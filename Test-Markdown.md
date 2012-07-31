@@ -10,6 +10,17 @@
     * One more level
     * Really?
 
+* nesting test
+  * level two
+  * another bullet
+     1. one
+     1. two
+     1. three
+         * not four!
+         * not five!
+             1. another one
+             1. another two
+
 ***
 
      <xml>
