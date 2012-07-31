@@ -17,3 +17,13 @@
          <bar/>
        </foo>
      </xml>
+
+```python
+import foo
+
+class Bar(object):
+  int baz
+
+  def xyz(abc):
+    return abc
+```
