@@ -1,1 +1,1 @@
-This is a UI page.
+Design docs for the User Interface for Eucalyptus.  Soon there will be content here!
