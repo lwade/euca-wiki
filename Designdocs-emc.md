@@ -1,1 +1,0 @@
-Here there will soon be design docs for the EMC/storage work.
