@@ -48,6 +48,6 @@ If you don't own the S3 buckets and can't download the image directly, you can l
 1. In EC2, launch an instance of the image you want to import to Eucalyptus. 
 2. Install euca2ools on that instance: http://www.eucalyptus.com/download/euca2ools
 2. Copy your admin-credentials.zip file from Eucalyptus to this instance.
-3. Run euca-bundle-vol based on the instructions here: https://github.com/eucalyptus/eucalyptus/wiki/Bundling-Images
+3. Run euca-bundle-vol based on the instructions here: [[Bundling Images]]
 4. Copy the files (.xml and .part files) to your Eucalyptus system.
 5. Run euca-upload-bundle and euca-register to upload and register the new system.
