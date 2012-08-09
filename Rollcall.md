@@ -2,4 +2,5 @@ This is a page for checking that you have access to the Eucalyptus wiki on Githu
 
 * Nóirín Plunkett
 * Greg DeKoenigsberg
+* Lester Wade
 * Your name here!
