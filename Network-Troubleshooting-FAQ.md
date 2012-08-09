@@ -19,6 +19,8 @@ PERMISSION      900692683087    default ALLOWS  icmp    0       0       FROM    
 
 In Managed, Managed (No VLAN), and Static networking modes, Eucalyptus runs its own DHCP server. It only answers requests for specific MAC addresses of VMs that Eucalyptus knows about. But if there is another DHCP server answering requests on your Eucalyptus network, it is likely that that DHCP server will answer first and your Eucalyptus VMs will get an unexpected address from your external DHCP server.
 
+To prevent this, you can configure your external DHCP server to ignore all MAC addresses that begin with **D0:0D**. (Yes, "d00d". Ha ha.) Note that Eucalyptus DHCP only responds to MAC addresses that begin with D0:0D.
+
 This is difficult to detect but you can put an iptables logging rule on your node controller to track DHCP traffic:
 
 ```
