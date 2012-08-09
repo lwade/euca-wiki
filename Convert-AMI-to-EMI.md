@@ -25,7 +25,7 @@ ec2-unbundle-image -m ami-conversion/manifest.xml
 ```
 mount -o loop ami.img /mnt
 rsync -i euca-key.private 192.168.1.100:/lib/modules/ /mnt/lib/modules/
-echo "devpts           /dev/pts      devpts   gid=5,mode=620   0 0" &gt;&gt; /etc/fstab
+echo "devpts           /dev/pts      devpts   gid=5,mode=620   0 0" >> /etc/fstab
 umount /mnt
 ```
 
