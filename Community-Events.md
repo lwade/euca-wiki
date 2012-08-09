@@ -9,5 +9,5 @@ Want to:
 Send a request to **community-team@eucalyptus.com** and we will be happy to talk more with you.
 
 ***
-original source: https://projects.eucalyptus.com/redmine/projects/events/
-category: events
+(original source: https://projects.eucalyptus.com/redmine/projects/events/)
+(category: events)
