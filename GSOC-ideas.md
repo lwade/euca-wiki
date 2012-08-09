@@ -19,3 +19,8 @@ Some project ideas for GSoC (or implementation in general).  Eucalyptians, pleas
 *Cluster GPU.* GPUs can now be used to accelerate the performance of many general purpose computing problems. The goal of this project is to explore and implement a mechanism for exposing the GPUs present on the system to the instances. An application needs to be identified that showcases implementation. _(Skills: libvirt / kvm - xen / scripting language)_
 
 *DropBukkit.* Working with many customers, partners and contractors means we often need to share small/medium/large files for various reasons.  Sometimes we use sftp, sometimes we use DropBox, sometimes we use other popular tools.  It would be great if we could work on a cool client for our own Walrus, to be able to provide users access to a bukkit for file sharing purposes.  It would be great to have clients for all platforms (including mobile devices). _(Skills: Android development; Java. Native; perhaps Python + Qt)_
+
+**********
+
+(original source: https://projects.eucalyptus.com/redmine/projects/gsoc2012/)
+(category: gsoc)
