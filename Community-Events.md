@@ -10,3 +10,4 @@ Send a request to **community-team@eucalyptus.com** and we will be happy to talk
 
 ***
 original source: https://projects.eucalyptus.com/redmine/projects/events/
+category: events
