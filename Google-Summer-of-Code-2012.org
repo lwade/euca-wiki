@@ -1,0 +1,35 @@
+** Note: this is a reference page.
+
+Eucalyptus was not accepted to the Google Summer of Code 2012.  Here's the original page, presented for reference purposes.
+
+********************************************************************************************
+
+** Mailing List
+
+For general information about Eucalyptus involvement with the GSoC, or for questions about any of the proposed Eucalyptus projects, please join the "community mailing list":http://lists.eucalyptus.com/cgi-bin/mailman/listinfo/community mailing list and ask your question. 
+
+** Internet Relay Chat
+
+You can also reach members of the Eucalyptus community on IRC at irc.freenode.net, channel #eucalyptus.
+
+** Project mentors
+
+The following members of the Eucalyptus community have volunteered to be mentors for Eucalyptus's participation in GSoC 2012:
+
++Dmitrii Zagorodnov
++Zach Hill
++Lester Wade (more project management, l33t coding skills not so much)
++Graziano Obertelli
++Rich Wolski
+ 
+** Student Applications
+
+See our [[GSOC-applications]] page.
+
+** Ideas
+
+See our [[GSOC-ideas]] page.
+
+********************************************************************************************
+
+(original source: https://projects.eucalyptus.com/redmine/projects/gsoc2012/) (category: gsoc)
