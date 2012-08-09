@@ -1,4 +1,4 @@
-## Want to see Eucalyptus at an upcoming event?  See the list of **[official Eucalyptus events](http://www.eucalyptus.com/news/events)**.
+### Want to meet Eucalyptus at an upcoming event?  See the list of **[official Eucalyptus events](http://www.eucalyptus.com/news/events)**.
 
 Want to:
 
