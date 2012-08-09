@@ -1,38 +1,35 @@
-_**Eucalyptus was not accepted to the Google Summer of Code 2011.  Here's the original page, presented for reference purposes.**_
+/*Eucalyptus was not accepted to the Google Summer of Code 2011.  Here's the original page, presented for reference purposes.*/
 
-***
+*******************
 
-## Contacts and Mentors
+** Contacts and Mentors
 
 For general information about Eucalyptus involvement with the GSoC, please contact community@eucalyptus.com. For specific questions on any of the proposed Eucalyptus projects, please contact our project administrators:
 
-* Graziano Obertelli (graziano@eucalyptus.com)
+Graziano Obertelli (graziano@eucalyptus.com)
 
-## Project mentors:
+** Project mentors:
 
-* Graziano Obertelli
-* Dmitrii Zagorodnov
-* Ye Wen
-* Mitch Garnaat
-* Rich Wolski
++Graziano Obertelli
++Dmitrii Zagorodnov
++Ye Wen
++Mitch Garnaat
++Rich Wolski
 
-Interested in applying for one of our projects? Send in an application.
-
-## Proposed Projects
+** Proposed Projects:
 
 The table below lists the proposed Eucalyptus project by name, description, recommended skills, and project scope. The following terms are used to define the scope:
 
-*Research*
-    The project does not have a specific deadline or well-defined requirements. The student must specify the deadline and define the requirements to limit the scope of the project
-*Open-ended*
-    The project has a very broad scope. The student should be careful in defining the objectives to limit the scope of his engagement.
-*Production*
-    The project is scheduled to be integrated very soon into Eucalyptus (i.e., next release). Initial requirements and milestones are already understood.
-*Focus (Deep or Broad)*
-    A Deep focus project targets a few specific technologies (e.g., one language and either server or client side) while a Broad focus project targets multiple technologies (e.g., working on back end and front end, or server and client side). 
+*Research*: The project does not have a specific deadline or well-defined requirements. The student must specify the deadline and define the requirements to limit the scope of the project
+
+*Open-ended*: The project has a very broad scope. The student should be careful in defining the objectives to limit the scope of his engagement.
+
+*Production*: The project is scheduled to be integrated very soon into Eucalyptus (i.e., next release). Initial requirements and milestones are already understood.
+
+*Focus (Deep or Broad)*: A Deep focus project targets a few specific technologies (e.g., one language and either server or client side) while a Broad focus project targets multiple technologies (e.g., working on back end and front end, or server and client side). 
 
 
-|*Project Name*  |*Description*                                       |*Skills*     |*Scope*  |
+|Project Name  |Description                                       |Skills     |Scope  |
 |EucaUI          |There are many ways to interact with a Eucalyptus cloud via the EC2 and S3 APIs, such as using Euca2ools, the Boto library, and Rightscale. However, having an basic GUI within eucalyptus may help to get started. A HTML5 / Javascript UI that can run in a web browser would be helpful for many types of users.  |HTML5 / Javascript / Ajaxy  |Open-end / Broad |
 |World Map | Investigate and implement the best method for reporting on Eucalyptus installations worldwide (including generic info such as country, size, and version). To include a means for visualizing this information, for example a world map or a running table showing specific stats, such as latest installation, largest installation of the month, etc. | Scripts / Java / web presentation | Open-end / Broad |
 |EucaDroid  |Android is an increasingly important open-source user-facing graphical operating system, running in smart phones, in handheld and wallmounted devices, and tablet computers. It would be useful to have a well written Android application that can manage and control storage and compute resources on AWs and in Eucalyptus clouds. | Android | Research / Focus |
