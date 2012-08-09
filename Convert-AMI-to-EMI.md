@@ -15,29 +15,29 @@ Steps:
 
 1. Download and decrypt the AMI from Amazon by running:
 
-```
-ec2-download-bundle -b <bucketname> -d ami-conversion
-ec2-unbundle-image -m ami-conversion/manifest.xml
-```
+    ```
+    ec2-download-bundle -b <bucketname> -d ami-conversion
+    ec2-unbundle-image -m ami-conversion/manifest.xml
+    ```
 
 2. Now that you have the root filesystem image, you need to add the kernel modules that you are using on  Eucalyptus. To do this, run a Eucalyptus instance and copy the kernel modules in to your AMI, and ensure that the /etc/fstab file is correct.
 
-```
-mount -o loop ami.img /mnt
-rsync -i euca-key.private 192.168.1.100:/lib/modules/ /mnt/lib/modules/
-echo "devpts           /dev/pts      devpts   gid=5,mode=620   0 0" >> /etc/fstab
-umount /mnt
-```
+    ```
+    mount -o loop ami.img /mnt
+    rsync -i euca-key.private 192.168.1.100:/lib/modules/ /mnt/lib/modules/
+    echo "devpts           /dev/pts      devpts   gid=5,mode=620   0 0" >> /etc/fstab
+    umount /mnt
+    ```
 
 3. Now, bundle the modified AMI into Eucalyptus:
 
-```
-euca-bundle-image -i ami.img --ramdisk eri-xxxxxx --kernel eki-xxxxxx
-euca-upload-bundle -b myami -m /mnt/manifest.xml
-euca-register myami/manifest.xml
-```
+    ```
+    euca-bundle-image -i ami.img --ramdisk eri-xxxxxx --kernel eki-xxxxxx
+    euca-upload-bundle -b myami -m /mnt/manifest.xml
+    euca-register myami/manifest.xml
+    ```
 
-(Substitute eri-xxxxxx and eki-xxxxxx with the appropriate EKI and ERI ids based on the running Eucalyptus instance you copied the kernel modules from.)
+    (Substitute eri-xxxxxx and eki-xxxxxx with the appropriate EKI and ERI ids based on the running Eucalyptus instance you copied the kernel modules from.)
 
 4. Test the instance.
 
