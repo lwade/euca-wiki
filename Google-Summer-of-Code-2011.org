@@ -1,4 +1,6 @@
-/Eucalyptus was not accepted to the Google Summer of Code 2011.  Here's the original page, presented for reference purposes./
+** Note: this is a reference page.
+
+Eucalyptus was not accepted to the Google Summer of Code 2011.  Here's the original page, presented for reference purposes.
 
 ********************************************************************************************
 
