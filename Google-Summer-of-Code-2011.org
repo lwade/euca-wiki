@@ -1,6 +1,6 @@
-/*Eucalyptus was not accepted to the Google Summer of Code 2011.  Here's the original page, presented for reference purposes.*/
+/Eucalyptus was not accepted to the Google Summer of Code 2011.  Here's the original page, presented for reference purposes./
 
-*******************
+********************************************************************************************
 
 ** Contacts and Mentors
 
@@ -38,3 +38,6 @@ The table below lists the proposed Eucalyptus project by name, description, reco
 |Euca2ools NG | The Boto library and the Euca2ools scripts are written in Python 2, and work well in the Python interpreter up to version 2.7.1. This project will focus on porting Euca2tools and Boto to Python 3.x interpreters. | Python 3.x | Production / Focus |
 |RoboUI  | The roboto project uses JSON data structures to fully describe the requests and responses of HTTP-based distributed systems like Eucalyptus. We then use those JSON descriptions to automatically generate command line interfaces for new services. It is believed that these JSON descriptions could also be useful in helping to automatically generate user interfaces for these services. This project would explore these possibilities with a goal of auto-generating admin-level web user interfaces for a subset of Eucalyptus services. | JSON / Java/ Javascript  | Research / Focus |
 |Cluster GPU | GPUs can now be used to accelerate the performance of many general purpose computing problems. The goal of this project is to explore and implement a mechanism for exposing the GPUs present on the system to the instances. An application needs to be identified that showcases implementation.  | libvirt / kvm - xen / scripting language | Research / Focus|
+
+********************************************************************************************
+
