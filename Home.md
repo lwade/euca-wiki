@@ -1,1 +1,11 @@
-Welcome to the eucalyptus wiki!
+Welcome to the Eucalyptus wiki!
+
+If you'd like to contribute, please check out the [Contributor Guidelines](https://github.com/eucalyptus/eucalyptus/wiki/Contributing) first.
+
+You can always ask questions on our [community mailing list](http://lists.eucalyptus.com/cgi-bin/mailman/listinfo/community), or on our [documentation mailing list](http://lists.eucalyptus.com/cgi-bin/mailman/listinfo/community). 
+
+You can find us on Freenode IRC in #eucalyptus or #eucalyptus-docs, or at any of our [community events](https://github.com/eucalyptus/eucalyptus/wiki/Community-Events)
+
+To see more of what's on the wiki, check out our [page listing](https://github.com/eucalyptus/eucalyptus/wiki/_pages) :-)
+
+Look forward to seeing you soon!
