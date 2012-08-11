@@ -1,6 +1,6 @@
 Welcome to the Eucalyptus wiki!
 
-If you'd like to contribute, please check out the [Contributor Guidelines](https://github.com/eucalyptus/eucalyptus/wiki/Contributing) first.
+If you'd like to contribute, please check out the [Contributor Guidelines](https://github.com/eucalyptus/eucalyptus/wiki/Contributing) first. We also have some more information on [our Git setup](https://github.com/eucalyptus/eucalyptus/wiki/Documentation-Contributions) especially focused on sending documentation patches.
 
 You can always ask questions on our [community mailing list](http://lists.eucalyptus.com/cgi-bin/mailman/listinfo/community), or on our [documentation mailing list](http://lists.eucalyptus.com/cgi-bin/mailman/listinfo/community). 
 
