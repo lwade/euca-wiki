@@ -67,3 +67,6 @@ Please make sure that you're using a compatible kernel and ramdisk for the Linux
 _My system appears to boot, but doesn't get an IP address, or I can't connect to the IP address._
 
 Please make sure you've excluded ALL networking configuration from the bundled image, including MAC address settings and DHCP leases, and make sure that the bundled VM is configured in DHCP mode.
+
+*****
+[[category:docs]] [[category:images]]
