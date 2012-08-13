@@ -28,3 +28,8 @@ configuration, exact package versions, or other details which may help us
 diagnose the issue.
 
 Once you have reported a bug, you will automatically be notified on all changes to the bug.  In particular, you should watch for any changes to the "Need Clarification" or "Waiting for Reporter" states, as those indicate that further progress on the issue cannot be made without more information from you, the reporter.
+
+*****
+
+[[category:bugs]]
+[[category:participation]]
