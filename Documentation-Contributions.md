@@ -27,3 +27,8 @@ When you get commit access to the Eucalyptus Systems repository, you’ll be abl
 * Apply the patch to your local repository using ``curl [patchURL] | git am``
 * Make sure the docs build, and do any more review that’s required
 * Push the changes to the Eucalyptus Systems repository using ``git push [internalremotename]``
+
+*****
+
+[[category:docs-team]]
+[[category:contributions]]
