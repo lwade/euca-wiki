@@ -36,4 +36,4 @@ This page contains the template we would like to be used when submitting a propo
 ********************************************************************************************
 
 (original source: https://projects.eucalyptus.com/redmine/projects/gsoc2012/) 
-(category: gsoc)
+[[category:gsoc]]
