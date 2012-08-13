@@ -48,3 +48,8 @@ The important part is that br0 exists, and that eth0 is in the "interfaces" list
 ### VLAN-tagged packets not passed by switch (MANAGED)
 
 In Managed mode, Eucalyptus tags instance traffic with its own chosen VLAN tags. If your switch ports aren't trunked or configured to forward a range of tags, the traffic won't flow. See your Installation Guide for some manual troubleshooting steps to test VLAN-tagged interfaces and make sure that your switch configuration is correct.
+
+*****
+
+[[category:docs]]
+[[category:networking]]
