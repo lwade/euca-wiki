@@ -8,3 +8,7 @@
 ## 2012-08-22
 * ...
 
+*****
+
+[[category:meetings]]
+[[category:docs-team]]
