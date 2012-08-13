@@ -43,4 +43,5 @@ The table below lists the proposed Eucalyptus project by name, description, reco
 
 ********************************************************************************************
 
-(original source: https://projects.eucalyptus.com/redmine/projects/gsoc2011/) (category: gsoc)
+(original source: https://projects.eucalyptus.com/redmine/projects/gsoc2011/) 
+[[category:gsoc]]
