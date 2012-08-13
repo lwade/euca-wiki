@@ -51,3 +51,8 @@ If you don't own the S3 buckets and can't download the image directly, you can l
 3. Run euca-bundle-vol based on the instructions here: [[Bundling Images]]
 4. Copy the files (.xml and .part files) to your Eucalyptus system.
 5. Run euca-upload-bundle and euca-register to upload and register the new system.
+
+*****
+
+[[category:docs]]
+[[category:images]]
