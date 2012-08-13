@@ -7,3 +7,8 @@ Stubs for these design docs:
 * [[Designdocs ui]]
 * [[Designdocs troubleshooting]]
 * [[Designdocs reporting]]
+
+*****
+
+[[category:docs]]
+[[category:design]]
