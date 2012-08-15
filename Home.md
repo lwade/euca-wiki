@@ -8,6 +8,6 @@ You can find us on Freenode IRC in #eucalyptus or #eucalyptus-docs, or at any of
 
 Finding pages:
 * [page listing](https://github.com/eucalyptus/eucalyptus/wiki/_pages)
-* [index of categories]
+* [[index of categories]]
 
 Look forward to seeing you soon!
