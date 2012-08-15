@@ -69,4 +69,5 @@ _My system appears to boot, but doesn't get an IP address, or I can't connect to
 Please make sure you've excluded ALL networking configuration from the bundled image, including MAC address settings and DHCP leases, and make sure that the bundled VM is configured in DHCP mode.
 
 *****
-[[category:docs]] [[category:images]]
+[[category:docs]] 
+[[category:images]]
