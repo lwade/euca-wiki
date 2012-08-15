@@ -6,6 +6,8 @@ You can always ask questions on our [community mailing list](http://lists.eucaly
 
 You can find us on Freenode IRC in #eucalyptus or #eucalyptus-docs, or at any of our [community events](https://github.com/eucalyptus/eucalyptus/wiki/Community-Events)
 
-To see more of what's on the wiki, check out our [page listing](https://github.com/eucalyptus/eucalyptus/wiki/_pages) :-)
+Finding pages:
+* [page listing](https://github.com/eucalyptus/eucalyptus/wiki/_pages)
+* [index of categories]
 
 Look forward to seeing you soon!
