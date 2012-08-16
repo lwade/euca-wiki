@@ -23,4 +23,4 @@ Some project ideas for GSoC (or implementation in general).  Eucalyptians, pleas
 **********
 
 (original source: https://projects.eucalyptus.com/redmine/projects/gsoc2012/)
-[[category:gsoc]]
+[[category.gsoc]]

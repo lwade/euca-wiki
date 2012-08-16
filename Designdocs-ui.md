@@ -4,6 +4,6 @@ Design docs for the User Interface for Eucalyptus.  Soon there will be content h
 
 *****
 
-[[category:design]]
-[[category:docs]]
-[[category:ui]]
+[[category.design]]
+[[category.docs]]
+[[category.ui]]

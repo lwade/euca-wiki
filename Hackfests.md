@@ -19,4 +19,4 @@ Here is a place to capture ideas for all the cool hackfests we could/should be d
 
 *****
 
-[[category:hackfests]]
+[[category.hackfests]]

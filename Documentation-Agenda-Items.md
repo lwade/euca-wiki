@@ -10,5 +10,5 @@
 
 *****
 
-[[category:meetings]]
-[[category:docs-team]]
+[[category.meetings]]
+[[category.docs-team]]

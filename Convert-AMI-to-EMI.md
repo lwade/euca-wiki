@@ -54,5 +54,5 @@ If you don't own the S3 buckets and can't download the image directly, you can l
 
 *****
 
-[[category:docs]]
-[[category:images]]
+[[category.docs]]
+[[category.images]]

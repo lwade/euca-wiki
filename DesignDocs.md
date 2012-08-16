@@ -10,5 +10,5 @@ Stubs for these design docs:
 
 *****
 
-[[category:docs]]
-[[category:design]]
+[[category.docs]]
+[[category.design]]

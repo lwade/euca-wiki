@@ -71,4 +71,4 @@ process occurs:
 * If the patch is not accepted, a report is issued explaining why it cannot be accepted, and guidelines are provided showing how to remedy the problem for subsequent patch acceptance.
 
 *****
-[[category:contributing]]
+[[category.contributing]]

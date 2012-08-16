@@ -31,5 +31,5 @@ Once you have reported a bug, you will automatically be notified on all changes 
 
 *****
 
-[[category:bugs]]
-[[category:participation]]
+[[category.bugs]]
+[[category.participation]]

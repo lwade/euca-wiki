@@ -30,5 +30,5 @@ When you get commit access to the Eucalyptus Systems repository, you’ll be abl
 
 *****
 
-[[category:docs-team]]
-[[category:contributions]]
+[[category.docs-team]]
+[[category.contributions]]

@@ -33,4 +33,4 @@ See our [[GSOC-ideas]] page.
 ********************************************************************************************
 
 (original source: https://projects.eucalyptus.com/redmine/projects/gsoc2012/)
-[[category:gsoc]]
+[[category.gsoc]]
