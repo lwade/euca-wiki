@@ -1,18 +1,3 @@
 Index of Categories
 
 * [[category.UNCATEGORIZED]]
-* [[category.bugs]]
-* [[category.contributing]]
-* [[category.contributions]]
-* [[category.design]]
-* [[category.docs]]
-* [[category.docs-team]]
-* [[category.events]]
-* [[category.gsoc]]
-* [[category.hackfests]]
-* [[category.images]]
-* [[category.meetings]]
-* [[category.networking]]
-* [[category.participation]]
-* [[category.reporting]]
-* [[category.ui]]
