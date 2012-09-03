@@ -109,6 +109,7 @@ NC uses multiple threads, which can be examined interactively to identify them:
 #5  0x00007f6092421ccd in clone () from /lib64/libc.so.6
 (gdb)
 ```
+One can discern from the above that thread 2 is the monitoring_thread and thread 2 is the sensor_thread. If there were instances in the process of being started up or rebooted or bundled, you would also see startup_thread or rebooting_thread or bundling_thread in the list.
 
 ## Run Eucalyptus component under gdb
 
