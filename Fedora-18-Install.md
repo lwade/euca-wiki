@@ -5,7 +5,7 @@
 1. yum update yum
 1. edit /etc/yum.repos.d/fedora-updates-testing.repo
    * set enabled=1
-   * set includepkgs=*wso2*,mule*
+   * set includepkgs=mule*
 1. rpm --import https://fedoraproject.org/static/DE7F38BD.txt
 1. yum clean all
 1. yum --releasever=18 --disableplugin=presto distro-sync
@@ -35,9 +35,18 @@ EOF
 1. systemctl enable network.service
 1. yum erase NetworkManager NetworkManager-glib
 1. reboot
-1. grab eucalyptus rpms from (koji build, etc.).  Current build is 3.1.0-19
-1. yum install *.rpm (eucalyptus-cloud eucalyptus-sc eucalyptus-walrus eucalyptus-cc eucalyptus-nc)
-1. Broken deps:  yum install mod_wso2-axis2 wso2-axis2-devel wso2-axis2-modules (need -14 or later)
+1. Add eucalyptus repo:
+```
+cat <<EOF >/etc/yum.repos.d/eucalyptus.repo
+[euca]
+name=euca
+baseurl=http://downloads.eucalyptus.com/devel/packages/fedora-18/x86_64/
+gpgcheck=0
+enabled=1
+EOF
+```
+1. yum install eucalyptus-cloud eucalyptus-sc eucalyptus-walrus eucalyptus-cc eucalyptus-nc
+1. Install missing deps:  yum install mod_wso2-axis2 wso2-axis2-devel wso2-axis2-modules
 1. kernel params
 ```
 cat <<EOF >/etc/sysctl.d/eucalyptus-cloud
