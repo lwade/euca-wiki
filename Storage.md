@@ -1,38 +1,32 @@
-# Walrus/S3
-What it is, What it does
+# Eucalyptus Storage
 
-## DesignDoc for the Cloud Admin
-### Backing Store (where the buckets are)
-### HA (DRBD and more)
-failover, setup, DRBD info etc ...
-### How is the Backing Store Used
-how buckets are used and what is in them
-how buckets and storage is mapped to the backing store
-### Lifecycle of a Request
-Get and Put examples
-walrus API
-### Walrus and the Database
-should we talk about this? It would be obsolete the very moment we write it and the admin is not expected to use it directly
-### Authentication, ACLs, Permissions
+Buckets and Volumes are the persistent storages within Eucalyptus.
+Eucalyptus implement the S3 and EC2 API: more about these storages can be
+found at http://aws.amazon.com/ebs/ and http://aws.amazon.com/s3/.
 
-## DesignDoc for the Developers
-code is the ultimate truth here
+The Eucalyptus component Walrus implements Buckets (sometimes mispelled
+bukkits within Eucalyptus), that is the S3 interface. S3 implements a
+simple get/put interface: there are quite a few commands/programs that can
+be used with Walrus (check out
+http://www.eucalyptus.com/eucalyptus-cloud/tools/s3 for a sample of
+tools). Files needs can be added to or removed from the bucket: this is
+considered and atomic operation, either the full action succeed, in which
+case the file will be added/removed, or, in case of failure, the old
+content will remain in the bucket.
 
-# EBS/Volumes
-## DesignDoc for the Cloud Admin
-### Backing Store (where the volumes are)
-filesystem how is it used (LVM and loop devices)
-SAN
-### Export Volumes (how the volumes are accessible by instances)
-### Snapshotting
-### Startup and Shutdown 
-there is a lot of state in the StorageManager
-### Lifecycle of a Request
-Create volume
-Attach volume
-Snapshot
-how clc is involed
-### Database (same issue as walrus)
+The Storage Controller is the Eucalyptus component implementing the
+Elastic Block Storage, which allows instances to use Volumes. Volumes can
+be create, deleted, attached to running instances, detached, and
+snapshotted using the EC2 interface, thus the euca2ools has all the needed
+command to operate on the Volumes. Volumes will appear to the running
+instance as a new disk: unlike ephemeral storage, this disk will persist
+across instance termination, and instance failures, till the user
+explicitely deletes it. 
 
-## DesignDoc for the Developers
-code is the ultimate truth here
+To recap, both storages are persistent, but buckets are accessed only via
+the API or commands, meaning that the application will have to account for
+staging the files somewhere else, while volumes will have the familiar
+block device interface.
+
+Read more about [[Walrus]]
+Read more about [[StorageController]]
