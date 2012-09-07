@@ -107,9 +107,11 @@ systemctl restart polkit
 
 For some reason, /dev/kvm was not assigned to group 'kvm' on my system.  This may be because the modules were loaded before qemu-system-x86 was installed.
 
-1. chown root:kvm /dev/kvm
-1. rmmod kvm_intel; rmmod kvm
-1. modprobe kvm; modprobe kvm_intel
+```
+chown root:kvm /dev/kvm
+rmmod kvm_intel; rmmod kvm
+modprobe kvm; modprobe kvm_intel
+```
 
 ## Cloud Initialization
 
