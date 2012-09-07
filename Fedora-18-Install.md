@@ -60,7 +60,7 @@ EOF
 sysctl -p /etc/sysctl.d/eucalyptus-cloud
 ```
 
-# Eucalyptus Package Installation
+## Eucalyptus Package Installation
 
 1. edit /etc/yum.repos.d/fedora-updates-testing.repo (For [FEDORA-2012-11983](https://admin.fedoraproject.org/updates/FEDORA-2012-11983/)):
    * set enabled=1
