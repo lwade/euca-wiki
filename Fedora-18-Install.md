@@ -1,5 +1,7 @@
 ## Upgrade Fedora 17 to Fedora 18 (optional)
 
+This is only necessary if you don't have a working Fedora 18 install.  It is recommended that you install Fedora 18.
+
 1. kickstart fedora 17
 1. switch selinux to permissive mode
 1. reboot
@@ -65,8 +67,8 @@ sysctl -p /etc/sysctl.d/eucalyptus-cloud
 ## Eucalyptus Package Installation
 
 1. edit /etc/yum.repos.d/fedora-updates-testing.repo (For [FEDORA-2012-11983](https://admin.fedoraproject.org/updates/FEDORA-2012-11983/)):
-   * set enabled=1
-   * set includepkgs=mule*,*wso2*
+   * set `enabled=1`
+   * set `includepkgs=mule*,*wso2*`
 1. Add eucalyptus repo. This will not be necessary once eucalyptus is accepted into Fedora.
 ```
 cat <<EOF >/etc/yum.repos.d/eucalyptus.repo
@@ -88,11 +90,14 @@ ln -s libmod_rampart.so /usr/lib64/wso2-axis2/modules/rampart/libmod_rampart.so.
 
 ## Cloud Initialization
 
-1. su eucalyptus -c "euca_conf --initialize"
-1. systemctl start eucalyptus-cloud
-1. WAIT (The first startup can take a few minutes while the databases are loaded)
+```
+su eucalyptus -c "euca_conf --initialize"
+systemctl start eucalyptus-cloud
+```
 
-# Component Registration
+The first startup can take a few minutes while the databases are loaded.  You can `tail -f /var/log/eucalyptus/cloud-exhaust.log` and watch for the "Mule ESB and Integration Platform" box to appear, which is a good indication that the web services stack is fully loaded.
+
+## Component Registration
 
 * Get credentials - Note that if you don't wait long enough, you may get an error or a zero-length file here.  If so, remove the empty file and try again.
 ```
