@@ -1,8 +1,14 @@
 # EBS/Volumes
 ## DesignDoc for the Cloud Admin
+The Storage Controller is the component of Eucalyptus that manages EBS volumes. Eucalyptus uses the iSCSI protocol to connect EBS volumes to instances (NCs actually), and uses standard linux commands for configuring and exporting the volumes to instances. Volumes are represented as files on the filesystem of the machine hosting the SC. The SC manages creating, deleting, snapshotting, and exporting volumes in response to both user commands (example: euca-create-volume and euca-create-snapshot) and system operations (example: euca-run-instances of a boot-from-ebs instance)
+
 ### Backing Store (where the volumes are)
-filesystem how is it used (LVM and loop devices)
-SAN
+**Default Backing Store: Posix Filesystem**
+The default configuration for the SC uses a standard Posix filesystem as the backing storage for EBS volumes. In this configuration, the SC does all the work and manages the volumes themselves, metadata, and the iSCSI operations. When using the filesystem, each EBS volume is a single file and each snapshot is also a single file. The files for snapshots and volumes are not connected in any way in the filesystem (i.e. they are not symlinks to each other etc). The SC has the expectation that the filesystem it uses is under the sole control of the SC and is not a shared filesystem. The SC does not support an NFS-mounted filesystem that is shared between multiple SCs in multiple clusters (or even in an HA pair). Doing so can cause name conflicts, particularly for snapshots because snapshot names (i.e. snap-abc123) are globally unique in Eucalyptus.
+
+**SAN Storage (paid subscriptions only)**
+The SC can also be configured to interact with a SAN device to host EBS volumes. In this configuration the SC manages metadata for volumes and snapshots and issues commands to the SAN to perform required operations, but the volumes and snapshots themselves are hosted by the SAN and the SAN manages the iSCSI connections to the NCs. In this configuration the SC is not in the data path for EBS volume block traffic and therefore this configuration typically yields much better performance.
+
 ### Export Volumes (how the volumes are accessible by instances)
 ### Snapshotting
 ### Startup and Shutdown 
