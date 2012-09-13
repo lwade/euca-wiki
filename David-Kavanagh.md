@@ -7,4 +7,4 @@ I'm an engineer and involved in several partner integration efforts. Currently, 
 
 
 *****
-[[categories.people]]
+[[category.people]]
