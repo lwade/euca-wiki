@@ -1,8 +1,6 @@
 * [[ChangeLog]]
-* [[David-Federlein]]
 * [[Debugging-Eucalyptus-C-language-components]]
 * [[Fedora-18-Single-System-Install]]
-* [[Home]]
 * [[index-of-categories]]
 * [[Rollcall]]
 * [[Storage]]
