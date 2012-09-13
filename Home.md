@@ -10,4 +10,7 @@ Finding pages:
 * [page listing](https://github.com/eucalyptus/eucalyptus/wiki/_pages)
 * [[index of categories]]
 
+We've got some great people working on Eucalyptus: meet some of them.  
+* [[category.people]]
+
 Look forward to seeing you soon!
