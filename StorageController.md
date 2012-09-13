@@ -14,8 +14,16 @@ The default configuration for the SC uses a standard Posix filesystem as the bac
 The SC can also be configured to interact with a SAN device to host EBS volumes. In this configuration the SC manages metadata for volumes and snapshots and issues commands to the SAN to perform required operations, but the volumes and snapshots themselves are hosted by the SAN and the SAN manages the iSCSI connections to the NCs. In this configuration the SC is not in the data path for EBS volume block traffic and therefore this configuration typically yields much better performance.
 
 ### Export Volumes (how the volumes are accessible by instances)
+**SAN-backed SCs**
+For SAN-backed SCs the SAN exports the volumes directly to NCs using iSCSI. This is very device specific and we will not discuss it further in this section. Eventually we will probably put up an entire section dedicated to SAN-backed SCs as well as the devices we support and how they are used, but that feature is not part of the open-source Eucalyptus (we have to save some good bits for the paying customers right?).
+
+**Filesystem-backed SCs**
+SCs using a filesystem as the backend export volumes using standard linux iSCSI servers and tools. Specifically, the SC uses [the linux ISCSI Framework (TGT)](http://stgt.sourceforge.net/) to export the volumes as iSCSI stores to the NCs. The SC creates an LVM volume from the file using a loopback device (more details below) and exports that device as a store using tgtadm.
 
 ### Snapshotting
+**Filesystem-backed SCs**
+A snapshot operation is a simple file-copy in this case. However, there are some complexities due to the headers added to the file when it becomes an lvm volume. For that reason, we snapshot by copying (using dd) the source file into the destination file after the destination has been created and configured as an lvm volume independently of the source. The SC only copies the final lvm volume devices so that all lvm header and metadata information stays unique to each file.
+
 ### Startup and Shutdown 
 there is a lot of state in the StorageManager
 ### Lifecycle of a Request
