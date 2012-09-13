@@ -1,5 +1,6 @@
 * [[Bundling-Images]]
 * [[Convert-AMI-to-EMI]]
+* [[index-of-categories]]
 
 
 *****

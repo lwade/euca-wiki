@@ -11,4 +11,4 @@ Some fun facts about me:
 * I am the go-to guy for all issues Eucalyptus + OpenShift.
 
 *****
-category.people
+[[category.people]]

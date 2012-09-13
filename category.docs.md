@@ -4,6 +4,7 @@
 * [[Designdocs-troubleshooting]]
 * [[Designdocs-ui]]
 * [[DesignDocs]]
+* [[index-of-categories]]
 * [[Network-Troubleshooting-FAQ]]
 
 
