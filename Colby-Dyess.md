@@ -12,4 +12,4 @@ You may ask yourself, "What's a guy in Marketing doing with a wiki page on git?"
 
 Email: colby (dot) dyess (at) eucaluptus (dot) com
 
-IRC: ecuacolby  <-- yep..."ecuacolby".
+IRC: ecuacolby  <-- yep..."ecuacolby". I spelled it incorrectly once and will just live with it.
