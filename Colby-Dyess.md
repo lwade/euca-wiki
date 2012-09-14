@@ -6,7 +6,7 @@ I am a Senior Alliances Manager at Eucalyptus. If you'd like to integrate and ma
 * Trying out pre-release software
 * Building demos with our partners
 
-You can reach me at:
+## Contact:
 
 Email: colby (dot) dyess (at) eucaluptus (dot) com
 
