@@ -1,4 +1,6 @@
 * [[ChangeLog]]
+* [[Chris-Grzegorczyk]]
+* [[Colby-Dyess]]
 * [[Debugging-Eucalyptus-C-language-components]]
 * [[Fedora-18-Single-System-Install]]
 * [[index-of-categories]]
