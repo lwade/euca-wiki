@@ -6,4 +6,5 @@ Hi, my name is Harold Spencer, Jr. ([@hspencer77](https://twitter.com/hspencer77
 
 I have been with Eucalyptus now for over 2 and a half years.  Before this, I worked at California State University Northridge in the Pioneering Technology Group.  I really enjoy cloud computing and I really enjoy open source! :-)
 
+*****
 [[categories.people]]
