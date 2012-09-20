@@ -8,9 +8,13 @@ This page contains a list of resources that a monitoring agent could check for o
 
 **Cloud Controller**
 * PostgreSQL connections
+* Number of Public IP Addresses allocated
+* Number of available instances per type (warn when availability runs low)
 
 **Walrus**
 * Cache size
+* Bukkits disk usage
+* DRBD sync status 
 
 **Cluster Controller**
 
@@ -18,3 +22,4 @@ This page contains a list of resources that a monitoring agent could check for o
 * Local cache
 
 **Node Controller**
+* Loopback devices in use
