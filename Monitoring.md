@@ -26,3 +26,9 @@ This page contains a list of resources that a monitoring agent could check for o
 * Loopback devices in use
 * iscsid
 * libvirtd
+
+**Cloud**
+* Running images
+* Running instance type
+* Available ressource
+
