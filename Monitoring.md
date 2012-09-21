@@ -20,6 +20,9 @@ This page contains a list of resources that a monitoring agent could check for o
 
 **Storage Controller**
 * Local cache
+* Loopback devices in use
 
 **Node Controller**
 * Loopback devices in use
+* iscsid
+* libvirtd
