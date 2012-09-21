@@ -24,6 +24,18 @@ For SAN-backed SCs the SAN exports the volumes directly to NCs using iSCSI. This
 **Filesystem-backed SCs**
 SCs using a filesystem as the backend export volumes using standard linux iSCSI servers and tools. Specifically, the SC uses [the linux ISCSI Framework (TGT)](http://stgt.sourceforge.net/) to export the volumes as iSCSI stores to the NCs. The SC creates an LVM volume from the file using a loopback device (more details below) and exports that device as a store using tgtadm.
 
+The basic operations done when creating a volume (example: vol-X, of size 1GB) are:
+
+1. Create a file: $EUCALYPTUS/var/lib/eucalyptus/volumes/vol-X of size 1GB + lvm header size (~4MB): `dd -if /dev/zero -of $EUCALYPTUS/var/lib/eucalyptus/volumes/vol-X count=1 bs=1M`
+2. Attach file to a loopback using losetup: `losetup $EUCALYPTUS/var/lib/eucalyptus/volumes /dev/loop0`, assuming loop0 is free. The SC uses the next available loopback, as returned by `losetup -f`.
+3. Create physical volume from loopback: `pvcreate /dev/loop0`.
+4. Create volume group: `vgcreate /dev/loop0 vg-xyza` (the volume group name is a 4 char random hash).
+5. Create logical volume: `lvcreate -n lv-jklm -l 100%FREE vg-xyza`
+6. Create new iSCSI target: `tgtadm --lld iscsi --op new --mode target --tid <assigned_tid> -T <some_prefix><SC_NAME>:store0`
+7. Create new lun in the target: `tgtadm --lld iscsi --op new --mode logicalunit --tid <assigned_tid> --lun 1 -b /dev/vg-xyza/lv-jklm`
+8. Add eucalyptus CHAP user to target: `tgtadm --lld iscsi --op bind --mode account --tid <assigned_tid> --user eucalyptus`
+9. Bind the target to all interfaces: `tgtadm --lld iscsi --op bind --mode target --tid <assigned_tid> -I ALL`
+
 ### Snapshotting
 **Filesystem-backed SCs**
 A snapshot operation is a simple file-copy in this case. However, there are some complexities due to the headers added to the file when it becomes an lvm volume. For that reason, we snapshot by copying (using dd) the source file into the destination file after the destination has been created and configured as an lvm volume independently of the source. The SC only copies the final lvm volume devices so that all lvm header and metadata information stays unique to each file.
@@ -34,7 +46,7 @@ there is a lot of state in the StorageManager
 Create volume
 Attach volume
 Snapshot
-how clc is involed
+How Cloud Controller (CLC) is involved
 ### Database (same issue as walrus)
 
 ## DesignDoc for the Developers
