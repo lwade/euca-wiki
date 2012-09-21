@@ -15,7 +15,7 @@ This page contains a list of resources that a monitoring agent could check for o
 **Walrus**
 * Cache size
 * Bukkits disk usage
-* DRBD sync status 
+* DRBD sync & role (status) 
 
 **Cluster Controller**
 
