@@ -27,7 +27,8 @@ SCs using a filesystem as the backend export volumes using standard linux iSCSI 
 The basic operations done when creating a volume (example: vol-X, of size 1GB, and assuming /dev/loop0 is open and there are no other volumes, so target-id 1 is unused as well) are:
 
 1. Create a file: $EUCALYPTUS/var/lib/eucalyptus/volumes/vol-X of size 1GB + lvm header size (~4MB): `dd -if /dev/zero -of $EUCALYPTUS/var/lib/eucalyptus/volumes/vol-X count=1 bs=1M`
-2. Attach file to a loopback using losetup: `losetup $EUCALYPTUS/var/lib/eucalyptus/volumes /dev/loop0`, assuming loop0 is free. The SC uses the next available loopback, as returned by `losetup -f`.
+2. Find unused loopback: `losetup -f`
+2. Attach file to a loopback using losetup: `losetup /dev/loop0 $EUCALYPTUS/var/lib/eucalyptus/volumes`
 3. Create physical volume from loopback: `pvcreate /dev/loop0`.
 4. Create volume group: `vgcreate /dev/loop0 vg-xyza` (the volume group name is a 4 char random hash).
 5. Create logical volume: `lvcreate -n lv-jklm -l 100%FREE vg-xyza`
