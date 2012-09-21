@@ -24,17 +24,17 @@ For SAN-backed SCs the SAN exports the volumes directly to NCs using iSCSI. This
 **Filesystem-backed SCs**
 SCs using a filesystem as the backend export volumes using standard linux iSCSI servers and tools. Specifically, the SC uses [the linux ISCSI Framework (TGT)](http://stgt.sourceforge.net/) to export the volumes as iSCSI stores to the NCs. The SC creates an LVM volume from the file using a loopback device (more details below) and exports that device as a store using tgtadm.
 
-The basic operations done when creating a volume (example: vol-X, of size 1GB) are:
+The basic operations done when creating a volume (example: vol-X, of size 1GB, and assuming /dev/loop0 is open and there are no other volumes, so target-id 1 is unused as well) are:
 
 1. Create a file: $EUCALYPTUS/var/lib/eucalyptus/volumes/vol-X of size 1GB + lvm header size (~4MB): `dd -if /dev/zero -of $EUCALYPTUS/var/lib/eucalyptus/volumes/vol-X count=1 bs=1M`
 2. Attach file to a loopback using losetup: `losetup $EUCALYPTUS/var/lib/eucalyptus/volumes /dev/loop0`, assuming loop0 is free. The SC uses the next available loopback, as returned by `losetup -f`.
 3. Create physical volume from loopback: `pvcreate /dev/loop0`.
 4. Create volume group: `vgcreate /dev/loop0 vg-xyza` (the volume group name is a 4 char random hash).
 5. Create logical volume: `lvcreate -n lv-jklm -l 100%FREE vg-xyza`
-6. Create new iSCSI target: `tgtadm --lld iscsi --op new --mode target --tid <assigned_tid> -T <some_prefix><SC_NAME>:store0`
-7. Create new lun in the target: `tgtadm --lld iscsi --op new --mode logicalunit --tid <assigned_tid> --lun 1 -b /dev/vg-xyza/lv-jklm`
-8. Add eucalyptus CHAP user to target: `tgtadm --lld iscsi --op bind --mode account --tid <assigned_tid> --user eucalyptus`
-9. Bind the target to all interfaces: `tgtadm --lld iscsi --op bind --mode target --tid <assigned_tid> -I ALL`
+6. Create new iSCSI target: `tgtadm --lld iscsi --op new --mode target --tid 1 -T <some_prefix><SC_NAME>:store0`
+7. Create new lun in the target: `tgtadm --lld iscsi --op new --mode logicalunit --tid 1 --lun 1 -b /dev/vg-xyza/lv-jklm`
+8. Add eucalyptus CHAP user to target: `tgtadm --lld iscsi --op bind --mode account --tid 1 --user eucalyptus`
+9. Bind the target to all interfaces: `tgtadm --lld iscsi --op bind --mode target --tid 1 -I ALL`
 
 ### Snapshotting
 **Filesystem-backed SCs**
