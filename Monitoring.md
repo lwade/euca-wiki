@@ -5,6 +5,7 @@ This page contains a list of resources that a monitoring agent could check for o
 * Memory usage
 * Disk space
 * Network Traffic
+* I/O (metric tbd)
 
 **Cloud Controller**
 * PostgreSQL connections
@@ -21,11 +22,15 @@ This page contains a list of resources that a monitoring agent could check for o
 **Storage Controller**
 * Local cache
 * Loopback devices in use
+* Specifically disk space in /var/lib/eucalyptus/volumes
+* Failed snapshots? (check for vol and snap ID's by filename length?)
+* tgtd status
 
 **Node Controller**
 * Loopback devices in use
 * iscsid
 * libvirtd
+* Specifically disk space in /var/lib/eucalyptus/instances/[cache,work]
 
 **Cloud**
 * Running images
