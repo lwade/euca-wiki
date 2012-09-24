@@ -2,9 +2,11 @@ This page contains a list of resources that a monitoring agent could check for o
 
 **Standard Operating System Checks**
 * CPU Load
+* System Load
 * Memory usage
 * Disk space
 * Network Traffic
+* Total Processes
 * I/O (metric tbd)
 
 **Cloud**
