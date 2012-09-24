@@ -6,3 +6,6 @@ I've been a user of AWS since around 2007-2008 and I had followed Eucalyptus fro
 
 Ok, enough about me, back to making sure Walrus "can haz bukkits".
 
+*****
+
+[[category.people]]

@@ -11,3 +11,7 @@ Some things that might not be obvious on LinkedIn:
 * I am a huge fan of St. Louis Cardinals baseball. My apologies to the great state of Texas. I'd feel bad for you, but we have the Rams for football, and I think that about evens things out.
 
 * Like many, many others in the high technology field, I have a B.S. in Psychology, which I followed with an M.B.A., and am now finishing up an Associate's of Applied Science in Computer Programming - you know, the standard education track for a cloud tech guy. My ultimate career goal is to apply all of this knowledge as a peanut and beer vendor for a semi-professional sports team.
+
+*****
+
+[[category.people]]

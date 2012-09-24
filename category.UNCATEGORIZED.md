@@ -1,17 +1,14 @@
 * [[ChangeLog]]
 * [[Chris-Grzegorczyk]]
-* [[Colby-Dyess]]
 * [[Debugging-Eucalyptus-C-language-components]]
 * [[Fedora-18-Single-System-Install]]
 * [[index-of-categories]]
-* [[Jason-Eden]]
 * [[Monitoring]]
 * [[Rollcall]]
 * [[Storage]]
 * [[StorageController]]
 * [[Test-Markdown]]
 * [[Walrus]]
-* [[Zach-Hill]]
 * [[Textile-Test]]
 
 
