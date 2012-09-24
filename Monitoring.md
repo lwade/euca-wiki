@@ -14,6 +14,7 @@ This page contains a list of resources that a monitoring agent could check for o
 * Running images
 * Running instance type
 * Available resources
+* Available cores - **Done**
 
 **Cloud Controller**
 * PostgreSQL connections / CLC logs indicate proxool errors / CLC/postgres (can connect)
