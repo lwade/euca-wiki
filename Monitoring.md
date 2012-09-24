@@ -34,7 +34,7 @@ master! Unable to proceed!"
 
 **Cluster Controller**
 * Do the NODES in the a HA CC setup match for paired CCs
-* CC/NC rampart package versions do not match
+* CC/NC rampart package versions do not match (more Eucalyptus Bug specific, not daily monitoring?)
 * CC logs indicate errors communicating with an NC
 * Network tomography (partition detection; routing/switching check)
 * Check TCP port 8774 is listening **Done**
