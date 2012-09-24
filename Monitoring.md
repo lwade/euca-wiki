@@ -47,9 +47,10 @@ another initiator already exists"
 **Node Controller**
 * NC/kernel (load average threshold, dmesg call stacks with io_sched in them)
 * NC/libvirtd (is it alive)
-* Loopback devices in use **Done**
-* iscsid / iscsiadm (can establish sessions)
-* libvirtd
+* Loopback devices in use - **Done**
+* iscsid - **Done**
+* iscsiadm (can establish sessions)
+* libvirtd - **Done**
 * Specifically disk space in /var/lib/eucalyptus/instances/[cache,work]
 * NC has not received a describeResources request in the last
 WARN_TIMEOUT minutes: Warning
