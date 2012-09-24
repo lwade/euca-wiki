@@ -3,6 +3,7 @@
 * [[David-Kavanagh]]
 * [[Greg-DeKoenigsberg]]
 * [[grze]]
+* [[Harold-Spencer-Jr]]
 * [[Home]]
 * [[index-of-categories]]
 * [[Jenny-Loza]]
