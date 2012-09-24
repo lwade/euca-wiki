@@ -17,7 +17,7 @@ This page contains a list of resources that a monitoring agent could check for o
 
 **Cloud Controller**
 * PostgreSQL connections / CLC logs indicate proxool errors / CLC/postgres (can connect)
-* Number of Public IP Addresses allocated
+* Number of Public IP Addresses allocated **Done**
 * Number of available instances per type (warn when availability runs low)
 * CLC logs indicate errors in VmInstance$RestoreAllocation
 * CLC,Walrus,SC,VB/jvm (heap usage, full gc stop time threshold)
