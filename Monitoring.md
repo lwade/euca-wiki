@@ -1,14 +1,14 @@
 This page contains a list of resources that a monitoring agent could check for on a production Eucalyptus IaaS cloud.
 
 **Standard Operating System Checks**
-* CPU Load
-* System Load
-* Memory usage
-* Swap usage
-* Disk space
+* CPU Load - Done
+* System Load - Done
+* Memory usage - Done
+* Swap usage - Done
+* Disk space - Done
 * Network Traffic
-* Total Processes
-* I/O (metric tbd)
+* Total Processes - Done
+* I/O (metric tbd) 
 
 **Cloud**
 * Running images
@@ -37,7 +37,7 @@ master! Unable to proceed!"
 
 **Storage Controller**
 * Local cache
-* Loopback devices in use
+* Loopback devices in use - Done
 * Specifically disk space in /var/lib/eucalyptus/volumes
 * Failed snapshots? (check for vol and snap ID's by filename length?)
 * tgtd status
