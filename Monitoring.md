@@ -47,6 +47,7 @@ master! Unable to proceed!"
 * tgtd status
 * NetApp/Equallogic logs have  faulures because an "iSCSI session from
 another initiator already exists"
+* I/O Wait
 * Check TCP port 8773 is listening **Done**
 
 **Node Controller**
