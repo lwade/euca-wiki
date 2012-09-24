@@ -4,6 +4,7 @@ This page contains a list of resources that a monitoring agent could check for o
 * CPU Load
 * System Load
 * Memory usage
+* Swap usage
 * Disk space
 * Network Traffic
 * Total Processes
