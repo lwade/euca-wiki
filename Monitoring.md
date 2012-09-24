@@ -48,7 +48,7 @@ another initiator already exists"
 * NC/kernel (load average threshold, dmesg call stacks with io_sched in them)
 * NC/libvirtd (is it alive)
 * Loopback devices in use - **Done**
-* iscsid - **Done**
+* iscsid - To rethink, as if iscsid is stops, euca will restart it auto on mounting EBS vol.
 * iscsiadm (can establish sessions)
 * libvirtd - **Done**
 * Specifically disk space in /var/lib/eucalyptus/instances/[cache,work]
