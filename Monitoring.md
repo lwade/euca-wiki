@@ -7,17 +7,30 @@ This page contains a list of resources that a monitoring agent could check for o
 * Network Traffic
 * I/O (metric tbd)
 
+**Cloud**
+* Running images
+* Running instance type
+* Available resources
+
 **Cloud Controller**
-* PostgreSQL connections
+* PostgreSQL connections / CLC logs indicate proxool errors / CLC/postgres (can connect)
 * Number of Public IP Addresses allocated
 * Number of available instances per type (warn when availability runs low)
+* CLC logs indicate errors in VmInstance$RestoreAllocation
+* CLC,Walrus,SC,VB/jvm (heap usage, full gc stop time threshold)
 
 **Walrus**
 * Cache size
 * Bukkits disk usage
 * DRBD sync & role (status) 
+* Walrus logs indicate "Peer is primary and I am supposed to be
+master! Unable to proceed!"
 
 **Cluster Controller**
+* Do the NODES in the a HA CC setup match for paired CCs
+* CC/NC rampart package versions do not match
+* CC logs indicate errors communicating with an NC
+* Network tomography (partition detection; routing/switching check)
 
 **Storage Controller**
 * Local cache
@@ -25,15 +38,19 @@ This page contains a list of resources that a monitoring agent could check for o
 * Specifically disk space in /var/lib/eucalyptus/volumes
 * Failed snapshots? (check for vol and snap ID's by filename length?)
 * tgtd status
+* NetApp/Equallogic logs have  faulures because an "iSCSI session from
+another initiator already exists"
 
 **Node Controller**
+* NC/kernel (load average threshold, dmesg call stacks with io_sched in them)
+* NC/libvirtd (is it alive)
 * Loopback devices in use
-* iscsid
+* iscsid / iscsiadm (can establish sessions)
 * libvirtd
 * Specifically disk space in /var/lib/eucalyptus/instances/[cache,work]
-
-**Cloud**
-* Running images
-* Running instance type
-* Available ressource
-
+* NC has not received a describeResources request in the last
+WARN_TIMEOUT minutes: Warning
+* NC has not received a describeResources request in the last
+ERROR_TIMEOUT minutes: Error
+* iscsiadm on NC is not responding to control operations or has
+errors about loading kernel module
