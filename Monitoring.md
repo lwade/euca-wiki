@@ -21,6 +21,7 @@ This page contains a list of resources that a monitoring agent could check for o
 * Number of available instances per type (warn when availability runs low)
 * CLC logs indicate errors in VmInstance$RestoreAllocation
 * CLC,Walrus,SC,VB/jvm (heap usage, full gc stop time threshold)
+* Check TCP port 8773 is listening
 
 **Walrus**
 * Cache size
@@ -28,12 +29,14 @@ This page contains a list of resources that a monitoring agent could check for o
 * DRBD sync & role (status) 
 * Walrus logs indicate "Peer is primary and I am supposed to be
 master! Unable to proceed!"
+* Check TCP port 8773 is listening
 
 **Cluster Controller**
 * Do the NODES in the a HA CC setup match for paired CCs
 * CC/NC rampart package versions do not match
 * CC logs indicate errors communicating with an NC
 * Network tomography (partition detection; routing/switching check)
+* Check TCP port 8774 is listening
 
 **Storage Controller**
 * Local cache
@@ -43,6 +46,7 @@ master! Unable to proceed!"
 * tgtd status
 * NetApp/Equallogic logs have  faulures because an "iSCSI session from
 another initiator already exists"
+* Check TCP port 8773 is listening
 
 **Node Controller**
 * NC/kernel (load average threshold, dmesg call stacks with io_sched in them)
@@ -58,3 +62,4 @@ WARN_TIMEOUT minutes: Warning
 ERROR_TIMEOUT minutes: Error
 * iscsiadm on NC is not responding to control operations or has
 errors about loading kernel module
+* Check TCP port 80 is listening
