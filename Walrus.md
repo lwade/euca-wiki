@@ -18,3 +18,6 @@ should we talk about this? It would be obsolete the very moment we write it and 
 ## DesignDoc for the Developers
 code is the ultimate truth here
 
+*****
+
+[[category.components]]
