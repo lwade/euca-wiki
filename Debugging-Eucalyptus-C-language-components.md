@@ -148,3 +148,7 @@ Continuing.
 ```
 
 Note how setting breakpoints before the Eucalyptus component shared library is loaded results in 'not defined' error. Take care to type in the breakpoint information accurately. For NC, the default policy of debugger staying with the parent process is sufficient. For CC, which uses forks extensively, you may be able to reach the desired process by setting `set follow-fork-mode child` option on the `gdb` prompt.
+
+*****
+
+[[category.debugging]]
