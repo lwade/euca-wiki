@@ -5,6 +5,7 @@
 * [[Greg-DeKoenigsberg]]
 * [[grze]]
 * [[Harold-Spencer-Jr]]
+* [[Harold-spencer-jr]]
 * [[Home]]
 * [[index-of-categories]]
 * [[Jason-Eden]]
