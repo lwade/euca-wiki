@@ -28,8 +28,10 @@ the API or commands, meaning that the application will have to account for
 staging the files somewhere else, while volumes will have the familiar
 block device interface.
 
-
-***
 Read more about [[Walrus]]
 
 Read more about [[StorageController]]
+
+*****
+
+[[category.components]]
