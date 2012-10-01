@@ -174,3 +174,7 @@ euca-run-instances -k foobar -t m1.large $EMI_ID
 ```
 
 Note: The instance boot time is _really_ slow, partly due to SELinux file relabelling.  Also, since I'm testing system mode here, cloud-init fails, so you have to log in as root rather than ec2-user.  It is possible to set up metadata service access for system mode, but I haven't done the iptables rules for that yet.
+
+*****
+
+[[category.install]]
