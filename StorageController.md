@@ -116,3 +116,7 @@ How Cloud Controller (CLC) is involved
 
 ## DesignDoc for the Developers
 code is the ultimate truth here
+
+*****
+
+[[category.components]]
