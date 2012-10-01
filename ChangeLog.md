@@ -1,4 +1,3 @@
-
 <h1>Changelog</h1>
 
 </div>
@@ -99,3 +98,7 @@ bittorrent support.</li>
 </li></ul></li></ul><h3 id="Version1.02008-05-29">Version 1.0 (2008-05-29)<a title="Link to this section" class="anchor" href="Version1.02008-05-29"> </a></h3>
 
 <ul><li>First public version (limited-feature binary-only beta)</li> <div id="book-navigation-1188" class="book-navigation">
+
+*****
+
+[[category.legacy]]
