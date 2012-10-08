@@ -1,10 +1,10 @@
 # Create a single kernel to boot all Linux based EMIs 
 https://code.launchpad.net/~smoser/+junk/kexec-loader
 
-This ramdisk will boot the kernel configured as part of your grub. It should works with grub1 and grub2. It reads grub.cfg or menu.lst and boot the configured kernel using kexec.
+This ramdisk will boot the kernel configured as part of your grub. It should work with grub1 and grub2. It reads grub.cfg or menu.lst and boot the configured kernel using kexec.
 
 ## Requirements
-1. Ubuntu instance ( can be an EMI running on eucalyptus )
+1. Ubuntu instance (can be an EMI running on eucalyptus)
 2. Check out kexec-loader from launchpad
 <pre><code>
 bzr branch lp:~smoser/+junk/kexec-loader
@@ -22,4 +22,4 @@ update-initramfs -c -k `uname -r`
 
 3. Bundle / upload / register - kernel / initramdisk pair
 
-NB: Make sure to have kexec installed ( kexec-tools )
+NB: Make sure to have kexec installed (kexec-tools)
