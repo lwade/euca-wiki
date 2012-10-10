@@ -1,6 +1,53 @@
 # Debugging Eucalyptus C-language components (CC and NC)
 
-CC and NC can be debugged using gdb, which can be:
+The following information may be of interest to developers working on Eucalyptus components written in C.
+
+## Using client binaries
+
+CC and NC can be queried using `CCclient_full` and `NCclient` programs, respectively. These programs, located in source directories of the respective component, allow command-line invocation of API functions of the component. Before invoking the programs, dynamic library search path must be set to include several Axis2 libraries:
+
+*         libneethi.so.0
+*         libmod_rampart.so.0
+*         libaxutil.so.0
+*         libaxis2_parser.so.0
+*         libguththila.so.0
+*         libaxis2_http_sender.so.0
+*         libaxis2_http_receiver.so.0
+*         libaxis2_http_common.so.0
+*         libaxis2_engine.so.0
+*         libaxis2_axiom.so.0
+*         librampart.so.0
+
+And the path to the root of the Eucalyptus installation -- which is root for a package-based installation -- must be set (so that the cryptographic credentials can be found). 
+
+```bash
+export EUCALYPTUS=/opt/eucalyptus
+export AXIS2C_HOME=/opt/eucalyptus/packages/axis2c-1.6.0/
+export LD_LIBRARY_PATH=$AXIS2C_HOME/lib:$AXIS2C_HOME/modules/rampart/
+```
+
+Here is an example invocation of `CCclient_full` on a CC host with Eucalyptus source tree in `$EUCALYPTUS_SRC` that has been compiled:
+
+```bash
+$EUCALYPTUS_SRC/cluster/CCclient_full localhost:8774 describeNetworks
+describenetworks returned status 1
+useVlans: 1 mode: MANAGED addrspernet: 32 addrIndexMin: 9 addrIndexMax: 30 vlanMin: 2 vlanMax: 127
+found 0 active nets
+```
+
+Here is an example invocation of `NCclient` on the same CC host:
+
+```bash
+grep NODES $EUCALYPTUS/etc/eucalyptus/eucalyptus.conf
+NODES="192.168.51.165"
+$EUCALYPTUS_SRC/node/NCclient -n 192.168.51.165:8775 describeResource
+2012-10-10 14:20:36 DEBUG 000010036 ncStubCreate             | DEBUG: requested URI http://192.168.51.165:8775/axis2/services/EucalyptusNC
+node status=[OK] memory=7792/7792 disk=2/2 cores=4/4 subnets=[none]
+```
+
+## Using gdb
+
+CC and NC can be debugged with gdb, which can be:
 
 * used to analyze a core dump,
 * attached to a live Apache process hosting CC or NC, 
@@ -10,7 +57,7 @@ Each approach will be discussed in turn.
 
 > The commands below assume that `$EUCALYPTUS` is set to the root of Eucalyptus installation: typically just `/` for package-based installs and often `/opt/eucalyptus` for from-source installations.
 
-## Core dump
+### Core dump
 
 Core dumps are useful when a SEGFAULT is difficult to trigger manually, especially on CC, which does a lot of forking.  You know your CC or NC is segfaulting when `httpd-[cc|nc]_error_log` contains lines similar to:
 
@@ -50,7 +97,7 @@ Missing separate debuginfos, use: debuginfo-install httpd-2.2.15-15.el6.centos.1
 (gdb)
 ```
 
-## Attach gdb to a Eucalyptus component
+### Attach gdb to a Eucalyptus component
 
 Attaching to a running instance of the component is often sufficient to examine its memory state or to catch a reproducible SEGFAULT with the debugger attached. 
 
@@ -111,7 +158,7 @@ NC uses multiple threads, which can be examined interactively to identify them:
 ```
 One can discern from the above that **thread 2** is the `monitoring_thread` and **thread 3** is the `sensor_thread`. If there were instances in the process of being started up or rebooted or bundled, you would also see `startup_thread` or `rebooting_thread` or `bundling_thread` in the list.
 
-## Run Eucalyptus component under gdb
+### Run Eucalyptus component under gdb
 
 Several environment variables must be set when starting a Eucalyptus component under `gdb` from the beginning:
 
