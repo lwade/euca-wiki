@@ -35,7 +35,7 @@ useVlans: 1 mode: MANAGED addrspernet: 32 addrIndexMin: 9 addrIndexMax: 30 vlanM
 found 0 active nets
 ```
 
-Here is an example invocation of `NCclient` on the same CC host:
+Here is an example invocation of `NCclient` on the same CC host (note the slight change in syntax relative to `CCclient_full`: endpoint is specified with `-n` option, which defaults to `localhost:8775` if not specified):
 
 ```bash
 grep NODES $EUCALYPTUS/etc/eucalyptus/eucalyptus.conf
