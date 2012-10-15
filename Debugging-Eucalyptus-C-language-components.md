@@ -4,7 +4,7 @@ The following information may be of interest to developers working on Eucalyptus
 
 ## Using client binaries
 
-CC and NC can be queried using `CCclient_full` and `NCclient` programs, respectively. These programs, located in source directories of the respective component, allow command-line invocation of API functions of the component. Before invoking the programs, dynamic library search path must be set to include several Axis2 libraries:
+CC and NC can be queried using `CCclient_full` and `NCclient` programs, respectively. These programs, located in source directories of the respective component, allow command-line invocation of API functions of the component. Thus, `CCclient_full` impersonates CLC and `NCclient` impersonates a CC. Before invoking the programs, dynamic library search path must be set to include several Axis2 libraries:
 
 *         libneethi.so.0
 *         libmod_rampart.so.0
@@ -18,7 +18,7 @@ CC and NC can be queried using `CCclient_full` and `NCclient` programs, respecti
 *         libaxis2_axiom.so.0
 *         librampart.so.0
 
-And the path to the root of the Eucalyptus installation -- which is root for a package-based installation -- must be set (so that the cryptographic credentials can be found). 
+And the path to the root of the Eucalyptus installation -- which is system root `/` for a package-based installation -- must be set (so that the cryptographic credentials can be found). 
 
 ```bash
 export EUCALYPTUS=/opt/eucalyptus
