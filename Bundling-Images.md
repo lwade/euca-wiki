@@ -22,6 +22,8 @@ Make sure the hardware MAC address is not specified--Eucalyptus provides its own
 
 You must also exclude the DHCP leases directory, if your system is using DHCP already. See below.
 
+Finally, there sometimes exists a udev "rules" file that causes problems with the auto-generated MAC addresses that Eucalyptus VMs use. It is usually /etc/udev/rules.d/70-persistent-net.rules on most Linux systems. If this file exists, delete it before bundling. It will cause problems with the Ethernet device naming when the system is booted with a new MAC address assigned by Eucalyptus.
+
 ### Excluded directories:
 
 You can specify directories to be excluded from the bundling operation. Most of the directories are already excluded, including /tmp, /mnt, /proc, etc. The only one you may want to additionally include is /root. You must also exclude /var/lib/dhclient/ (Red Hat-based systems) or /var/lib/dhcp3 (Debian/Ubuntu).
