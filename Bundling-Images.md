@@ -61,9 +61,10 @@ If you're bundling a Eucalyptus instance, you can use a command like this:
 
     euca-bundle-vol -p my-new-img -d /mnt/ -e /var/lib/dhclient -s 4096
 
-If you're bundling a virtual machine or a physical machine outside of Eucalyptus, use --no-inherit, and specify an appropriate kernel and ramdisk IDs (eki and eri) based on the kernel modules that you copied in during the previous step:
+If you're bundling a virtual machine or a physical machine outside of Eucalyptus, use --no-inherit and --generate-fstab, and specify an appropriate kernel and ramdisk IDs (eki and eri) based on the kernel modules that you copied in during the previous step:
 
-    euca-bundle-vol -p my-new-img -d /mnt/ -e /var/lib/dhclient -s 4096 --no-inherit --kernel eki-xxxxxx --ramdisk eri-xxxxxx
+    euca-bundle-vol -p my-new-img -d /mnt/ -e /var/lib/dhclient -s 4096 \
+     --generate-fstab --no-inherit --kernel eki-xxxxxx --ramdisk eri-xxxxxx
 
 This will produce a bunch of image "chunks" and an XML manifest file. The next step is to upload the image to Eucalyptus:
 
