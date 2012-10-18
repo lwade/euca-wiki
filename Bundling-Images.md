@@ -55,7 +55,7 @@ It's almost always a good idea to use the --generate-fstab option, since most ph
 
 If your Eucalyptus environment is not running in Managed or Managed (No VLAN) networking modes, or if you're bundling an existing system either physical or virtual not running on Eucalyptus, use the --no-inherit option. The euca-bundle-vol command will attempt to contact the Eucalyptus metadata server to implant instance information into your bundled image, but this only works in Managed and Managed (No VLAN) modes.
 
-### Using euca-bundle-vol:
+## Using euca-bundle-vol:
 
 If you're bundling a Eucalyptus instance, you can use a command like this:
 
@@ -74,7 +74,7 @@ Finally, register it. This will produce an EMI ID.
 
     euca-register bucket-name/my-new-img.manifest.xml
 
-### Common Problems
+## Common Problems
 
 _My bundled image immediately goes from "pending" to "terminated" state._
 
