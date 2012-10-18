@@ -24,11 +24,9 @@ Steps:
     git checkout 1.5.3
     ```
 
-2. Create a test page to make sure the SDK works:
+2. Create a test page to make sure the SDK works (/var/www/aws-sdk-for-php/eucalyptus-example.php):
 
-The file /var/www/aws-sdk-for-php/eucalyptus-example.php is below which should display available images.
-
-Replace 'your-access-key', 'your-secret-access-key' and 'eucalyptus.yourdomain.com', with your Eucalyptus Access Key, Secret Key and DNS name found within your Eucalyptus 'eucarc' credentials:
+     Replace '_your-access-key_', '_your-secret-access-key_' and '_eucalyptus.yourdomain.com_', with your Eucalyptus Access Key, Secret Key and DNS name found within your Eucalyptus 'eucarc' credentials.
 
     ```
     <?php
