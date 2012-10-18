@@ -77,8 +77,35 @@ PHP-AWS (https://github.com/tylerhall/php-aws/) is a collection of small PHP scr
     cd /var/www/php-aws
     ```
 
-2.
+2. Modify class.ec2.php to point to your Eucalyptus server:
 
+    Replace:
+    ````
+    var $_server     = "http://ec2.amazonaws.com";
+    ````
+
+    with:
+    ````
+    var $_server     = "http://eucalyptus.yourdomain.com:8773/services/Eucalyptus";
+    ````
+
+3. Create a test page to ensure the scripts are working (/var/www/php-aws/euca-test.php)
+
+    Replace '_your-access-key_', '_your-secret-access-key_' and '_put-an-emi-id-here', with your credentials and a Eucalyptus Machine Image to run.
+
+    ```
+    <?PHP  
+        // ec2 sdk code
+        require_once("../class.ec2.php");
+
+        // Credentials for ec2 function
+        $ec2    = new EC2('your-access-key', 'your-secret-access-key');
+
+        $run = $ec2->runInstances('put-an-emi-id-here');
+    ?>
+    ```
+
+4. 
 *****
 
 [[category.docs]]
