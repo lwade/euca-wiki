@@ -77,17 +77,17 @@ PHP-AWS (https://github.com/tylerhall/php-aws/) is a collection of small PHP scr
     cd /var/www/php-aws
     ```
 
-2. Modify class.ec2.php to point to your Eucalyptus server:
+2. Modify class.ec2.php to point to your Eucalyptus server.
 
     Replace:
-    ````
+    ```
     var $_server     = "http://ec2.amazonaws.com";
-    ````
+    ```
 
     with:
-    ````
+    ```
     var $_server     = "http://eucalyptus.yourdomain.com:8773/services/Eucalyptus";
-    ````
+    ```
 
 3. Create a test page to ensure the scripts are working (/var/www/php-aws/euca-test.php)
 
@@ -105,7 +105,14 @@ PHP-AWS (https://github.com/tylerhall/php-aws/) is a collection of small PHP scr
     ?>
     ```
 
-4. 
+4. Run the test script via the command line:
+
+    ````
+    php /var/www/php-aws/euca-test.php
+    ````
+
+5. Profit?!?
+
 *****
 
 [[category.docs]]
