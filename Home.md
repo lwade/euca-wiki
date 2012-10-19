@@ -1,10 +1,10 @@
 Welcome to the Eucalyptus wiki!
 
-If you'd like to contribute, please check out the [Contributor Guidelines](https://github.com/eucalyptus/eucalyptus/wiki/Contributing) first. We also have some more information on [our Git setup](https://github.com/eucalyptus/eucalyptus/wiki/Documentation-Contributions) especially focused on sending documentation patches.
+If you'd like to contribute, please check out the [Contributor Guidelines](Contributing) first. We also have some more information on [our Git setup](Documentation-Contributions) especially focused on sending documentation patches.
 
 You can always ask questions on our [community mailing list](http://lists.eucalyptus.com/cgi-bin/mailman/listinfo/community), or on our [documentation mailing list](http://lists.eucalyptus.com/cgi-bin/mailman/listinfo/community). 
 
-You can find us on Freenode IRC in #eucalyptus or #eucalyptus-docs, or at any of our [community events](https://github.com/eucalyptus/eucalyptus/wiki/Community-Events)
+You can find us on Freenode IRC in #eucalyptus or #eucalyptus-docs, or at any of our [community events](Community-Events)
 
 ### Pages for Cloud Users
 
@@ -23,9 +23,9 @@ You can find us on Freenode IRC in #eucalyptus or #eucalyptus-docs, or at any of
 * [Design Docs](DesignDocs) - Internal Eucalyptus design documentation.
 * [Debugging Eucalyptus C language components](Debugging-Eucalyptus-C-language-components) - Tools and advice to debug the components of Eucalyptus written in C: Node Controller and Cluster Controller.
 
-Finding pages:
+### Finding Pages
 
-* [page listing](https://github.com/eucalyptus/eucalyptus/wiki/_pages)
+* [page listing](_pages)
 * [[index of categories]]
 
 We've got some great people working on Eucalyptus: meet some of them.  
