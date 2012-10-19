@@ -8,7 +8,7 @@ You can find us on Freenode IRC in #eucalyptus or #eucalyptus-docs, or at any of
 
 ### Pages for Cloud Users
 
-* [Bundling Images](Bundling-Images) - How to use euca-bundle-vol to "rebundle" modified VM instances back into the Eucalyptus image catalog as a new EMI.
+* [Bundling Images](wiki/Bundling-Images) - How to use euca-bundle-vol to "rebundle" modified VM instances back into the Eucalyptus image catalog as a new EMI.
 * [Convert AMI to EMI](Convert-AMI-to-EMI) - How to import an AMI (Amazon Machine Image) into Eucalyptus as an EMI (Eucalyptus Machine Image).
 * [Kexec Loader](Kexec-loader) - How to use a specialized EKI and ERI to boot the EMI's own in-filesystem kernel and ramdisk using GRUB.
 * [Using PHP with Eucalyptus](Using-PHP-with-Eucalyptus) - How to use the Amazon AWS PHP SDK with Eucalyptus.
