@@ -11,24 +11,24 @@ where has it been uploaded ?
 
 ### Register kernel / ramdisk 
 Before being available, you will need to register them on your eucalyptus cloud. 
-<pre><code>
+```
 euca-bundle-image --kernel true -i <kernel filename>
 euca-upload-bundle -m <manifest> -b <bucket>
 euca-register <bucket>/<manifest>
 euca-bundle-image --ramdisk true -i <ramdisk filename>
 euca-upload-bundle -m <manifest> -b <bucket>
 euca-register <bucket>/<manifest>
-</code></pre>
+```
 
 ### Set these as your default kernel and ramdisk:
 You aren't required to do the step of setting the eki / eri as the
 default, but if you don't, you still have to associate every emi you
 register with this eki/eri pair, and who wants to do that?
 
-<pre><code>
+```
 euca-modify-property cloud.images.defaultkernelid=<eki>
 euca-modify-property cloud.images.defaultramdiskid=<eri>
-</code></pre>
+```
 
 ### Enjoy
 
