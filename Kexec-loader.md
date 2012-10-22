@@ -30,8 +30,8 @@ default, but if you don't, you still have to associate every emi you
 register with this eki/eri pair, and who wants to do that?
 
 ```
-euca-modify-property cloud.images.defaultkernelid=<eki>
-euca-modify-property cloud.images.defaultramdiskid=<eri>
+euca-modify-property -p cloud.images.defaultkernelid=<eki>
+euca-modify-property -p cloud.images.defaultramdiskid=<eri>
 ```
 
 ### Enjoy
