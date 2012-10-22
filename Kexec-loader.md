@@ -7,7 +7,11 @@ The following kernel / ramdisk is able to boot any images which has got a grub1 
 
 ## How to use it. 
 ### Download it
-where has it been uploaded ?
+For now, you can download directly from Github (permanent location soon):
+```
+wget -O vmlinuz https://github.com/monolive/euca-single-kernel/blob/master/examples/vmlinuz?raw=true
+wget -O initrd-kexec https://github.com/monolive/euca-single-kernel/blob/master/examples/initrd-kexec_load?raw=true
+```
 
 ### Register kernel / ramdisk 
 Before being available, you will need to register them on your eucalyptus cloud. 
