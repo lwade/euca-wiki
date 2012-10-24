@@ -65,6 +65,10 @@ Steps:
 
 4. Adapt the code based on examples provided on the Amazon site, to use it within your own website code.
 
+### Example: Simple page to launch an instance
+
+This page provides a simple form to launch and instance and uses a few different API queries : https://gist.github.com/3946086
+
 ## PHP-AWS
 
 PHP-AWS (https://github.com/tylerhall/php-aws/) is a collection of small PHP scripts that use PHP-Curl to query the Eucalyptus API.
