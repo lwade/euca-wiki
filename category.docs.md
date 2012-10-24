@@ -6,6 +6,7 @@
 * [[DesignDocs]]
 * [[index-of-categories]]
 * [[Network-Troubleshooting-FAQ]]
+* [[Using-PHP-with-Eucalyptus]]
 
 
 *****

@@ -1,5 +1,7 @@
 * [[Chris-Grzegorczyk]]
 * [[index-of-categories]]
+* [[Integrating-Eutester-and-Nagios]]
+* [[Kexec-loader]]
 * [[Monitoring]]
 * [[Test-Markdown]]
 * [[Textile-Test]]
