@@ -31,7 +31,7 @@ block device interface.
 
 Read more about [[Walrus]]
 
-Read more about [[Storage Controller]]
+Read more about [[Storage Controller(SC)]]
 
 *****
 
