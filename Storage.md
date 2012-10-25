@@ -1,11 +1,10 @@
 # Eucalyptus Storage
-![Walrus haz many bukkits!](http://i45.photobucket.com/albums/f75/basilsblog/lolcatz/01-i-has-a-bucket.jpg)
 _Buckets_ and _Volumes_ are the persistent storages within Eucalyptus.
 Eucalyptus implement the S3 and EC2 API: more about these storages can be
 found at http://aws.amazon.com/ebs/ and http://aws.amazon.com/s3/.
 
 The Eucalyptus component **Walrus** implements Buckets (sometimes intentionally misspelled
-bukkits within Eucalyptus--just Google for Walrus bukkits and you'll see why), that is the S3 interface. S3 implements a
+bukkits within Eucalyptus), that is the S3 interface. S3 implements a
 simple get/put interface: there are quite a few commands/programs that can
 be used with Walrus (check out
 http://www.eucalyptus.com/eucalyptus-cloud/tools/s3 for a sample of
@@ -13,6 +12,8 @@ tools). Files needs can be added to or removed from the bucket: this is
 considered and atomic operation, either the full action succeed, in which
 case the file will be added/removed, or, in case of failure, the old
 content will remain in the bucket.
+
+![Walrus haz many bukkits!](http://i45.photobucket.com/albums/f75/basilsblog/lolcatz/01-i-has-a-bucket.jpg)
 
 The **Storage Controller** is the Eucalyptus component implementing the
 Elastic Block Storage, which allows instances to use Volumes. Volumes can
