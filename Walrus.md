@@ -1,7 +1,7 @@
 # Walrus/S3
 What it is, What it does
 
-![Walrus haz many bukkits!](http://i45.photobucket.com/albums/f75/basilsblog/lolcatz/01-i-has-a-bucket.jpg)
+![Walrus haz many bukkits!](http://www.funny-pics-space.com/wp-content/uploads/2012/04/walrus-ma-bucket-5.jpg)
 
 
 ## DesignDoc for the Cloud Admin
