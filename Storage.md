@@ -4,8 +4,8 @@ _Buckets_ and _Volumes_ are the persistent storages within Eucalyptus.
 Eucalyptus implement the S3 and EC2 API: more about these storages can be
 found at http://aws.amazon.com/ebs/ and http://aws.amazon.com/s3/.
 
-The Eucalyptus component **Walrus** implements Buckets (sometimes mispelled
-bukkits within Eucalyptus), that is the S3 interface. S3 implements a
+The Eucalyptus component **Walrus** implements Buckets (sometimes intentionally misspelled
+bukkits within Eucalyptus--just Google for Walrus bukkits and you'll see why), that is the S3 interface. S3 implements a
 simple get/put interface: there are quite a few commands/programs that can
 be used with Walrus (check out
 http://www.eucalyptus.com/eucalyptus-cloud/tools/s3 for a sample of
@@ -20,8 +20,8 @@ be create, deleted, attached to running instances, detached, and
 snapshotted using the EC2 interface, thus the euca2ools has all the needed
 command to operate on the Volumes. Volumes will appear to the running
 instance as a new disk: unlike ephemeral storage, this disk will persist
-across instance termination, and instance failures, till the user
-explicitely deletes it. 
+across instance termination, and instance failures, until the user
+explicitly deletes it. 
 
 To recap, both storages are persistent, but buckets are accessed only via
 the API or commands, meaning that the application will have to account for
