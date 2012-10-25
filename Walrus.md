@@ -1,6 +1,9 @@
 # Walrus/S3
 What it is, What it does
 
+![Walrus haz many bukkits!](http://i45.photobucket.com/albums/f75/basilsblog/lolcatz/01-i-has-a-bucket.jpg)
+
+
 ## DesignDoc for the Cloud Admin
 ### Backing Store (where the buckets are)
 ### HA (DRBD and more)
