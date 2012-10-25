@@ -1,5 +1,5 @@
 # Eucalyptus Storage
-
+![Walrus haz many bukkits!](http://i45.photobucket.com/albums/f75/basilsblog/lolcatz/01-i-has-a-bucket.jpg)
 _Buckets_ and _Volumes_ are the persistent storages within Eucalyptus.
 Eucalyptus implement the S3 and EC2 API: more about these storages can be
 found at http://aws.amazon.com/ebs/ and http://aws.amazon.com/s3/.
