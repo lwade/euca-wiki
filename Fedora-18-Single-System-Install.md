@@ -65,19 +65,7 @@ sysctl -p /etc/sysctl.d/eucalyptus-cloud
 ```
 
 ## Eucalyptus Package Installation
-
-1. edit /etc/yum.repos.d/fedora-updates-testing.repo (For [FEDORA-2012-11983](https://admin.fedoraproject.org/updates/FEDORA-2012-11983/)):
-   * set `enabled=1`
-   * set `includepkgs=mule*,*wso2*`
-1. Add eucalyptus repo. This will not be necessary once eucalyptus is accepted into Fedora.
 ```
-cat <<EOF >/etc/yum.repos.d/eucalyptus.repo
-[euca]
-name=euca
-baseurl=http://downloads.eucalyptus.com/devel/packages/fedora-18/x86_64/
-gpgcheck=0
-enabled=1
-EOF
 yum install eucalyptus-cloud eucalyptus-sc eucalyptus-walrus eucalyptus-cc eucalyptus-nc
 ```
 
