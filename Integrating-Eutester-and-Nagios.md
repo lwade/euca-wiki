@@ -105,6 +105,14 @@ For the meantime, let's just remove the upstream version and replace it with the
 This script requires a Eucalyptus Machine Image ID of a usable Linux instance in your cloud that it can spin up, ping and ssh to. It also requires the path to your Eucalyptus credentials.
 If you followed the example from above, you shouldn't need to modify anything except for supplying a valid Linux based EMI.
 
+**Edit the script and update the EMI to a valid EMI** 
+
+    vim /root/nagios-eucalyptus/nagios/run_eutester_testcase.sh
+
+On the line with **EMI=**, add a valid EMI from your cloud. See _euca-describe-images_ for a list of EMI's.
+
+**Link the script to /etc/cron.hourly - This will run the script once an hour**
+
     ln -s /root/nagios-eucalyptus/nagios/run_eutester_testcase.sh /etc/cron.hourly/
 
 ### Test the script
