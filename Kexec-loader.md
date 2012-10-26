@@ -34,6 +34,10 @@ euca-modify-property -p cloud.images.defaultkernelid=<eki>
 euca-modify-property -p cloud.images.defaultramdiskid=<eri>
 ```
 
+### Find images that work with it
+
+There's plenty of prepackaged cloud images available from various places.  We've got a list of [[Kexec images]] that we've done some rudimentary testing on.
+
 ### Enjoy
 
 Yes, now profit by not having to specify kernel and ramdisk for every
