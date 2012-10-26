@@ -8,6 +8,7 @@ This is a placeholder for the basis of a storage controller blueprint document. 
 * Scheduler Tuning
 * Cache considerations
 * iSCSI Initiator Config
+
 ### Cloud Best Practices
 * cloud properties
 * quota enforcement
