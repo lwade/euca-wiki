@@ -70,8 +70,10 @@ Run the following commands from an environment where your Eucalyptus admin crede
     unzip eutester-admin.zip -d ~/.eucarc
     source ~/.eucarc/eucarc
 
-### To ensure your credentials are working, try a euca-describe-instances command
-    euca-describe-instances
+### To ensure your credentials are working, try a euca-describe-images command
+    euca-describe-images
+
+_This command should list the available images in your cloud_
 
 ## Install Eutester
 
