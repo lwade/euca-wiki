@@ -38,6 +38,7 @@ master! Unable to proceed!"
 * CC logs indicate errors communicating with an NC
 * Network tomography (partition detection; routing/switching check)
 * Check TCP port 8774 is listening **Done**
+* CC image cache size vs size of current cache (/var/lib/eucalyptus/dynserv/)
 
 **Storage Controller**
 * Local cache
