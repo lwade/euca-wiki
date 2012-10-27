@@ -4,3 +4,4 @@ Image Description|Image URL|Last tested
 -----|-----|-----
 Ubuntu Quantal Quetzal|http://cloud-images.ubuntu.com/quantal/current/quantal-server-cloudimg-amd64.tar.gz|jeevan_ullas 10/26
 Ubuntu Precise Pangolin|http://cloud-images.ubuntu.com/precise/current/precise-server-cloudimg-amd64.tar.gz|jeevan_ullas 10/27
+Ubuntu Lucid Lynx|http://cloud-images.ubuntu.com/lucid/current/lucid-server-cloudimg-amd64.tar.gz|jeevan_ullas 10/27
