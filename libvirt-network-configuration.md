@@ -43,3 +43,9 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 iptables -I FORWARD 3 --proto tcp --dport 22 --dst 10.110.7.0/26 -j ACCEPT
 ```
 1. **Create a VM** -- launch a VM with the network set to virbr0; I'll cover the gory details of that in another page.
+
+**Additional note:** I am not yet sure how to advertise the route automatically to other systems, so in my testing I manually added a route on the machine from which I was testing connectivity:
+```
+route add -net 10.110.7.0/26 gw 10.101.1.25
+```
+I'm sure there's a better way to deal with this.
