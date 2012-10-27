@@ -3,3 +3,4 @@ Not all images will work with the [[Kexec-loader]], but a lot will.  Here's an u
 Image Description|Image URL|Last tested
 -----|-----|-----
 Ubuntu Quantal Quetzal|http://cloud-images.ubuntu.com/quantal/current/quantal-server-cloudimg-amd64.tar.gz|jeevan_ullas 10/26
+Ubuntu Precise Pangolin|http://cloud-images.ubuntu.com/precise/current/precise-server-cloudimg-amd64.tar.gz|jeevan_ullas 10/27
