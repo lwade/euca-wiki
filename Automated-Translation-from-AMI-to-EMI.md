@@ -43,7 +43,11 @@ Total AMIs in us-east-1: 20369
 
 This gives us a list of 6000+ images that we might be able to test to see if they "just work" on Euca using kexec-loader.
 
-Ultimately, there should be a script that does this on a regular basis -- but it's easy to get a dataset to get us started.
+A quick and dirty perl hack example to get all AMI IDs that use a particular AKI:
+
+`grep aki-825ea7eb /tmp/all-images | perl -ne 'if (/(ami-.{8}?)/) {print "$1\n";}'`
+
+Ultimately, there should be a script that does this properly on a regular basis -- but it's easy to get a dataset to get us started.
 
 **Step 2: Running the AMIs, checking them for Euca compatibility, and bundling** 
 
