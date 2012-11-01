@@ -1,6 +1,9 @@
+* [[Automated-Translation-from-AMI-to-EMI]]
 * [[Bundling-Images]]
 * [[Convert-AMI-to-EMI]]
 * [[index-of-categories]]
+* [[Kexec-Images]]
+* [[Kexec-loader]]
 
 
 *****

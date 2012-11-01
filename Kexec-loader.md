@@ -67,3 +67,7 @@ update-initramfs -c -k `uname -r`
 3. Bundle / upload / register - kernel / initramdisk pair
 
 NB: Make sure to have kexec installed (kexec-tools)
+
+*****
+
+[[category.images]]

@@ -72,3 +72,6 @@ We log in (note it's a bitnami image, so must log in as user "bitnami").
 
 **Note:** lsinitramfs versus lsinitrd -- does it matter?
 
+*****
+
+[[category.images]]
