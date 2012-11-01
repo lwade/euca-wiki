@@ -4,7 +4,7 @@ The best targets for translation are those images that are using pvgrub to boot.
 
 Our goal here is to build a set of tools that does as much as can possibly be done automatically, so that we get a clear picture of which images "just work" -- and which ones don't, and why.
 
-*Step 1: Identifying AMIs that use the pvgrub AKI* 
+**Step 1: Identifying AMIs that use the pvgrub AKI**
 
 First, we get a list of the pvgrub AKIs in a particular region (thanks to these guys: http://www.dowdandassociates.com/content/howto-amazon-ec2-kernel-images-pv-grub).  We'll choose us-east-1 because it's one of the busiest.
 
@@ -45,7 +45,7 @@ This gives us a list of 6000+ images that we might be able to test to see if the
 
 Ultimately, there should be a script that does this on a regular basis -- but it's easy to get a dataset to get us started.
 
-*Step 2: Running the AMIs, checking them for Euca compatibility, and bundling* 
+**Step 2: Running the AMIs, checking them for Euca compatibility, and bundling** 
 
 Having a list of AMIs, we can build a script that performs the following steps:
 
