@@ -1,8 +1,13 @@
+* [[Automated-Translation-from-AMI-to-EMI]]
 * [[Chris-Grzegorczyk]]
 * [[index-of-categories]]
 * [[Integrating-Eutester-and-Nagios]]
+* [[Kexec-Images]]
 * [[Kexec-loader]]
+* [[libvirt-network-configuration]]
 * [[Monitoring]]
+* [[NC-Blueprint]]
+* [[SC-Blueprint]]
 * [[Test-Markdown]]
 * [[Textile-Test]]
 
