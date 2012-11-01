@@ -51,6 +51,8 @@ Ultimately, there should be a script that does this properly on a regular basis 
 
 **Step 2: Running the AMIs, checking them for Euca compatibility, and bundling** 
 
+(NOTE: these are working notes in progress. --[[Greg DeKoenigsberg, 1 Nov]])
+
 Having a list of AMIs, we can build a script that performs the following steps:
 
 * Picks an AMI id from the top of the stack;
@@ -62,4 +64,6 @@ Having a list of AMIs, we can build a script that performs the following steps:
 Once we've done this, it should be easy to provide users with a tool and a set of AMIs that can be
 translated into EMIs with a high degree of confidence.
 
-[[Greg DeKoenigsberg]] is working on scripts for step 2 right now.  Updates as they become available.
+First let's start with a typical AMI in US-EAST-1 with a pvgrub AKI:
+
+`IMAGE   ami-002bf169    bitnami-cloud/wordpress/bitnami-wordpress-3.3.2-0-multisite-linux-ubuntu-12.04-x86_64-s3.manifest.xml   979382823631    available       public          x86_64  machine aki-825ea7eb`
