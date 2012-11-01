@@ -51,7 +51,7 @@ Ultimately, there should be a script that does this properly on a regular basis 
 
 **Step 2: Running the AMIs, checking them for Euca compatibility, and bundling** 
 
-(NOTE: these are working notes in progress. --[[Greg DeKoenigsberg, 1 Nov]])
+(NOTE: these are working notes in progress. --[[Greg DeKoenigsberg]], 1 Nov 2012)
 
 Having a list of AMIs, we can build a script that performs the following steps:
 
