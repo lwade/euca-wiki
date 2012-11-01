@@ -66,4 +66,9 @@ translated into EMIs with a high degree of confidence.
 
 First let's start with a typical AMI in US-EAST-1 with a pvgrub AKI:
 
-`IMAGE   ami-002bf169    bitnami-cloud/wordpress/bitnami-wordpress-3.3.2-0-multisite-linux-ubuntu-12.04-x86_64-s3.manifest.xml   979382823631    available       public          x86_64  machine aki-825ea7eb`
+*IMAGE   ami-002bf169    bitnami-cloud/wordpress/bitnami-wordpress-3.3.2-0-multisite-linux-ubuntu-12.04-x86_64-s3.manifest.xml   979382823631    available       public          x86_64  machine aki-825ea7eb*
+
+We log in (note it's a bitnami image, so must log in as user "bitnami").
+
+**Note:** lsinitramfs versus lsinitrd -- does it matter?
+
