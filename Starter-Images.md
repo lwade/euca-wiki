@@ -30,7 +30,13 @@ Below is a list of the starter images that will be made available on emis.eucaly
     </tr>
     <tr>
        <td>https://s3-eu-west-1.amazonaws.com/fedora-emi/f16-x86_64.tgz</td>
-       <td>Fedor 16 x86_64</td>
+       <td>Fedora 16 x86_64 - unsecure</td>
+       <td>Olivier Renault - olivier.renault@eucalyptus.com</td>
+       <td>SELinux / iptables disabled. Root disk of 4.5G. Root user enabled.</td>
+    </tr>
+    <tr>
+       <td>https://s3-eu-west-1.amazonaws.com/fedora-emi/f17-x86_64.tgz</td>
+       <td>Fedora 17 x86_64 - unsecure</td>
        <td>Olivier Renault - olivier.renault@eucalyptus.com</td>
        <td>SELinux / iptables disabled. Root disk of 4.5G. Root user enabled.</td>
     </tr>
