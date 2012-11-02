@@ -29,10 +29,10 @@ Below is a list of the starter images that will be made available on emis.eucaly
     </tr>
     </tr>
     <tr>
-       <td></td>
-       <td></td>
-       <td></td>
-       <td></td>
+       <td>https://s3-eu-west-1.amazonaws.com/fedora-emi/f16-x86_64.tgz</td>
+       <td>Fedor 16 x86_64</td>
+       <td>Olivier Renault - olivier.renault@eucalyptus.com</td>
+       <td>SELinux / iptables disabled. Root disk of 4.5G. Root user enabled.</td>
     </tr>
     <tr>
        <td></td>
