@@ -10,10 +10,10 @@ Below is a list of the starter images that will be made available on emis.eucaly
        <th>Notes</th>
     </tr>
     <tr>
-       <td></td>
-       <td></td>
-       <td></td>
-       <td></td>
+       <td>https://s3-eu-west-1.amazonaws.com/centos-6.3-x64/centos6.tgz</td>
+       <td>CentOS 6.3 x86_64 - unsecure</td>
+       <td>Olivier Renault - olivier.renault@eucalyptus.com</td>
+       <td>This image does not have SELinux / iptables enables. It has got a root disk of 4.5G. You should be using root to login. It works w/ kexec kernel.</td>
     </tr>
     <tr>
        <td></td>
@@ -52,4 +52,3 @@ Below is a list of the starter images that will be made available on emis.eucaly
        <td></td>
     </tr>
 </table>
-
