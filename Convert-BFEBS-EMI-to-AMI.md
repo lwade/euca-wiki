@@ -37,7 +37,8 @@ You can easily convert EBS-backed images from Eucalyptus to Amazon with usually 
 3. Now that you've copied the volume contents out of Eucalyptus, you need to upload it to EC2. There is an EC2 command line tool to do this in one step. Run: 
 
  ```
- $ ec2-import-volume ebs-disk.raw -f raw -z us-east-1a -o $AWS_ACCESS_KEY -w $AWS_SECRET_KEY -b bfebs-emi- import-test
+ $ ec2-import-volume ebs-disk.raw -f raw -z us-east-1a -b bfebs-emi-import-test \
+   -o $AWS_ACCESS_KEY -w $AWS_SECRET_KEY
  ```
 
  This step will take some time. Watch the progress by using "ec2-describe-conversion-tasks". When it's  finished, that command will show you the vol-xxxxxxxx volume ID.
