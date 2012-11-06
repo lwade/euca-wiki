@@ -7,7 +7,9 @@ You can easily convert EBS-backed images from Eucalyptus to Amazon with usually 
 
 ## Steps
 
-1. The first step in the EBS-backed EMI to AMI conversion is to transfer the contents of the EBS volume in Eucalyptus to a file on disk that can be imported using ec2-import-volume. Do this by first launching a "scratch" instance in Eucalyptus, creating a volume from the EBS snapshot, attaching the volume, and using "dd" to copy the contents of the volume out. (Note: if you already have the disk image available outside of a Eucalyptus volume, you can skip this step.)
+1. The first step in the EBS-backed EMI to AMI conversion is to transfer the contents of the EBS volume in Eucalyptus to a file on disk that can be imported using ec2-import-volume. Do this by first launching a "scratch" instance in Eucalyptus, creating a volume from the EBS snapshot, attaching the volume, and using "dd" to copy the contents of the volume out.
+
+_(Note: if you already have the disk image available outside of a Eucalyptus volume, you can skip this step.)_
 
     ```
     $ euca-run-instances -k admin emi-xxxxxxxx
