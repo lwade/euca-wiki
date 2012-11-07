@@ -19,7 +19,7 @@ You can easily convert EBS-backed images from Eucalyptus to Amazon with usually 
     (Log into the instance, verify volume device with fdisk -l)
 
     $ ssh -i admin.key root@10.110.1.86 "dd if=/dev/sdc bs=1M" | dd of=ebs-disk.raw bs=1M
-    $ euca-detact-volume vol-xxxxxxxx
+    $ euca-detach-volume vol-xxxxxxxx
     ```
 
 2. Make sure that the kernel specified as the default in /boot/grub/menu.lst is a Xen-compatible kernel. You may want to edit this file by mounting the .raw image with -o loop and replacing it with a simple grub stanza:
