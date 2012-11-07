@@ -25,7 +25,7 @@ You can easily convert EBS-backed images from Eucalyptus to Amazon with usually 
 2. Make sure that the kernel specified as the default in /boot/grub/menu.lst is a Xen-compatible kernel. You may want to edit this file by mounting the .raw image with -o loop and replacing it with a simple grub stanza:
 
  ```
- default 2
+ default 0
  timeout 0
  
  title Xen 2.6.32.24-0.2
