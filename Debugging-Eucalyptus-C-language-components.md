@@ -196,6 +196,22 @@ Continuing.
 
 Note how setting breakpoints before the Eucalyptus component shared library is loaded results in 'not defined' error. Take care to type in the breakpoint information accurately. For NC, the default policy of debugger staying with the parent process is sufficient. For CC, which uses forks extensively, you may be able to reach the desired process by setting `set follow-fork-mode child` option on the `gdb` prompt.
 
+## Obtaining stack traces with pstack or gstack
+
+Stack traces are useful indicators of what a process is doing at a point in time. For instance, analysis of locks being held by threads may help identify the cause of a deadlocked process. Although `gdb` can be attached to a Eucalyptus process to obtain stack traces, it can be tedious when many processes are involved, as in the case of the CC. Using `pstack` or `gstack` (for a threaded process, like NC) is a faster alternative, especially in combination with a bash for-loop. (The two commands are available as part of the `gdb` package.)
+
+* For CC, the following command will print the top 10 stack frames of each process that makes up the CC:
+
+```
+for pid in `ps aux | grep euca | grep cc | cut -c 10-15 | xargs` ; do echo; echo $pid; pstack $pid | head -10 ; done | less
+```
+
+* For NC, the following command will do the same for stack state of both processes and threads that make up the NC:
+
+```
+for pid in `ps aux | grep euca | grep nc | cut -c 10-15 | xargs` ; do echo; echo $pid; gstack $pid | head -10 ; done | less
+```
+
 *****
 
 [[category.debugging]]
