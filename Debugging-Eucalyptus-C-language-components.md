@@ -214,7 +214,7 @@ for pid in `ps aux | grep euca | grep nc | cut -c 10-15 | xargs` ; do echo; echo
 
 ## Sniffing CC's or NC's network traffic
 
-Sniffing control network traffic between Eucalyptus components can help diagnose many problems, especially those related to syntax or timing of communication messages. Since the message are in semi-human-readable format (XML) and not encrypted or compressed (only signed), not much processing is required to make sense of them.
+Sniffing control network traffic between Eucalyptus components can help diagnose many problems, especially those related to syntax, signing, or timing of communication messages. Since the message are in semi-human-readable format (XML) and not encrypted or compressed (only signed), not much processing is required to make some sense of them.
 
 Two important parameters for sniffing are **ethernet device**:
 
@@ -223,24 +223,24 @@ Two important parameters for sniffing are **ethernet device**:
 
 and **TCP port**:
 
-* `8774` for CLC-NC communication
+* `8774` for CLC-CC communication
 * `8775` for CC-NC communication
 
-Even the most commonly available Unix tool, `tcpdump`, results in readable output:
+Even the most commonly available Unix tool, `tcpdump`, results in readable output with just a few flags:
 
 ```
 tcpdump -i eth0 -Als0 port 8775
 ```
 
-We either pipe the output of above commands into `less` for searchable, paged output or save it in raw format with `-w filename.dump` option for future analysis, either with `tcpdump` or many other tools that will read the format, such as `Wireshark` and `tcpflow`.
+We either pipe the output of such command into `less` for searchable, paged output or save it in raw format with `-w filename.dump` option for future analysis, either with `tcpdump` or other tools that can read `tcpdump` format, such as `Wireshark` and `tcpflow`.
 
-Another handy tool that is usually available on a Unix system is `ngrep`, which can be used to filter out specific messages. For instance, the following expression looks for packets containing `describe` message (such as the DescribeResource, DescribeInstances, and DescribeSensors queries that periodically traverse the system):
+Also commonly available on Unix systems is `ngrep`, which is designed for searching for strings in network traffic. For instance, the following expression looks for packets containing `describe` message (such as the DescribeResource, DescribeInstances, and DescribeSensors queries that periodically traverse the system):
 
 ```
 ngrep -d eth0 -qi describe port 8775 
 ```
 
-When extracting exact messages from TCP flows is desired, a tools called `tcpflow` can be useful. It is not commonly available in package repositories, but it is easy enough to install it from source:
+For extracting content of specific TCP flows (i.e., data flowing in one direction on a connection), a tool called `tcpflow` can be useful. It is not commonly available in package repositories, but it is easy enough to install it from source:
 
 ```
 pushd /tmp
@@ -254,7 +254,7 @@ sudo make install
 popd
 ```
 
-After running the tool for a bit to capture packets, one can examine individual flows with `less` or tools capable of pretty-printing the XML that makes up SOAP messages in Eucalyptus:
+After running the tool for a bit to capture packets, one can examine individual flows with `less` or with tools capable of pretty-printing the XML which makes up SOAP messages in Eucalyptus:
 
 ```
 mkdir tcpflows
@@ -265,7 +265,7 @@ tcpflow[29034]: listening on eth0
 less *
 ```
 
-Here we filter out messages containing string DescribeInstance, concatenate them together, and pass to `xmlstarlet` wrapped by a top-level element `<trace>` (which is as good as any for the purpose). 
+Here we filter out messages containing the string DescribeInstance, concatenate them together, and pass to `xmlstarlet` wrapped by a top-level element `<trace>` (which is as good as any for the purpose). 
 
 ```
 yum install xmlstarlet
