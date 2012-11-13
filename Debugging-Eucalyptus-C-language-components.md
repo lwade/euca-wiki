@@ -247,7 +247,7 @@ pushd /tmp
 wget https://github.com/downloads/simsong/tcpflow/tcpflow-1.3.0.tar.gz
 tar zxvf tcpflow-1.3.0.tar.gz
 cd tcpflow-1.3.0
-yum install gcc-c++ libpcap-devel
+yum -y install gcc-c++ libpcap-devel
 ./configure
 make
 sudo make install
@@ -260,8 +260,7 @@ After running the tool for a bit to capture packets, one can examine individual 
 mkdir tcpflows
 cd tcpflows
 tcpflow -i eth0 port 8775
-tcpflow[29034]: listening on eth0
-^Ctcpflow[29034]: terminating
+^C
 less *
 ```
 
