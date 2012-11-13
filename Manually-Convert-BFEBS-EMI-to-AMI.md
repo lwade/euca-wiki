@@ -1,4 +1,6 @@
-You can easily convert EBS-backed images from Eucalyptus to Amazon with usually only minor changes to the root filesystem. This document describes how.
+You can easily convert EBS-backed images from Eucalyptus to Amazon and back again with usually only minor changes to the root filesystem. This document describes how.
+
+# EMI to AMI (Eucalyptus to Amazon)
 
 ## Requirements
 
@@ -58,6 +60,38 @@ You can easily convert EBS-backed images from Eucalyptus to Amazon with usually 
  ```
 
 5. You now have an AMI that can be launched.
+
+# AMI to EMI (Amazon to Eucalyptus)
+
+## Requirements
+
+* Access to a snap-xxxxxx or vol-xxxxxx on Amazon that holds the root filesystem volume you want to import.
+* A Eucalyptus cloud.
+
+1. Copy the volume contents to a local machine:
+
+ ```
+ $ ec2-attach-volume vol-xxxxxx -i i-xxxxxx -d /dev/sdc
+ $ ssh -i aws-key.priv root@aws-instance "dd if=/dev/sdc bs=1M" | dd of=imported-ami.raw bs=1M
+ $ ec2-detact-volume vol-xxxxxx
+ ```
+
+2. Now you have a copy of the volume on disk as imported-ami.raw. Now you need to transfer it to a volume in your Eucalyptus cloud, using exactly the same procedure, except the other way. In a KVM Eucalyptus cloud, the volume names are "vdX" instead of "sdX" as they are in Amazon. Assuming you have a Eucalyptus "scratch" instance running:
+
+ ```
+ $ euca-attach-vol vol-yyyyyy -i i-yyyyyy -d /dev/vdc
+ $ dd if=imported-ami.raw bs=1M | ssh -i euca-key.priv root@scratch-instance "dd of=/dev/vdc bs=1M"
+ $ euca-detach-volume vol-yyyyyy
+ ```
+
+3. Then snapshot and register the new volume as an EMI:
+
+ ```
+ $ euca-snapshot vol-yyyyyy
+ $ euca-register -n ami-import-test --root-device-name /dev/vda -b /dev/vda=snap-xxxxxx 
+ ```
+
+You will probably need to modify the initrd within the instance. This is left as an exercise for the reader and we will document it here later.
 
 *****
 
