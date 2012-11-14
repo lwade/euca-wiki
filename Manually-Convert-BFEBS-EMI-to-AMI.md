@@ -68,6 +68,8 @@ You can easily convert EBS-backed images from Eucalyptus to Amazon and back agai
 * Access to a snap-xxxxxx or vol-xxxxxx on Amazon that holds the root filesystem volume you want to import.
 * A Eucalyptus cloud.
 
+## Steps
+
 1. Copy the volume contents to a local machine:
 
  ```
