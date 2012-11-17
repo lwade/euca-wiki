@@ -20,7 +20,7 @@ You can easily convert EBS-backed images from Eucalyptus to Amazon and back agai
 
     (Log into the instance, verify volume device with fdisk -l)
 
-    $ ssh -i admin.key root@10.110.1.86 "dd if=/dev/sdc bs=1M" | dd of=ebs-disk.raw bs=1M
+    $ ssh -i admin.key root@10.110.1.86 "gzip - < /dev/sdc" | zcat > ebs-disk.raw
     $ euca-detach-volume vol-xxxxxxxx
     ```
 
@@ -74,7 +74,7 @@ You can easily convert EBS-backed images from Eucalyptus to Amazon and back agai
 
  ```
  $ ec2-attach-volume vol-xxxxxx -i i-xxxxxx -d /dev/sdc
- $ ssh -i aws-key.priv root@aws-instance "dd if=/dev/sdc bs=1M" | dd of=imported-ami.raw bs=1M
+ $ ssh -i aws-key.priv root@aws-instance "gzip - < /dev/sdc" | zcat > imported-ami.raw
  $ ec2-detact-volume vol-xxxxxx
  ```
 
@@ -82,7 +82,7 @@ You can easily convert EBS-backed images from Eucalyptus to Amazon and back agai
 
  ```
  $ euca-attach-vol vol-yyyyyy -i i-yyyyyy -d /dev/vdc
- $ dd if=imported-ami.raw bs=1M | ssh -i euca-key.priv root@scratch-instance "dd of=/dev/vdc bs=1M"
+ $ gzip - < imported-ami.raw | ssh -i euca-key.priv root@scratch-instance "zcat > /dev/vdc"
  $ euca-detach-volume vol-yyyyyy
  ```
 
