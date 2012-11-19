@@ -1,5 +1,7 @@
 You can directly import an HVM AMI from Amazon into Eucalyptus with a few modifications.
 
+Note: These steps are very similar to the section section of https://github.com/eucalyptus/eucalyptus/wiki/Manually-Convert-BFEBS-EMI-to-AMI and should perhaps be merged.
+
 ## Requirements
 
 * An HVM AMI running in Amazon
