@@ -5,6 +5,7 @@
 * [[Designdocs-ui]]
 * [[DesignDocs]]
 * [[index-of-categories]]
+* [[Manually-Convert-BFEBS-EMI-to-AMI]]
 * [[Network-Troubleshooting-FAQ]]
 * [[Using-PHP-with-Eucalyptus]]
 

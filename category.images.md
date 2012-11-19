@@ -4,6 +4,7 @@
 * [[index-of-categories]]
 * [[Kexec-Images]]
 * [[Kexec-loader]]
+* [[Manually-Convert-BFEBS-EMI-to-AMI]]
 
 
 *****
