@@ -8,9 +8,9 @@ To use these tools you'll need:
 * A running Eucalyptus cloud, with user credentials (This guide was tested on Eucalyptus 3.1.2)
 * git revision control tool installed
 
-## Amazon PHP SDK
+## AWS SDK for PHP
 
-The Amazon PHP SDK (http://aws.amazon.com/sdkforphp/) provides a great tool kit for interacting with the Amazon Web Services API's, including EC2 and S3, which we can re-use in Eucalyptus. 
+The AWS SDK for PHP (http://aws.amazon.com/sdkforphp/) provides a great tool kit for interacting with the Amazon Web Services APIs, including EC2 and S3, which we can re-use in Eucalyptus. 
 
 **The SDK has not been fully validated on Eucalyptus and is not supported by Eucalyptus Systems but it does seem to work without modification, your mileage may vary.**
 
@@ -33,28 +33,32 @@ Steps:
 
     require_once 'sdk.class.php';
 
-    $options = array(
-            'key' => 'your-access-key',
-            'secret' => 'your-secret-access-key',
-    );
+    $ec2 = new AmazonEC2(array(
+        'key' => 'your-access-key',
+        'secret' => 'your-secret-access-key',
+    ));
 
-    $ec2 = new AmazonEC2($options);
-    $ec2->enable_debug_mode();
-    $ec2->disable_ssl();
-    $ec2->set_hostname("http://eucalyptus.yourdomain.com:8773/services/Eucalyptus");
+    // http://docs.amazonwebservices.com/AWSSDKforPHP/latest/#m=AmazonEC2/set_hostname
+    $ec2->set_hostname("eucalyptus.yourdomain.com", 8773);
+
+    // http://docs.amazonwebservices.com/AWSSDKforPHP/latest/#m=AmazonEC2/set_resource_prefix
+    $ec2->set_resource_prefix("/services/Eucalyptus");
+
+    // http://docs.amazonwebservices.com/AWSSDKforPHP/latest/#m=CFRuntime/disable_ssl
+    $ec2->disable_ssl(); // If you need to disable SSL
 
     $response = $ec2->describe_images();
 
-    if($response->status == "200") {
-            foreach($response->body->imagesSet->item as $item) {
-                    $image_id = (string) $item->imageId;
-                    print_r($image_id . "\n");
-            }
+    if ($response->isOK()) {
+        // `body` is a SimpleXMLElement
+        foreach ($response->body->imagesSet->item as $item) {
+            $image_id = (string) $item->imageId;
+            print_r($image_id . "\n");
+        }
     } else {
-            // error--dump the whole request
-            print_r($response);
+        // error--dump the whole request
+        print_r($response);
     }
-    ?>
     ```
 
 3. Run the PHP test page via the command-line:
@@ -63,7 +67,7 @@ Steps:
     php /var/www/aws-sdk-for-php/eucalyptus-example.php
     ```
 
-4. Adapt the code based on examples provided on the Amazon site, to use it within your own website code.
+4. Adapt the code based on examples provided on the AWS site, to use it within your own website code.
 
 ### Example: Simple page to launch an instance
 
