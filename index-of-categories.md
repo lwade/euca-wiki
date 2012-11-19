@@ -1,6 +1,7 @@
 Index of Categories
 
 * [[category.UNCATEGORIZED]]
+* [[category.blueprints]]
 * [[category.bugs]]
 * [[category.components]]
 * [[category.contributing]]
@@ -9,6 +10,7 @@ Index of Categories
 * [[category.design]]
 * [[category.docs]]
 * [[category.docs-team]]
+* [[category.ebs]]
 * [[category.events]]
 * [[category.gsoc]]
 * [[category.hackfests]]
@@ -16,6 +18,7 @@ Index of Categories
 * [[category.install]]
 * [[category.legacy]]
 * [[category.meetings]]
+* [[category.monitoring]]
 * [[category.networking]]
 * [[category.participation]]
 * [[category.people]]

@@ -68,3 +68,7 @@ Below is a list of the starter images that will be made available on emis.eucaly
        <td></td>
     </tr>
 </table>
+
+*****
+
+[[category.images]]

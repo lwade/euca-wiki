@@ -18,3 +18,6 @@ Cloud Best Practices
     quota enforcement
     monitoring
 
+*****
+
+[[category.blueprints]]

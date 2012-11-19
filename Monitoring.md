@@ -66,3 +66,7 @@ ERROR_TIMEOUT minutes: Error
 * iscsiadm on NC is not responding to control operations or has
 errors about loading kernel module
 * Check TCP port 80 is listening **Done**
+
+*****
+
+[[category.monitoring]]

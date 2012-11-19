@@ -156,3 +156,7 @@ Now go checkout the Nagios WebUI to see the status of the check:
     ```
     http://<your-nagios-server>/nagios/
     ```
+
+*****
+
+[[category.monitoring]]

@@ -1,1 +1,5 @@
 blueprints placeholder.
+
+*****
+
+[[category.blueprints]]

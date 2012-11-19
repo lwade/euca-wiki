@@ -45,3 +45,7 @@ You can resize an EBS volume by creating a new volume of the target size and cop
  # euca-create-snapshot vol-NEWVOLUME
  # euca-register -n "resized BFEBS" --root-device-name /dev/vda -b /dev/vda=snap-XXXXXX
  ```
+
+*****
+
+[[category.ebs]]
