@@ -14,7 +14,7 @@ Below is a list of the starter images that will be made available on emis.eucaly
        <td>https://s3-eu-west-1.amazonaws.com/centos-6.3-x64/centos6.tgz</td>
        <td>CentOS 6.3 x86_64</td>
        <td>Olivier Renault - olivier.renault@eucalyptus.com</td>
-       <td>[Test Results](https://github.com/eucalyptus/image-verification-results/blob/master/centos6.3-eutester-testresults.txt)</td>
+       <td><a href="https://github.com/eucalyptus/image-verification-results/blob/master/centos6.3-eutester-testresults.txt">Test Results</a></td>
        <td>SELinux / iptables disabled. Root disk of 4.5G. Root user enable. It works w/ kexec kernel ( default kernel is provided as part of tar ).</td>
     </tr>
     <tr>
