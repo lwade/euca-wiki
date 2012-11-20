@@ -36,7 +36,7 @@ Below is a list of the starter images that will be made available on emis.eucaly
        <td>https://s3-eu-west-1.amazonaws.com/fedora-emi/f16-x86_64.tgz</td>
        <td>Fedora 16 x86_64</td>
        <td>Olivier Renault - olivier.renault@eucalyptus.com</td>
-       <td>None</td>
+       <td><a href="https://github.com/eucalyptus/image-verification-results/blob/master/fedora16-eutester-testresults.txt">Test results</a></td>
        <td>SELinux / iptables disabled. Root disk of 4.5G. Root user enabled. It works w/ kexec kernel ( default kernel is provided as part of tar )</td>
     </tr>
     <tr>
