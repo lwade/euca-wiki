@@ -12,6 +12,7 @@ You can find us on Freenode IRC in #eucalyptus or #eucalyptus-docs, or at any of
 * [Convert AMI to EMI](wiki/Convert-AMI-to-EMI) - How to import an AMI (Amazon Machine Image) into Eucalyptus as an EMI (Eucalyptus Machine Image).
 * [Kexec Loader](wiki/Kexec-loader) - How to use a specialized EKI and ERI to boot the EMI's own in-filesystem kernel and ramdisk using GRUB.
 * [Using PHP with Eucalyptus](wiki/Using-PHP-with-Eucalyptus) - How to use the Amazon AWS PHP SDK with Eucalyptus.
+* [Starter Images](https://github.com/eucalyptus/eucalyptus/wiki/Starter-Images) - Starter Images that can be accessed via emis.eucalyptus.com or eustore.
 
 ### Pages for Cloud Administrators
 
