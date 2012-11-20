@@ -51,7 +51,7 @@ Below is a list of the starter images that will be made available on emis.eucaly
        <td>OpenSUSE 12.2 x86_64</td>
        <td>Lester Wade - lester@eucalyptus.com</td>
        <td><a href="https://github.com/eucalyptus/image-verification-results/blob/master/opensuse12.2-eutester-testresults.txt">Test Results</a></td>
-       <td>SUSE Firewall off.  Root disk of 2.5G.  Root user enabled.  Working with kexec kernel and ramdisk.</td>
+       <td>SUSE Firewall off.  Root disk of 2.5G.  Root user enabled.  Working with kexec kernel and ramdisk. OpenSUSE minimal base package set.</td>
     </tr>
     <tr>
        <td></td>
