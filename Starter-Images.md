@@ -36,7 +36,7 @@ Below is a list of the starter images that will be made available on emis.eucaly
        <td><a href="http://emis.eucalyptus.com/starter-emis/euca-fedora16-2012.11.07-x86_64.tgz">Download</a></td>
        <td>Fedora 16 x86_64</td>
        <td>Olivier Renault - olivier.renault@eucalyptus.com</td>
-       <td><a href="https://github.com/eucalyptus/image-verification-results/blob/master/fedora16-eutester-testresults.txt">Test results</a><br>(Eucalyptus 3.0.x - 3.1.x)</td>
+       <td><a href="https://github.com/eucalyptus/image-verification-results/blob/master/fedora16-eutester-testresults.txt">Test Results</a><br>(Eucalyptus 3.0.x - 3.1.x)</td>
        <td>SELinux / iptables disabled. Root disk of 4.5G. Root user enabled. It works w/ kexec kernel ( default kernel is provided as part of tar )</td>
     </tr>
     <tr>
