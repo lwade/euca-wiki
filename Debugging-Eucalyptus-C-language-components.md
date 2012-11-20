@@ -26,6 +26,8 @@ export AXIS2C_HOME=/opt/eucalyptus/packages/axis2c-1.6.0/
 export LD_LIBRARY_PATH=$AXIS2C_HOME/lib:$AXIS2C_HOME/modules/rampart/
 ```
 
+(NOTE: for most packaged installs, AXIS2C_HOME will be /usr/lib64/axis2c)
+
 Here is an example invocation of `CCclient_full` on a CC host with Eucalyptus source tree in `$EUCALYPTUS_SRC` that has been compiled:
 
 ```bash
