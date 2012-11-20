@@ -18,14 +18,14 @@ Below is a list of the starter images that will be made available on emis.eucaly
        <td>SELinux / iptables disabled. Root disk of 4.5G. Root user enable. It works w/ kexec kernel ( default kernel is provided as part of tar ).</td>
     </tr>
     <tr>
-       <td>http://cloud-images.ubuntu.com/releases/precise/release/ubuntu-12.04-server-cloudimg-amd64.tar.gz</td>
+       <td><a href="http://cloud-images.ubuntu.com/releases/precise/release/ubuntu-12.04-server-cloudimg-amd64.tar.gz">Download from Ubuntu</a></td>
        <td>Ubuntu 12.04 LTS x86_64 - Official Ubuntu Image</td>
        <td>Tom Ellis - tom.ellis@eucalyptus.com</td>
        <td>None</td>
        <td>Latest official Ubuntu image from cloud-images.ubuntu.com (if we use this link, it'll always pull the latest version of the image as they get updated frequently)</td>
     </tr>
     <tr>
-       <td>http://uec-images.ubuntu.com/releases/10.04/release/ubuntu-10.04-server-cloudimg-amd64.tar.gz</td>
+       <td><a href="http://uec-images.ubuntu.com/releases/10.04/release/ubuntu-10.04-server-cloudimg-amd64.tar.gz">Download from Ubuntu</a></td>
        <td>Ubuntu 10.04 LTS x86_64 - Official Ubuntu Image</td>
        <td>Tom Ellis - tom.ellis@eucalyptus.com</td>
        <td>None</td>
