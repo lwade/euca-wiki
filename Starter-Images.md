@@ -47,7 +47,7 @@ Below is a list of the starter images that will be made available on emis.eucaly
        <td>SELinux / iptables disabled. Root disk of 4.5G. Root user enabled. It works w/ kexec kernel ( default kernel is provided as part of tar )</td>
     </tr>
     <tr>
-       <td>https://s3-eu-west-1.amazonaws.com/opensuse-images/opensuse-12.2-x86_64-emi.tar.gz</td>
+       <td><a href="https://s3-eu-west-1.amazonaws.com/opensuse-images/opensuse-12.2-x86_64-emi.tar.gz">Download</a></td>
        <td>OpenSUSE 12.2 x86_64</td>
        <td>Lester Wade - lester@eucalyptus.com</td>
        <td><a href="https://github.com/eucalyptus/image-verification-results/blob/master/opensuse12.2-eutester-testresults.txt">Test Results</a><br>(Eucalyptus 3.0.x - 3.1.x)</td>
