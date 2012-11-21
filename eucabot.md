@@ -39,7 +39,7 @@ In addition, these commands are usable by people with `jirawrite` privileges:
 
 [Red Hat's bugzilla instance](https://bugzilla.redhat.com/) is the main bug tracker for Red Hat Enterprise Linux and Fedora.
 
-* **lp _issue_** - Show a summary of a bug.
+* **rh _issue_** - Show a summary of a bug.
 
 ## Meeting management<a id="meeting_management"/>
 
