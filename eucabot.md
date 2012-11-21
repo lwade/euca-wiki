@@ -45,7 +45,9 @@ In addition, these commands are usable by people with `jirawrite` privileges:
 
 Eucabot can take notes during IRC meetings.  After a meeting finishes, it will publish lots and meeting minutes to [its web server](https://meetbot.eucalyptus.com/private/meeting-logs/).  To employ this functionality, use the commands below.  The general syntax of a command is the command name, which begins with a #, followed by command-specific text.  If a line does not begin with a # then eucabot will not interpret it as a meeting command, so _do not_ address it directly when using such a command.
 
-* **#startmeeting** - Start a meeting with a given overall topic.  The meeting topic becomes the title that appears at the top of the meeting minutes.  You are designated the meeting's chair.
+Eucabot refers to people who run meetings as _chairs_ and allows them to run extra commands for the duration of the meeting.  The person who starts a meeting automatically becomes a chair for that meeting.
+
+* **#startmeeting** - Start a meeting with a given overall topic.  The meeting topic becomes the title that appears at the top of the meeting minutes.  You are designated the meeting's first chair.
 * **#meetingname** - Set the file name to give the meeting minutes.  Stick to the `[:word:]` character class or the name you supply will be mangled.  (Chairs only)
 * **#topic** - Start a new topic of discussion.  This creates a new section in the meeting minutes.  (Chairs  only)
 * **#info** - Add a note to the meeting minutes.  Use this command liberally, as general chat does not appear in the meeting minutes.
