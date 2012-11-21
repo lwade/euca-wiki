@@ -14,7 +14,7 @@ You can also address eucabot by preceding your message with a period.
 
 ## Bug management<a id="bug_management"/>
 
-Eucabot can provide short summaries and quick links to bugs in any of several bug trackers.  It can sometimes to simple bug management as well.
+Eucabot can provide short summaries and quick links to bugs in any of several bug trackers.  It can sometimes do simple bug management as well.
 
 ### Eucalyptus JIRA
 
@@ -126,7 +126,7 @@ We occasionally discover new commands that are not documented.  Some of them exi
 * **more** - If a message is too long to tell you in one line, eucabot will end it with something like "(1 more message)".  The "more" command asks eucabot to say the next line of the message.
 * **seen** - Show the last message that eucabot remembers a person saying in the channel.
 * **any** - Show the last thing that eucabot remembers a person doing in the channel.
-* **twitter** - Show the latest recent post by [eucalyptus](http://twitter.com/eucalyptus) on Twitter.
+* **twitter** - Show the latest recent post by [@eucalyptus](http://twitter.com/eucalyptus) on Twitter.
 
 # Administration
 
