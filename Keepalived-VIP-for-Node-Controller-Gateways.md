@@ -197,3 +197,7 @@ Eucalyptus Bug: [https://eucalyptus.atlassian.net/browse/EUCA-2412](https://euca
 CCClient_full: [https://github.com/eucalyptus/eucalyptus/wiki/Debugging-Eucalyptus-C-language-components](https://github.com/eucalyptus/eucalyptus/wiki/Debugging-Eucalyptus-C-language-components)
 
 Keepalived: [http://www.keepalived.org/](http://www.keepalived.org/)
+
+*****
+
+[[category.ha]]
