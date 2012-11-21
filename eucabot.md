@@ -1,4 +1,4 @@
-Eucabot is a multi-purpose fount of information that can be found on [Freenode](http://freenode.net/).  It is capable of managing bugs <sup>[[1](#bug_management)]</sup>, IRC users <sup>[[2](#misc_commands)]</sup>, and IRC meetings <sup>[[3](#meeting_management)]</sup>.  It subsists primarily on botsnacks <sup>[ _citation needed_ ]</sup>.
+Eucabot is a multi-purpose fount of information that can be found on [Freenode](http://freenode.net/).  It is capable of managing bugs [<sup>[1]</sup>](#bug_management), IRC users [<sup>[2]</sup>](#misc_commands), and IRC meetings [<sup>[3]</sup>](#meeting_management).  It subsists primarily on botsnacks <sup>[ _citation needed_ ]</sup>.
 
 # Guidelines
 
