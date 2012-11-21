@@ -74,7 +74,7 @@ Eucabot can take notes during IRC meetings.  After a meeting finishes, it will p
 <alice> Great! Let's get started. We only have one bug today, so this should be quick.
 <alice> #topic EUCA-640: hats, we need euca hats
 <alice> .issue euca-640
-<eucabot> alice: EUCA-640 (Unconfirmed): twinkies - https://eucalyptus.atlassian.net/browse/EUCA-640
+<eucabot> alice: EUCA-640 (Unconfirmed): hats, we need euca hats - https://eucalyptus.atlassian.net/browse/EUCA-640
 <bob> I think hats are great ways to start conversations at events.
 <carol> #info Hats are good conversation starters
 <dave> I'd wear a decent baseball cap.
