@@ -139,3 +139,5 @@ Users with `admin` capabilities can manage other accounts' privileges and also d
 
 # Quotes
 `<eucabot> :D`
+
+[[category.infrastructure]]
