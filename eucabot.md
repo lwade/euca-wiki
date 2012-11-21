@@ -1,4 +1,4 @@
-Eucabot is a multi-purpose fount of information that can be found on [Freenode](http://freenode.net/).  It is capable of managing bugs <sup>[ _citation needed_ ]</sup>, IRC users <sup>[ _citation needed_ ]</sup>, and IRC meetings <sup>[ _citation needed_ ]</sup>.  It subsists primarily on botsnacks <sup>[ _citation needed_ ]</sup>.
+Eucabot is a multi-purpose fount of information that can be found on [Freenode](http://freenode.net/).  It is capable of managing bugs <sup>[[1](#bug_management)]</sup>, IRC users <sup>[[2](#misc_commands)]</sup>, and IRC meetings <sup>[[3](#meeting_management)]</sup>.  It subsists primarily on botsnacks <sup>[ _citation needed_ ]</sup>.
 
 # Guidelines
 
@@ -12,7 +12,7 @@ Eucabot rarely responds when not addressed directly.  You can address eucabot di
 
 You can also address eucabot by preceding your message with a period.
 
-## Bug management
+## Bug management<a id="bug_management"/>
 
 Eucabot can provide short summaries and quick links to bugs in any of several bug trackers.  It can sometimes to simple bug management as well.
 
@@ -41,7 +41,7 @@ In addition, these commands are usable by people with `jirawrite` privileges:
 
 * **lp _issue_** - Show a summary of a bug.
 
-## Meeting management
+## Meeting management<a id="meeting_management"/>
 
 Eucabot can take notes during IRC meetings.  After a meeting finishes, it will publish lots and meeting minutes to [its web server](https://meetbot.eucalyptus.com/private/meeting-logs/).  To employ this functionality, use the commands below.  The general syntax of a command is the command name, which begins with a #, followed by command-specific text.  If a line does not begin with a # then eucabot will not interpret it as a meeting command, so _do not_ address it directly when using such a command.
 
@@ -116,7 +116,7 @@ If you need special permission to do something (or if you just want eucabot to k
 * **set secure _password_ [ True | False ]** - Sets (or toggles) the secure flag on your account.  When the secure flag is set, you must identify yourself with your password _and_ be connected from a computer in your account's hostmask list in order to log in.  (Must be sent via PM)
 * **whoami** - Say what account you are logged into.
 
-## Miscellaneous commands
+## Miscellaneous commands<a id="misc_commands"/>
 
 We occasionally discover new commands that are not documented.  Some of them exist intentionally.  Others do not.  This section attempts to document them.
 
