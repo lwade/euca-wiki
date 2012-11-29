@@ -7,7 +7,10 @@ Particularly, be careful about doing a boot-io storm where you 'euca-run-instanc
 
 Also, be aware that disk IO may be competing for network bandwidth with the regular NC and instance traffic. This is an issue we know about for TGT-backed SCs, in the future we will support configuring a distinct network and IP for data traffic on the SC. You will want to ensure that heavy EBS traffic does not saturate the network such that normal eucalyptus control messages (CC->NC for example) begin to fail or that instance traffic is not longer reaching instances. Ideally, you should put the SC on its own network that also connects to the NCs and CLC so that the SC traffic is on a different network than normal Eucalyptus or instance network traffic.
 
-As for instance-store instances and large Windows images:
-The limiter on this is, as correctly identified previously, the decryption and transfer cost for the image to the NC on the first instance start of that image on that NC. The reason for the chunking of the image during upload to Walrus is 1.) AWS compliance, and 2.) minimize the transfer time and failure probability for each chunk. The tools can retry a specific chunk of the image during upload rather than having to redo the entire 20GB image if the last 10MB fails.
+# Startup performance of instance-store instances and large Windows images
+The performance bottleneck for large instance-store images is the decryption and transfer cost for the image to the NC on the first instance start of that image on that NC. This cost is only incurred on the first run of the image after registration. Walrus will ensure that an image is decrypted only once and then cached for subsequent use on both Walrus and any NCs that run the image.
+
+## Why are images chunked into 10MB files during bundling and upload?
+The reason for the chunking of the image during upload to Walrus is 1.) AWS compliance, and 2.) minimize the transfer time and failure probability for each chunk. The tools can retry a specific chunk of the image during upload rather than having to redo the entire 20GB image if the last 10MB fails.
 
 The reason that both the individual chunks as well as the assembled image are stored is that the image is stored in the image-cache and may be flushed if it is unused and space is needed for other images in the cache. The cached image happens to reside in the same bucket as the uploaded image chunks but it is managed independently as part of the image cache.
