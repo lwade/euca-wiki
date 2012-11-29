@@ -20,7 +20,7 @@ You can find us on Freenode IRC in #eucalyptus or #eucalyptus-docs, or at any of
 * [Fedora 18 Single System Install](wiki/Fedora-18-Single-System-Install) - How to install a full Eucalyptus test environment on a single system.
 * [Eutester and Nagios](wiki/Integrating-Eutester-and-Nagios) - How to setup and configure Eutester and Nagios to carry out a simple test of cloud availablity,
 * [Keepalived VIP on Cluster Controllers](https://github.com/eucalyptus/eucalyptus/wiki/Keepalived-VIP-for-Node-Controller-Gateways) - How to install and configure keepalived to be used as a shared IP for Node Controller gateways when using MANAGED mode and a private network
-* [Eucalyptus Storage](https://github.com/eucalyptus/eucalyptus/wiki/Storage)
+* [Eucalyptus Storage](https://github.com/eucalyptus/eucalyptus/wiki/Storage) - High-level overview of storage in Eucalyptus including Walrus and the Storage Controller and how they work. Also includes some best practices and recommendations.
 
 ### Developer Resources
 
