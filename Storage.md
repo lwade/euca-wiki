@@ -33,7 +33,7 @@ Read more about [[Walrus]]
 
 Read more about [[Storage Controller (SC)]]
 
-Read more about EBS Best Practices [[EBS Best Practices]]
+Read more about EBS Instances and Large Instance-Store Instances [[EBS Instances Considerations and Large Image-backed Instances]]
 
 *****
 
