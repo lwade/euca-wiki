@@ -33,6 +33,8 @@ Read more about [[Walrus]]
 
 Read more about [[Storage Controller (SC)]]
 
+Read more about EBS Best Practices [[EBS Best Practices]]
+
 *****
 
 [[category.components]]
