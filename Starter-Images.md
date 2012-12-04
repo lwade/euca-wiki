@@ -25,7 +25,7 @@ Below is a list of the starter images that will be made available on emis.eucaly
        <td>Latest official Ubuntu image from cloud-images.ubuntu.com (if we use this link, it'll always pull the latest version of the image as they get updated frequently)</td>
     </tr>
     <tr>
-       <td><a href="http://uec-images.ubuntu.com/releases/10.04/release/ubuntu-10.04-server-cloudimg-amd64.tar.gz">Download from Ubuntu</a></td>
+       <td><a href="http://cloud-images.ubuntu.com/releases/10.04/release/ubuntu-10.04-server-cloudimg-amd64.tar.gz">Download from Ubuntu</a></td>
        <td>Ubuntu 10.04 LTS x86_64 - Official Ubuntu Image</td>
        <td>Tom Ellis - tom.ellis@eucalyptus.com</td>
        <td>None</td>
