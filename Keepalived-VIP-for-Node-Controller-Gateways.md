@@ -100,10 +100,12 @@ vrrp_instance cloud_cluster1_gateway {
 ### 3. Compile and Install CCclient_full
 
 [CCclient_full](https://github.com/eucalyptus/eucalyptus/wiki/Debugging-Eucalyptus-C-language-components)
-is a tool used for debugging Eucalyptus. It allows you to query the CC on the internal API and importantly,
-poll state information. See localState in the output below.
+is a tool used for debugging Eucalyptus. It allows you to query the CC on the internal API just like it is the CLC and importantly,
+poll state information. See localState in the output below:
 
 ``` bash Using CCclient_full
+$ export AXIS2C_HOME=/usr/lib64/axis2c
+$ export LD_LIBRARY_PATH=$AXIS2C_HOME/lib:$AXIS2C_HOME/modules/rampart/
 $ /usr/local/bin/CCclient_full 127.0.0.1:8774 describeServices
 LocalState=ENABLED localEpoch=0 details=ERRORS=0
 type=cluster name=cc1_c1
@@ -121,6 +123,13 @@ Alternatively, if you are running on CentOS 6 x86_64 you can download this pre-c
 ``` bash
 wget -c https://github.com/tomellis/puppet-modules/raw/master/keepalived/scripts/CCclient_full -O /usr/local/bin/CCclient_full
 chmod 750 /usr/local/bin/CCclient_full
+```
+
+**Importantly**, to get CCclient_full to run you will need an additional certificate copied on to the CC from your Cloud Controller (CLC), that key cloud-pk.pem is the private
+key for your cloud and is required for CCclient_full to mimic the CLC.
+
+``` bash Copy Certificate from CLC to CC
+scp /var/lib/eucalyptus/keys/cloud-pk.pem root@cc:/var/lib/eucalyptus/keys/
 ```
 
 ### 4. Add check script
