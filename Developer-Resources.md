@@ -4,4 +4,4 @@
 
 * [Python](/eucalyptus/eucalyptus/wiki/Boto)
 * [Ruby](/eucalyptus/eucalyptus/wiki/Fog)
-* [Typica](/eucalyptus/eucalyptus/wiki/Typica)
+* [Java](/eucalyptus/eucalyptus/wiki/Typica)
