@@ -75,7 +75,7 @@ You can easily convert EBS-backed images from Eucalyptus to Amazon and back agai
  ```
  $ ec2-attach-volume vol-xxxxxx -i i-xxxxxx -d /dev/sdc
  $ ssh -i aws-key.priv root@aws-instance "gzip - < /dev/sdc" | zcat > imported-ami.raw
- $ ec2-detact-volume vol-xxxxxx
+ $ ec2-detach-volume vol-xxxxxx
  ```
 
 2. Now you have a copy of the volume on disk as imported-ami.raw. Now you need to transfer it to a volume in your Eucalyptus cloud, using exactly the same procedure, except the other way. In a KVM Eucalyptus cloud, the volume names are "vdX" instead of "sdX" as they are in Amazon. Assuming you have a Eucalyptus "scratch" instance running:
