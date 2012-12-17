@@ -19,4 +19,4 @@ When we find issues, we should file them against the [AWS Compatibility componen
 
 *****
 
-[[AWS Compatibility]]
+[[category.aws-compatibility]]
