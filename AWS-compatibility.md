@@ -4,16 +4,19 @@ To that end, we want to test against all AWS tools in the open source ecosystem,
 
 Here's a list of the projects we're currently targeting (where "targeting" means "an individual who is responsible for assessing our compatibility):
 
-* AWS .Net SDK
-* AWS SDK for Java
-* AWS SDK for Android
-* AWS toolkit for Eclipse
-* AWS toolkit for iOS
-* JetS3t
-* RightScale AWS Gems (https://github.com/rightscale/right_aws)
-* Fog: https://github.com/fog/fog
-* Jenkins
-* Asgard
+<table>
+  <th><td>Project</td><td>Owner</td></th>
+  <tr><td>AWS .Net SDK</td><td>open</td></tr>
+  <tr><td>AWS SDK for Java</td><td>open</td></tr>
+  <tr><td>AWS SDK for Android</td><td>open</td></tr>
+  <tr><td>AWS toolkit for Eclipse</td><td>open</td></tr>
+  <tr><td>AWS toolkit for iOS</td><td>open</td></tr>
+  <tr><td>JetS3t</td><td>open</td></tr>
+  <tr><td>[RightScale AWS Gems](https://github.com/rightscale/right_aws)</td><td>open</td></tr>
+  <tr><td>[Fog](https://github.com/fog/fog)</td><td>open</td></tr>
+  <tr><td>Jenkins</td><td>open</td></tr>
+  <tr><td>Asgard</td><td>open</td></tr>
+</table>
 
 When we find issues, we should file them against the [AWS Compatibility component](https://eucalyptus.atlassian.net/browse/EUCA/component/10201).
 
