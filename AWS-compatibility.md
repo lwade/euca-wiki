@@ -5,7 +5,7 @@ To that end, we want to test against all AWS tools in the open source ecosystem,
 Here's a list of the projects we're currently targeting (where "targeting" means "an individual who is responsible for assessing our compatibility):
 
 <table>
-  <tr><td><bProject</td><td>Owner</td></tr>
+  <tr><td><b>Project</b></td><td>Owner</td></tr>
   <tr><td>AWS .Net SDK</td><td>open</td></tr>
   <tr><td>AWS SDK for Java</td><td>open</td></tr>
   <tr><td>AWS SDK for Android</td><td>open</td></tr>
