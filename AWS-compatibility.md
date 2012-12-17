@@ -14,7 +14,7 @@ Here's a list of the projects we're currently targeting (where "targeting" means
   <tr><td>JetS3t</td><td>&nbsp;</td><td>open</td></tr>
   <tr><td>RightScale AWS Gems</td><td>&nbsp;</td><td>open</td></tr>
   <tr><td>Fog</td><td>&nbsp;</td><td>open</td></tr>
-  <tr><td>Jenkins</td><td>&nbsp;</td><td>open</td></tr>
+  <tr><td>Jenkins</td><td>&nbsp;</td><td>https://wiki.jenkins-ci.org/display/JENKINS/Amazon+EC2+Plugin</td></tr>
   <tr><td>Asgard</td><td>&nbsp;</td><td>open</td></tr>
 </table>
 
