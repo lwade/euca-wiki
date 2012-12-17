@@ -24,7 +24,7 @@ You can find us on Freenode IRC in #eucalyptus or #eucalyptus-docs, or at any of
 
 ### AWS Compatibility
 
-* [AWS Compatibility] - tracking compatibility of all AWS ecosystem tools with Eucalyptus.
+* [[AWS Compatibility]] - tracking compatibility of all AWS ecosystem tools with Eucalyptus.
 
 ### Developer Resources
 
