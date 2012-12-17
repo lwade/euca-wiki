@@ -22,6 +22,10 @@ You can find us on Freenode IRC in #eucalyptus or #eucalyptus-docs, or at any of
 * [Keepalived VIP on Cluster Controllers](https://github.com/eucalyptus/eucalyptus/wiki/Keepalived-VIP-for-Node-Controller-Gateways) - How to install and configure keepalived to be used as a shared IP for Node Controller gateways when using MANAGED mode and a private network
 * [Eucalyptus Storage](https://github.com/eucalyptus/eucalyptus/wiki/Storage) - High-level overview of storage in Eucalyptus including Walrus and the Storage Controller and how they work. Also includes some best practices and recommendations.
 
+### AWS Compatibility
+
+* [AWS Compatibility] - tracking compatibility of all AWS ecosystem tools with Eucalyptus.
+
 ### Developer Resources
 
 * [Design Docs](wiki/DesignDocs) - Internal Eucalyptus design documentation.
