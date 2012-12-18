@@ -14,6 +14,7 @@ There are hundreds of possible images that are targets for translation, and we'r
 
 ## Successfully Tested AMIs To Date
 
+<pre>
 ami-002bf169	bitnami-cloud/wordpress/bitnami-wordpress-3.3.2-0-multisite-linux-ubuntu-12.04-x86_64-s3.manifest.xml
 ami-00d47069	bitnami-cloud/ezpublish/bitnami-ezpublish-2012.4-0-linux-ubuntu-12.04-x86_64-s3.manifest.xml
 ami-01209768	bitnami-cloud/sugarcrm/bitnami-sugarcrm-6.5.4-0-linux-ubuntu-12.04.2-x86_64-s3.manifest.xml
@@ -34,3 +35,4 @@ ami-0e8a2f67	bitnami-cloud/drupal/bitnami-drupal-7.14-0-linux-ubuntu-12.04-x86_6
 ami-0f3c8e66	bitnami-cloud/phpbb/bitnami-phpbb-3.0.11-1-linux-ubuntu-12.04.2-x86_64-s3.manifest.xml
 ami-1005df79	bitnami-cloud/magento/bitnami-magento-1.6.2.0-0-linux-ubuntu-12.04-x86_64-s3.manifest.xml
 ami-105dff79	bitnami-cloud/lampstack/bitnami-lampstack-5.3.14-0-linux-ubuntu-12.04-x86_64-s3.manifest.xml
+</pre>
