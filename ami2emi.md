@@ -14,6 +14,8 @@ There are hundreds of possible images that are targets for translation, and we'r
 
 ## Successfully Tested AMIs To Date
 
+**All of these images are in us-east-1.**
+
 <pre>
 ami-002bf169	bitnami-cloud/wordpress/bitnami-wordpress-3.3.2-0-multisite-linux-ubuntu-12.04-x86_64-s3.manifest.xml
 ami-00d47069	bitnami-cloud/ezpublish/bitnami-ezpublish-2012.4-0-linux-ubuntu-12.04-x86_64-s3.manifest.xml
