@@ -1,9 +1,5 @@
-More information about Harold Spencer, Jr. can be found in the following places:
+More information about Harold Spencer, Jr. can be found [here](https://github.com/eucalyptus/eucalyptus/wiki/Harold-Spencer-Jr.).  Enjoy!
 
-* http://blogs.mindspew-age.com/about-haroldjr/
-* https://github.com/hspencer77
-
-Enjoy!
 
 *****
 
