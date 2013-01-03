@@ -12,6 +12,7 @@ Here's a list of the projects we're currently targeting (where "targeting" means
   <tr><td>AWS SDK for Android</td><td>&nbsp;</td><td>open</td><td>&nbsp;</td></tr>
   <tr><td>AWS toolkit for Eclipse</td><td>https://github.com/aws/aws-toolkit-eclipse</td><td>[[Colby Dyess]]</td><td>&nbsp;</td></tr>
   <tr><td>AWS toolkit for iOS</td><td>&nbsp;</td><td>open</td><td>&nbsp;</td></tr>
+  <tr><td>awscli</td><td>http://aws.amazon.com/cli/</td><td>[[Andy Grimm]]</td><td>http://agrimmsreality.blogspot.com/2013/01/using-aws-cli-with-eucalyptus.html</td></tr>
   <tr><td>JetS3t</td><td>&nbsp;</td><td>open</td><td>&nbsp;</td></tr>
   <tr><td>RightScale AWS Gems</td><td>&nbsp;</td><td>open</td><td>&nbsp;</td></tr>
   <tr><td>Fog</td><td>http://fog.io/1.8.0/index.html</td><td>[[Harold Spencer Jr.]]</td><td>[[Fog with Eucalyptus]]</td></tr>
