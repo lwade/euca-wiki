@@ -7,9 +7,9 @@ Here's a list of the projects we're currently targeting (where "targeting" means
 <table>
   <tr><td><b>Project</b></td><td><b>Project URL</b></td><td><b>Owner</b></td></tr>
   <tr><td>AWS .Net SDK</td><td>&nbsp;</td><td>open</td></tr>
-  <tr><td>AWS SDK for Java</td><td>&nbsp;</td><td>open</td></tr>
+  <tr><td>AWS SDK for Java</td><td>&nbsp;</td><td>Engineering</td></tr>
   <tr><td>AWS SDK for Android</td><td>&nbsp;</td><td>open</td></tr>
-  <tr><td>AWS toolkit for Eclipse</td><td>https://github.com/aws/aws-toolkit-eclipse</td><td>Engineering</td></tr>
+  <tr><td>AWS toolkit for Eclipse</td><td>https://github.com/aws/aws-toolkit-eclipse</td><td>[[Colby Dyess]]</td></tr>
   <tr><td>AWS toolkit for iOS</td><td>&nbsp;</td><td>open</td></tr>
   <tr><td>JetS3t</td><td>&nbsp;</td><td>open</td></tr>
   <tr><td>RightScale AWS Gems</td><td>&nbsp;</td><td>open</td></tr>
