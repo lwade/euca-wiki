@@ -6,6 +6,7 @@ Here's a list of the projects we're currently targeting (where "targeting" means
 
 <table>
   <tr><td><b>Project</b></td><td><b>Project URL</b></td><td><b>Owner</b></td></tr>
+  <tr><td>AWS CLI</td><td>&nbsp;</td>[[Greg DeKoenigsberg]]<td></td></tr>
   <tr><td>AWS .Net SDK</td><td>&nbsp;</td><td>open</td></tr>
   <tr><td>AWS SDK for Java</td><td>&nbsp;</td><td>Engineering</td></tr>
   <tr><td>AWS SDK for Android</td><td>&nbsp;</td><td>open</td></tr>
