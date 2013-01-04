@@ -1,6 +1,6 @@
-## Listing of Starter EMIs
+Find below a list of various images for Linux distributions. If you have any questions about any of these images, please join the community mailing list and ask.
 
-Below is a list of the starter images that will be made available on emis.eucalyptus.com and eustore. 
+## Listing of Starter images
 
 <table>
     <tr>
