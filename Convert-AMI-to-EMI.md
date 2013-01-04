@@ -45,6 +45,8 @@ Steps:
 
 If you don't own the S3 buckets and can't download the image directly, you can launch an AMI, install euca2ools, and use euca-bundle-vol to import your image.
 
+There's also a tool called **[[ami2emi]]** that can serve as a starting point.  The idea is as follows:
+
 1. In EC2, launch an instance of the image you want to import to Eucalyptus. 
 2. Install euca2ools on that instance: http://www.eucalyptus.com/download/euca2ools
 2. Copy your admin-credentials.zip file from Eucalyptus to this instance.
