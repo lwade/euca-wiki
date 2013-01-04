@@ -2,7 +2,7 @@ Looking to install a starter image for Eucalyptus?  You want to use **eustore**,
 
 www.eucalyptus.com/docs/latest/ug/eustore-browse-install.html
 
-_Back to the [[Images Wizard]]_
+_Back to the [[Image Wizard]]!_
 
 * * *
 
