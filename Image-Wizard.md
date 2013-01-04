@@ -5,6 +5,8 @@ Looking to figure out how to upload an image to Eucalyptus, but aren't quite sur
 * I want to [[build an image from scratch]].
 * I want to [[import an image from AWS]].
 
+If you have any questions about images, please join the [Eucalyptus community mailing list](http://lists.eucalyptus.com/cgi-bin/mailman/listinfo/community) and ask there, or find us on [IRC](http://webchat.freenode.net/?channels=eucalyptus).
+
 * * * * *
 
 [[category.images]]
