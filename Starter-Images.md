@@ -1,4 +1,4 @@
-Find below a list of various images for Linux distributions. If you have any questions about any of these images, please join the community mailing list and ask.
+Find below a list of various images for Linux distributions. We also have the [[Kexec-images]] page, that should be merged with this one.
 
 ## Listing of Starter images
 
