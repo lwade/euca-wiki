@@ -2,7 +2,20 @@ _This document is in draft form--improvements and suggestions welcome._
 
 Here are two ways to convert an AMI (Amazon Machine Image) living in Amazon into an EMI (Eucalyptus Machine Image):
 
-## First Approach - Download from S3
+## First Approach: Bundle a Running AMI
+
+If you don't own the S3 buckets and can't download the image directly, you can launch an AMI, install euca2ools, and use euca-bundle-vol to import your image.
+
+There's also a tool called **[[ami2emi]]** that can serve as a starting point.  The idea is as follows:
+
+1. In EC2, launch an instance of the image you want to import to Eucalyptus. 
+2. Install euca2ools on that instance: http://www.eucalyptus.com/download/euca2ools
+2. Copy your admin-credentials.zip file from Eucalyptus to this instance.
+3. Run euca-bundle-vol based on the instructions here: [[Bundling Images]]
+4. Copy the files (.xml and .part files) to your Eucalyptus system.
+5. Run euca-upload-bundle and euca-register to upload and register the new system.
+
+## Second Approach - Download from S3
 
 If you own the AMI in question, you can download the bundled image directly from S3, unbundle, decrypt, and upload to Eucalyptus.
 
@@ -40,19 +53,6 @@ Steps:
     (Substitute eri-xxxxxx and eki-xxxxxx with the appropriate EKI and ERI ids based on the running Eucalyptus instance you copied the kernel modules from.)
 
 4. Test the instance.
-
-## Second Approach: Bundle a Running AMI
-
-If you don't own the S3 buckets and can't download the image directly, you can launch an AMI, install euca2ools, and use euca-bundle-vol to import your image.
-
-There's also a tool called **[[ami2emi]]** that can serve as a starting point.  The idea is as follows:
-
-1. In EC2, launch an instance of the image you want to import to Eucalyptus. 
-2. Install euca2ools on that instance: http://www.eucalyptus.com/download/euca2ools
-2. Copy your admin-credentials.zip file from Eucalyptus to this instance.
-3. Run euca-bundle-vol based on the instructions here: [[Bundling Images]]
-4. Copy the files (.xml and .part files) to your Eucalyptus system.
-5. Run euca-upload-bundle and euca-register to upload and register the new system.
 
 *****
 
