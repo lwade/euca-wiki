@@ -69,6 +69,19 @@ Find below a list of various images for Linux distributions. If you have any que
     </tr>
 </table>
 
+## Uploading Images
+
+Once you've retrieved the starter image you want, you must upload that image to your Eucalyptus cloud.  The basic steps that are required:
+
+* Upload a kernel and ramdisk. A good option here is to upload the [[kexec-loader]] kernel and ramdisk.
+* Upload the image, associating with the kernel and ramdisk in the process. Documentation is [here](http://www.eucalyptus.com/docs/latest/ug/associating_ekieri.html#associating_ekieri).
+
+
+## Getting Help
+
+If you have any questions about images, please join the [Eucalyptus community mailing list](http://lists.eucalyptus.com/cgi-bin/mailman/listinfo/community) and ask there, or find us on [IRC](http://webchat.freenode.net/?channels=eucalyptus).
+
+
 *****
 
 [[category.images]]
