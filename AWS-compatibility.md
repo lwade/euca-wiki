@@ -17,7 +17,9 @@ Here's a list of the projects we're currently targeting (where "targeting" means
   <tr><td>RightScale AWS Gems</td><td>&nbsp;</td><td>open</td><td>&nbsp;</td></tr>
   <tr><td>Fog</td><td>http://fog.io/1.8.0/index.html</td><td>[[Harold Spencer Jr.]]</td><td>[[Fog with Eucalyptus]]</td></tr>
   <tr><td>Jenkins</td><td>https://wiki.jenkins-ci.org/display/JENKINS/Amazon+EC2+Plugin</td><td>[[Lester Wade]]</td><td>&nbsp;</td></tr>
-  <tr><td>Asgard</td><td>&nbsp;</td><td>open</td><td>&nbsp;</td></tr>
+  <tr><td>Netflix Asgard</td><td>&nbsp;</td><td>open</td><td>&nbsp;</td></tr>
+  <tr><td>Netflix Chaos Monkey</td><td>&nbsp;</td><td>open</td><td>&nbsp;</td></tr>
+  <tr><td>Netflix Janitor Monkey</td><td>&nbsp;</td><td>open</td><td>&nbsp;</td></tr>
 </table>
 
 When we find issues, we should file them against the [AWS Compatibility component](https://eucalyptus.atlassian.net/browse/EUCA/component/10201).
