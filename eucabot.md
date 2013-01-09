@@ -127,6 +127,7 @@ We occasionally discover new commands that are not documented.  Some of them exi
 * **seen** - Show the last message that eucabot remembers a person saying in the channel.
 * **any** - Show the last thing that eucabot remembers a person doing in the channel.
 * **twitter** - Show the latest recent post by [@eucalyptus](http://twitter.com/eucalyptus) on Twitter.
+* **botsnack** - `:D`
 
 # Administration
 
