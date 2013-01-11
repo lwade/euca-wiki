@@ -1,6 +1,7 @@
 FIXME. Some distros and custom tools for building them:
 
-* Fedora: ami-creator?
+* CentOS: ami-creator, boxgrinder, yum
+* Fedora: ami-creator, boxgrinder, yum
 * Ubuntu: ubuntu-vm-builder?
 * Debian: debootstrap
 * OpenSuse: SuSE Studio
