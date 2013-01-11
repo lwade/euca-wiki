@@ -2,8 +2,8 @@ FIXME. Some distros and custom tools for building them:
 
 * Fedora: ami-creator?
 * Ubuntu: ubuntu-vm-builder?
-* Debian: ??? 
-* OpenSuse: ??? 
+* Debian: debootstrap
+* OpenSuse: SuSE Studio
 
 * * * * *
 
