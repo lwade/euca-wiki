@@ -1,6 +1,7 @@
 Index of Categories
 
 * [[category.UNCATEGORIZED]]
+* [[category.aws-compatibility]]
 * [[category.blueprints]]
 * [[category.bugs]]
 * [[category.components]]
@@ -13,8 +14,10 @@ Index of Categories
 * [[category.ebs]]
 * [[category.events]]
 * [[category.gsoc]]
+* [[category.ha]]
 * [[category.hackfests]]
 * [[category.images]]
+* [[category.infrastructure]]
 * [[category.install]]
 * [[category.legacy]]
 * [[category.meetings]]
@@ -23,4 +26,5 @@ Index of Categories
 * [[category.participation]]
 * [[category.people]]
 * [[category.reporting]]
+* [[category.todo]]
 * [[category.ui]]

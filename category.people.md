@@ -5,11 +5,12 @@
 * [[Greg-DeKoenigsberg]]
 * [[grze]]
 * [[Harold-Spencer-Jr]]
-* [[Harold-spencer-jr]]
+* [[Harold-Spencer-Jr]]
 * [[Home]]
 * [[index-of-categories]]
 * [[Jason-Eden]]
 * [[Jenny-Loza]]
+* [[Lester-Wade]]
 * [[Scot-Marvin]]
 * [[Zach-Hill]]
 
