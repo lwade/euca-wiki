@@ -1,4 +1,4 @@
-For Fedora 18, downloadable cloud images are being provided.  These are whole-disk images, though, which require some conversion to be loaded into eucalyptus as instance-store images.  Below is a shell script which takes care of this process.  It takes two arguments: the qcow filename and the destination bucket.
+For Fedora 18, [downloadable cloud images](http://mattdm.fedorapeople.org/cloud-images/) are being provided.  These are whole-disk images, though, which require some conversion to be loaded into eucalyptus as instance-store images.  Below is a shell script which takes care of this process.  It takes two arguments: the qcow filename and the destination bucket.
 It assumes that you have euca2ools and qemu-img installed on your system, and due to its use of loopback devices, it must be run as root.
 
 ```
