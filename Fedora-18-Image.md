@@ -22,7 +22,7 @@ ERI=$( euca-register $2/$INITRD.manifest.xml | awk '{ print $2 }' )
 umount /mnt
 kpartx -d $LODEV
 losetup -d $LODEV
-euca-bundle-image --kernel $EKI --ramdisk $ERI $EXTFILE
+euca-bundle-image --kernel $EKI --ramdisk $ERI -i $EXTFILE
 euca-upload-bundle -b $2 -m /tmp/$( basename $EXTFILE ).manifest.xml
 euca-register $2/$( basename $EXTFILE ).manifest.xml
 ```
