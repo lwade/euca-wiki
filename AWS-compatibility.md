@@ -2,7 +2,9 @@ Eucalyptus strives for 100% API compatibility with all AWS services that we curr
 
 To that end, we want to test against all AWS tools in the open source ecosystem, identify those places where we are compatible, and find and fix all places where we are not compatible.
 
-Here's a list of the projects we're currently targeting (where "targeting" means "an individual who is responsible for assessing our compatibility):
+Here's a list of the projects we're currently targeting (where "targeting" means "we have identified an individual who is responsible for assessing our compatibility):
+
+**Status**. <font color="red">Red</font> means "known broken" or "unknown". Yellow means "works to some degree with tweaks."  Green means "works out of the box".
 
 <table>
   <tr><td><b>Project</b></td><td><b>Project URL</b></td><td><b>Owner</b></td><td><b>Notes</b></td></tr>
