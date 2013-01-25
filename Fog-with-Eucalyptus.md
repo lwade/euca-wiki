@@ -9,8 +9,8 @@ A sample config file (which we should test out):
 # Fog Credentials File
 #
 :default:
-:aws_access_key_id:       IyJWpgObMl2Yp70BlWEP4aNGMfXdhL0FtAx4cQ
-:aws_secret_access_key:   7DeDGG2YMOnOqmWxwnHD5x9Y0PKbwE3xttsew
+:aws_access_key_id:       ecc-long-access-key-id
+:aws_secret_access_key:   ecc-long-secret-access-key
 :endpoint:                http://ecc.eucalyptus.com:8773/services/Eucalyptus
 </pre>
 
