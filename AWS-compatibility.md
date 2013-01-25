@@ -4,7 +4,7 @@ To that end, we want to test against all AWS tools in the open source ecosystem,
 
 Here's a list of the projects we're currently targeting (where "targeting" means "we have identified an individual who is responsible for assessing our compatibility):
 
-**Status**. <font color="red">Red</font> means "known broken" or "unknown". <font color="yellow">Yellow</font> means "works to some degree with tweaks."  <font color="green">Green</font> means "works out of the box".
+**Status**. <font color="red">Red</font> means "known broken". <font color="yellow">Yellow</font> means "works to some degree with tweaks."  <font color="green">Green</font> means "works out of the box".
 
 <table>
   <tr><td><b>Project</b></td><td><b>Project URL</b></td><td><b>Owner</b></td><td><b>Notes</b></td></tr>
