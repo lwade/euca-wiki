@@ -13,6 +13,7 @@ You can find us on Freenode IRC in #eucalyptus or #eucalyptus-docs, or at any of
 * [Kexec Loader](wiki/Kexec-loader) - How to use a specialized EKI and ERI to boot the EMI's own in-filesystem kernel and ramdisk using GRUB.
 * [Using PHP with Eucalyptus](wiki/Using-PHP-with-Eucalyptus) - How to use the Amazon AWS PHP SDK with Eucalyptus.
 * [Starter Images](https://github.com/eucalyptus/eucalyptus/wiki/Starter-Images) - Starter Images that can be accessed via emis.eucalyptus.com or eustore.
+* [Stackato Image](https://github.com/eucalyptus/eucalyptus/wiki/Stackato-Image) - Information regarding status of getting [Stackato](http://docs.stackato.com/index.html) image to work on Eucalyptus.
 
 ### Pages for Cloud Administrators
 
