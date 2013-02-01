@@ -36,7 +36,9 @@ So far, most testing has been done by hand to help troubleshoot Puppet Cloud Pro
 Setup is follows (using irb):
 
 require 'irb/completion' *for tab completion - makes it easier*
+
 require 'rubygems'
+
 require 'fog'
 
 connection = Fog::Compute.new({
