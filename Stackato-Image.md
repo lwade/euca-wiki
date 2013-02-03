@@ -4,7 +4,7 @@
 
 Image for Stackato can be uploaded to Eucalyptus by using the following documentation:
 
-*** NOTE: don't use uec-publish-image. Use documentation for bundling, uploading and registering kernel, ramdisk, image found here - http://www.eucalyptus.com/docs/3.2/ug/add_existing.html#add_existing ***
+***NOTE: don't use uec-publish-image. Use documentation for bundling, uploading and registering kernel, ramdisk, image found here - http://www.eucalyptus.com/docs/3.2/ug/add_existing.html#add_existing***
 
 http://docs.stackato.com/server/openstack-legacy.html?highlight=openstack
 
