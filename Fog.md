@@ -158,3 +158,5 @@ Tested the following commands:
 ## Additional Information
 
 Would be good to add mocks (http://rubydoc.info/github/fog/fog#Mocks) to Fog so that testing can be done without a Eucalyptus cloud.  Haven't scoped it out, but it would be helpful.
+
+More notes from an old experiment from [[David Kavanagh]], here: http://coderslike.us/2011/10/19/using-the-ruby-fog-library-to-connect-with-eucalyptus/
