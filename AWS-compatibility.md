@@ -12,6 +12,7 @@ Here's a list of the projects we're currently targeting (where "targeting" means
   <tr><td>AWS toolkit for Eclipse</td><td>https://github.com/aws/aws-toolkit-eclipse</td><td>[[Colby Dyess]]</td><td><font color="yellow">Yellow</font></td><td>[[Eclipse Plugin]]</td></tr>  
   <tr><td>Fog</td><td>http://fog.io/1.8.0/index.html</td><td>[[Harold Spencer Jr.]]</td><td><font color="yellow">Yellow</font></td><td>Lots of notes here: [[Fog]]</td></tr>
   <tr><td>Jenkins</td><td>https://wiki.jenkins-ci.org/display/JENKINS/Amazon+EC2+Plugin</td><td>[[Lester Wade]]</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+  <tr><td>AppScale</td><td>&nbsp;</td><td>[[Harold Spencer Jr.]]</td><td><font color="red">Red</font></td><td>Image runs, but the AppScale services do not yet work. Problem is that Euca does not currently follow the split internal/external DNS model of AWS. It may be that other PaaSes share this exact issue.</td></tr>
   <tr><td>Stackato</td><td>&nbsp;</td><td>[[Harold Spencer Jr.]]</td><td><font color="red">Red</font></td><td>Image runs, but the Stackato services do not yet work. More info: [[Stackato-Image]]</td></tr>
   <tr><td>Netflix Edda</td><td>&nbsp;</td><td>Dan Nurmi</td><td><font color="yellow">Yellow</font></td><td>http://nurmiblog.wordpress.com/2013/01/22/inspired-by-netflix/</td></tr>
   <tr><td>AWS .Net SDK</td><td>&nbsp;</td><td>open</td><td>&nbsp;</td><td>&nbsp;</td></tr>
