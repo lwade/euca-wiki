@@ -2,14 +2,14 @@
 
 ## Ubuntu 12.10
 
-1. Installed dependencies (I'm not sure if this list is really correct, but it was enough to make the build work):
+1. Installed dependencies (I'm not sure if this list is really correct, but it was enough to make the build work and get the CLC started):
 ```
 sudo apt-get install cdbs debhelper libaxis2c-dev librampart-dev default-jdk libvirt-dev \
   libfuse-dev libfuse2 libcurl4-openssl-dev libssl-dev ant-optional zlib1g-dev pkg-config \
   swig python python-setuptools rsync wget open-iscsi libxslt1-dev gengetopt ant groovy \
   postgresql-server-dev-9.1 iputils-arping make libapache2-mod-axis2c postgresql postgresql-client \
   libbackport-util-concurrent-java libwsdl4j-java libjaxen-java libcommons-cli-java libwsdl2c-java \
-  unzip libxalan2-java
+  unzip libxalan2-java python-pygresql
 ```
 1. Stop the default postgres service (should probably also permanently disable it):
 ```
