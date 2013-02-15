@@ -11,7 +11,7 @@ The release process generally occurs in two steps:  the final compose, and gener
   * `gpg --armor --sign --detach-sign`
 * Sign final packages
   * Make sure to use sigv3
-* Upload to staging server
+* Upload to staging server (release-repo)
   * final tarball
   * tarball signature (*.tar.gz.asc)
   * all packages to staging server
