@@ -2,6 +2,8 @@ The release process generally occurs in two steps:  the final compose, and gener
 
 # Final Compose (SA)
 
+* Ensure version information in all source code is coherent
+  * TODO:  list everywhere that that info appears
 * Build final packages in Jenkins
   * Make sure to use _no_ tarball suffix, as final releases don't need git info.
 * Keep final Jenkins builds ( _all_ jobs in the sequence, not just binaries or tarballs) forever
