@@ -19,9 +19,9 @@ The release process generally occurs in two steps:  the final compose, and gener
 # General Availability (GA)
 
 * Upload everything to public download server
-  * Sources include both a source package _and_ a tarball
+  * Releases with security fixes that cause the source release to be delayed should exclude `eucalyptus-*.src.rpm` and `eucalyptus-*.tar.gz` until the embargo is lifted.
 * Tag each git repo
-  * Pushing tags automatically causes sources to upload to GitHub
+  * Pushing tags automatically causes sources to upload to GitHub; if the source release must be delayed then this step must be delayed as well.
 * Add n-v-r and commit data to [[List of Packages]] wiki page
 * For a new series (e.g. x.y.0) work with IT to update where the mirrorlist points to by default
 
