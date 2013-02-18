@@ -8,6 +8,8 @@ Image for Stackato can be uploaded to Eucalyptus by using the following document
 
 http://docs.stackato.com/server/openstack-legacy.html?highlight=openstack
 
+*Make sure and use vm.type that has at least 2 gigs of RAM.  Stackato will have odd behavior if this requirement is not met.*
+
 ### Blockers
 
 * updated test stackato image cloud-init to use metadata source of EC2 (i.e. dpkg-reconfigure cloud-init).  This seems to have caused an issue in regards to how the instance initially runs.
