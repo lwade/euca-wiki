@@ -13,10 +13,10 @@ http://docs.stackato.com/server/openstack-legacy.html?highlight=openstack
 * updated test stackato image cloud-init to use metadata source of EC2 (i.e. dpkg-reconfigure cloud-init).  This seems to have caused an issue in regards to how the instance initially runs.
 * using instance without cloud-init - instance launches, but there seems to be an issue using a private IP and public IP configuration with Stackato.  Ran the following configuration for using public and private IP:
 
-- kato setup core api.euca-192-168-55-101.wu-tang.euca-hasp.eucalyptus-systems.com (public IP)
-- kato enable --all-but mdns
-- kato op static_ip (private IP information)
-- added 127.0.0.1 to /etc/resolv.conf
+     - kato setup core api.euca-192-168-55-101.wu-tang.euca-hasp.eucalyptus-systems.com (public IP)
+     - kato enable --all-but mdns
+     - kato op static_ip (private IP information)
+     - added 127.0.0.1 to /etc/resolv.conf
 
 ### Next Steps
 
