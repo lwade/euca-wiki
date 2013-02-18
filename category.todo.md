@@ -1,3 +1,4 @@
+* [[index-of-categories]]
 * [[Todo-Greg-DeKoenigsberg]]
 
 
