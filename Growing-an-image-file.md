@@ -13,7 +13,7 @@ euca-bundle-image --kernel eki-74C34082 --ramdisk eri-DAB1400A -i ks-centos6-201
 
 That's it.  Your new, larger image is ready to run.
 
-== What if you no longer have the image file? ==
+## What if you no longer have the image file?
 
 This problem is a bit trickier if you no longer have the image file on your system.  If you are the owner of the image in your cloud, though, there's hope.  I mangled the euca-unbundle utility into a new [euca-download-and-bundle](https://raw.github.com/eucalyptus/silvereye/master/scripts/euca-download-and-unbundle) script.  So you can grab that and use it to fetch an existing image from walrus.  Just determine the manifest path by running euca-describe-images.  Example output:
 
