@@ -12,3 +12,16 @@ euca-bundle-image --kernel eki-74C34082 --ramdisk eri-DAB1400A -i ks-centos6-201
 5. Register: `euca-register centos6bigger/ks-centos6-201302151307.img.manifest.xml`
 
 That's it.  Your new, larger image is ready to run.
+
+== What if you no longer have the image file? ==
+
+This problem is a bit trickier if you no longer have the image file on your system.  If you are the owner of the image in your cloud, though, there's hope.  I mangled the euca-unbundle utility into a new [euca-download-and-bundle](https://raw.github.com/eucalyptus/silvereye/master/scripts/euca-download-and-unbundle) script.  So you can grab that and use it to fetch an existing image from walrus.  Just determine the manifest path by running euca-describe-images.  Example output:
+
+```
+IMAGE	emi-CD1C39B7	centos6/ks-centos6-201302151307.manifest.xml	495684638284	available	
+public x86_64	machine	eki-74C34082	eri-DAB1400A		instance-store
+```
+
+in this case, centos6/ks-centos6-201302151307.manifest.xml is the manifest path.
+
+*NOTE*: When you modify an image, you should either change the file name or upload it to a different bucket.  If you upload to the same bucket and file name, your previous image will be overwritten, but it may take time for the cloud's various caches to invalid, which could lead to errors.
