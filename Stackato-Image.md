@@ -69,7 +69,22 @@ Log back into instance after it has finished rebooting and run the following com
 
 - kato setup core api.<public DNS name> (same as above, the DNS name set in the external DNS - e.g. stackato.dev.eucalyptus-systems.com)
 - kato enable --all-but mdns
+- edit resolv.conf, and make sure it has the following entries at the top:
+    - search containers.
+    - nameserver 127.0.0.1
 
+#### Setting Up Container Storage
+
+To make sure the applications have enough space to run on the instance, use ephemeral storage or EBS volume(s) for [LXC](http://lxc.sourceforge.net/) storage.  Stackato mentions it in their documentation under [Persistent Storage](http://api.stacka.to/docs/best-practices/index.html#persistent-storage), but given that there is a known bug regarding using those steps for v2.6.6, you have to do this manually.  Steps are as follows:
+
+- setup the ephemeral storage or attach EBS volume(s) to the instance
+- format the storage with the filesystem of your choice
+- set up the mount point to be /mnt/lxc/containers and run the following commands:
+    - kato stop
+    - sudo rm -r /lxc/containers
+    - sudo ln -s /mnt/lxc/containers /lxc/containers
+    - kato start
+ 
 Thats it.  Should be good to go.  Open up a browser and go to http:<public DNS name> e.g. http://stackato.dev.eucalyptus-systems.com.  You should see the [Admin Management Console](http://docs.stackato.com/quick-start/index.html#accessing-stackato-via-management-console) and then go from there.
 
 ### Next Steps
