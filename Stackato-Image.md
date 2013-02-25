@@ -73,7 +73,7 @@ Log back into instance after it has finished rebooting and run the following com
     - search containers.
     - nameserver 127.0.0.1
 
-#### Setting Up Container Storage
+#### Setting Up Container Storage (for non cloud-init image)
 
 To make sure the applications have enough space to run on the instance, use ephemeral storage or EBS volume(s) for [LXC](http://lxc.sourceforge.net/) storage.  Stackato mentions it in their documentation under [Persistent Storage](http://api.stacka.to/docs/best-practices/index.html#persistent-storage), but given that there is a known bug regarding using those steps for v2.6.6, you have to do this manually.  Steps are as follows:
 
@@ -87,11 +87,12 @@ To make sure the applications have enough space to run on the instance, use ephe
  
 Thats it.  Should be good to go.  Open up a browser and go to http:<public DNS name> e.g. http://stackato.dev.eucalyptus-systems.com.  You should see the [Admin Management Console](http://docs.stackato.com/quick-start/index.html#accessing-stackato-via-management-console) and then go from there.
 
+***NOTE: If cloud-init enabled Stackato image is used, it takes care of mounting the ephemeral storage for you and places the LXC containers in ephemeral.***
+
 ### Next Steps
 
 * Need to test Stackato 2.6.7 image.
-* Need to get the non cloud-init image on emis.eucalyptus.com
-* Work on getting the cloud-init Stackato image working.
+* Need to get the non cloud-init/cloud-init image on emis.eucalyptus.com
 * Work on setting up a micro-cloud cluster in Eucalyptus.
 
 
