@@ -43,3 +43,7 @@ euca_conf --setup
 euca_conf --initialize
 /opt/euca-3.3.0/etc/init.d/eucalyptus-cloud start
 ```
+1. Install other runtime dependencies:
+```
+apt-get install python-m2crypto python-boto
+```
