@@ -89,6 +89,11 @@ Thats it.  Should be good to go.  Open up a browser and go to http:<public DNS n
 
 ***NOTE: If cloud-init enabled Stackato image is used, it takes care of mounting the ephemeral storage for you and places the LXC containers in ephemeral.***
 
+### Blogs Referencing Stacakto running on Eucalyptus
+
+* http://blogs.mindspew-age.com/2013/02/24/test-drive-drupal-deployment-on-eucalyptus-using-stackato-amazon-route-53-and-the-eucalyptus-community-cloud/
+* http://blogs.mindspew-age.com/2013/02/23/jenkins-stackato-cloud-init-and-eucalyptus-potent-combination-for-an-on-premise-continuous-integration-environment/
+
 ### Next Steps
 
 * Need to test Stackato 2.6.7 image.
