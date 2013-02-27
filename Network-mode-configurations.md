@@ -2,7 +2,7 @@ The following are example configurations for the Cluster Controller and Node Con
 
 ## CC Example Configurations
 
-| VNET_MODE     | # of NICS | DISABLE_TUNNELING | CC Phys Pub | CC Phys Priv | VNET_PUBINTERFACE  | VNET_PRIVINTERFACE | Other required fields |
+| VNET_MODE     | # of NICS | DISABLE_ TUNNELING | CC Phys Pub | CC Phys Priv | VNET_PUBINTERFACE  | VNET_PRIVINTERFACE | Other required fields |
 |:-------------:|:---------:|:-:|:-----------:|:------------:|:------------------:|:------------------:| ----- |
 |MANAGED        | 1         | Y | eth0        | eth0         | eth0               | eth0               | VNET_PUBLICIPS VNET_SUBNET VNET_NETMASK VNET_DNS VNET_ADDRSPERNET |
 |MANAGED        | 2         | Y | eth0        | eth1         | eth0               | eth1               | VNET_PUBLICIPS VNET_SUBNET VNET_NETMASK VNET_DNS VNET_ADDRSPERNET |
@@ -12,8 +12,8 @@ The following are example configurations for the Cluster Controller and Node Con
 |MANAGED-NOVLAN | 2         | Y | eth0        | eth1         | eth0               | eth1               | VNET_PUBLICIPS VNET_SUBNET VNET_NETMASK VNET_DNS VNET_ADDRSPERNET |
 |MANAGED-NOVLAN | 1         | N | eth0        | eth0         | br0 (eth0 slave)   | eth0 (br0?)        | VNET_PUBLICIPS VNET_SUBNET VNET_NETMASK VNET_DNS VNET_ADDRSPERNET |
 |MANAGED-NOVLAN | 2         | N | eth0        | eth1         | br0 (eth0 slave)   | eth1               | VNET_PUBLICIPS VNET_SUBNET VNET_NETMASK VNET_DNS VNET_ADDRSPERNET |
-|STATIC         | 1         | eth0        | eth0         | N/A                | eth0               | VNET_SUBNET VNET_NETMASK VNET_BROADCAST VNET_ROUTER VNET_DNS VNET_MACMAP |
-|SYSTEM         | 1         | eth0        | eth0         | N/A                | N/A                | |
+|STATIC         | 1         | N/A |eth0        | eth0         | N/A                | eth0               | VNET_SUBNET VNET_NETMASK VNET_BROADCAST VNET_ROUTER VNET_DNS VNET_MACMAP |
+|SYSTEM         | 1         | N/A |eth0        | eth0         | N/A                | N/A                | |
 
 ## NC Example Configurations
 
