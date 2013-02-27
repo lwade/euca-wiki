@@ -19,7 +19,7 @@ The following are example configurations for the Cluster Controller and Node Con
 
 | VNET_MODE     | NC Phys Pub | VNET_PUBINTERFACE | VNET_BRIDGE |
 |:-------------:|:-----------:|:-----------------:|:-----------:|
-|MANAGED        | eth0        | br0               | N/A (eth0 according to QA code? why?) |
+|MANAGED        | eth0        | eth0              | N/A |
 |MANAGED-NOVLAN | eth0        | N/A               | br0 (eth0 slave) |
 |STATIC         | eth0        | N/A               | br0 (eth0 slave) |
 |SYSTEM         | eth0        | N/A               | br0 (eth0 slave) |
