@@ -2,7 +2,7 @@ The following are example configurations for the Cluster Controller and Node Con
 
 ## CC Example Configurations
 
-| VNET_MODE     | # of NICS | DISABLE_ TUNNELING | CC Phys Pub | CC Phys Priv | VNET_PUBINTERFACE  | VNET_PRIVINTERFACE | Other required fields |
+| VNET_MODE     | # of NICS | DISABLE_ TUNNELING | CC Phys Pub | CC Phys Priv | VNET_ PUBINTERFACE  | VNET_ PRIVINTERFACE | Other required fields |
 |:-------------:|:---------:|:-:|:-----------:|:------------:|:------------------:|:------------------:| ----- |
 |MANAGED        | 1         | Y | eth0        | eth0         | eth0               | eth0               | VNET_PUBLICIPS VNET_SUBNET VNET_NETMASK VNET_DNS VNET_ADDRSPERNET |
 |MANAGED        | 2         | Y | eth0        | eth1         | eth0               | eth1               | VNET_PUBLICIPS VNET_SUBNET VNET_NETMASK VNET_DNS VNET_ADDRSPERNET |
