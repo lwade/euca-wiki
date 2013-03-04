@@ -94,10 +94,19 @@ Thats it.  Should be good to go.  Open up a browser and go to http:<public DNS n
 * http://blogs.mindspew-age.com/2013/02/24/test-drive-drupal-deployment-on-eucalyptus-using-stackato-amazon-route-53-and-the-eucalyptus-community-cloud/
 * http://blogs.mindspew-age.com/2013/02/23/jenkins-stackato-cloud-init-and-eucalyptus-potent-combination-for-an-on-premise-continuous-integration-environment/
 
+### Location of Stackato Image
+
+* eustore
+<pre>
+# eustore-describe-images | grep stackato
+1310977951 ubuntu      x86_64  partner        kvm               Stackato MicroCloud v2.6.6 - KVM Image. Cloud-init enabled. Root disk of 8.8G. For more information, please visit here: http://docs.stackato.com/index.html
+</pre>
+* http://docs.stackato.com/quick-start/index.html#stackato-micro-cloud
+
 ### Next Steps
 
 * Need to test Stackato 2.6.7 image.
-* Need to get the non cloud-init/cloud-init image on emis.eucalyptus.com
+* Need to get the cloud-init image on emis.eucalyptus.com
 * Work on setting up a micro-cloud cluster in Eucalyptus.
 
 
