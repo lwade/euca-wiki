@@ -99,7 +99,9 @@ Thats it.  Should be good to go.  Open up a browser and go to http:<public DNS n
 * eustore
 <pre>
 # eustore-describe-images | grep stackato
-1310977951 ubuntu      x86_64  partner        kvm               Stackato MicroCloud v2.6.6 - KVM Image. Cloud-init enabled. Root disk of 8.8G. For more information, please visit here: http://docs.stackato.com/index.html
+1310977951 ubuntu      x86_64  partner        kvm           
+Stackato MicroCloud v2.6.6 - KVM Image. Cloud-init enabled. 
+Root disk of 8.8G. For more information, please visit here: http://docs.stackato.com/index.html
 </pre>
 * http://docs.stackato.com/quick-start/index.html#stackato-micro-cloud
 
