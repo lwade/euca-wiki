@@ -1,17 +1,3 @@
-## Upgrade Fedora 17 to Fedora 18 (optional)
-
-This is only necessary if you don't have a working Fedora 18 install.  It is recommended that you install Fedora 18.
-
-1. kickstart fedora 17
-1. switch selinux to permissive mode
-1. reboot
-1. /sbin/fixfiles -F restore (should use autorelabel, but reboots were failing)
-1. yum update yum
-1. rpm --import https://fedoraproject.org/static/DE7F38BD.txt
-1. yum clean all
-1. yum --releasever=18 --disableplugin=presto distro-sync
-1. Review http://fedoraproject.org/wiki/Upgrading_Fedora_using_yum#Fedora_17_-.3E_Fedora_18 to ensure that there aren't other known issues to be worked around.
-
 ## Network Configuration
 
 **NOTE: This configuration may vary by system, depending on your overall network configuration.  If em1 is your only/default interface, it is likely that NetworkManager will drop your connection as soon as ifcfg-em1 changes.**
@@ -69,13 +55,6 @@ sysctl -p /etc/sysctl.d/eucalyptus-cloud
 yum install eucalyptus-cloud eucalyptus-sc eucalyptus-walrus eucalyptus-cc eucalyptus-nc
 ```
 
-## Other System Modifications
-
-* Link make an unversioned libmod_rampart.so (I'm unsure whether this is a eucalyptus or wso2 issues):
-```
-ln -s libmod_rampart.so /usr/lib64/wso2-axis2/modules/rampart/libmod_rampart.so.0
-```
-
 ## Cloud Initialization
 
 ```
@@ -122,17 +101,6 @@ If you do not, it is likely that either the CC or NC has not started properly.  
 rmmod kvm_intel
 rmmod kvm
 modprobe kvm_intel
-```
-* There is an issue with libvirt in F18 currently:  https://bugzilla.redhat.com/show_bug.cgi?id=852549
-Until this is fixed, you may need to manually download and install a new libvirt from koji.  Here is what I did:
-```
-mkdir /tmp/libvirt
-cd /tmp/libvirt
-for x in $( rpm -qa --qf "%{NAME} " '*libvirt*' ); do 
-  wget -nd http://kojipkgs.fedoraproject.org//packages/libvirt/0.10.1/2.fc18/x86_64/${x}-0.10.1-2.fc18.x86_64.rpm;
-done
-yum install *.rpm
-systemctl restart libvirtd
 ```
 
 ## Image Registration
