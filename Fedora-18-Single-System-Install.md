@@ -81,10 +81,12 @@ euca-describe-services
 ```
 euca_conf --register-walrus -C walrus -P walrus -H <host-ip-address>
 euca_conf --register-sc -C SC00 -P PARTI00 -H <host-ip-address>
+euca-modify-property -p PARTI00.storage.blockstoragemanager=overlay
 euca_conf --register-cluster -C CC00 -P PARTI00 -H <host-ip-address>
 systemctl start eucalyptus-cc
 euca_conf --register-nodes <host-ip-address>
 systemctl start eucalyptus-nc
+systemctl start eucalyptus-console
 ```
 
 ## Verify compute resources
