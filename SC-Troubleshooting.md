@@ -20,7 +20,7 @@ can you ssh to the IP you specified with sanhost property from the SC? Eucalyptu
 
 ### Equallogic
 The Equallogic-backed SC uses a persistent SSH connection to the SAN to issue commands. Verify that from the SC you can ssh into the Equallogic using the sanhost, sanuser, and sanpassword property values you set.
-Once the SC is configured and running, you can check that the chapuser was correctly created by ssh'ing to Equallogic and running `>chapuser show`. You should see a 'eucalyptus' user in the output.
+Once the SC is configured and running, you can check that the chapuser was correctly created by ssh'ing to Equallogic and running `chapuser show`. You should see a 'eucalyptus' user in the output.
 ### EMC VNX
 * Storage Pool
 * SC Paths
