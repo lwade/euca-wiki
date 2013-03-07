@@ -37,7 +37,7 @@ Hypervisor Config
 
 Dependencies
 
-[Pre-Install Checks for Walrus](Preinstall Checks: Walrus)
+[Pre-Install Checks for Walrus](Preinstall_Walrus)
 
 [Pre-Install Checks for Storage Controller](Presinstall_SC)
 
