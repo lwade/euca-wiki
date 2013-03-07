@@ -39,6 +39,6 @@ Dependencies
 
 [Troubleshooting and Pre-install Checks for Walrus](Walrus-Troubleshooting)
 
-[Pre-Install Checks for Storage Controller](Presinstall_SC)
+[Troubleshooting and Pre-install Checks for Storage Controller](SC-Troubleshooting)
 
-[Troubleshooting EBS/Volumes](Troubleshoot_EBS)
+[Troubleshooting EBS/Volumes End-to-End](EBS-Troubleshooting)
