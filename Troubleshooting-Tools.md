@@ -1,4 +1,9 @@
-This is a survey of all tools we are currently using to troubleshoot issues with Eucalyptus installations.
+This is a survey of all tools we are currently using to troubleshoot issues with Eucalyptus installations.  This should include both pre-install infrastructure checks and post-install configuration verification, health checking, and gathering of support information for further escalation.
+
+## Already existing projects that incoporate Troubleshootiness
+Chris Grzegorczyk's [DevEUtils](https://github.com/eucalyptus/deveutils): 
+Tom Ellis' SOSreports hosted at the [Dr. Euca](https://github.com/eucalyptus/doctor-euca) project
+Vic's EuTester script to gather system info: [debug.py](https://github.com/eucalyptus/eutester/blob/testing/testcases/cloud_admin/get_debug.py)
 
 ## Pre-install Checklist
 **Author: Jason Eden**
