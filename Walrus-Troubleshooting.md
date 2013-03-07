@@ -22,3 +22,7 @@ It is highly recommended to read and understand [DRBD](http://www.drbd.org/users
 1.The resource and device properties: walrus.blockdevice and walrus.resource should correspond with to the configured DRBD resource (e.g. 'r0') and drbd device (e.g. /dev/drbd1).
 
 ## Using iSCSI LUNs with Walrus
+Things to consider if backing Walrus with one or more iSCSI LUNs:
+1. If using LVM on-top of one or more iSCSI LUNS, ensure LVM LV (if using LVM on-top of iSCSI) is properly re-enabled after reboot. This may require a 'vgchange -ay' or similar in /etc/rc.local since iSCSI is started after LVM on reboot and therefore the VG will be disabled since it cannot find the backing LUN. Explicitly enabling it after the LUN is attached with iSCSI should resolve the issue.
+2. In HA configurations if the above is not done DRBD will go to 'Diskless' mode if it cannot find the backing disk.
+3. Be aware that if *not* using LVM on top of iSCSI that you must configure DRBD to reference the proper device name that won't change on reboot. Using /dev/sd* is not a good idea because it may change on reboot. It is better to use /dev/disk/by-id/scsi-* that corresponds to the LUN(s) being used. Put that path in the /etc/eucalyptus/drbd.conf file rather than /dev/sd* and it will use the udev id (based on the Serial Number given to the LUN by the SAN).
