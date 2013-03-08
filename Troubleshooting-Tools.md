@@ -42,3 +42,5 @@ Dependencies
 [Troubleshooting and Pre-install Checks for Storage Controller](SC-Troubleshooting)
 
 [Troubleshooting EBS/Volumes End-to-End](EBS-Troubleshooting)
+
+[Pre-Installation Checklist (authored by Lee Rich)](https://docs.google.com/document/d/1FBZuLf_pr2TbEHHWlEeObQXKO-oZ7bq1IF_I2mRVpwU/edit?usp=sharing)
