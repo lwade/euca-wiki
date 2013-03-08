@@ -12,12 +12,13 @@ Network
 - Physical configuration - Network cables plugged into correct switches
 - IP address assignment
 - Public IP pool range assigned
-- Hostnames in DNS
-- Multicast working
+- Hostnames in DNS (or host lists maintained in /etc/hosts)
+- Multicast working between CLC, Walrus, and SC
 - Private Network - VLAN range assigned
+- No DHCP server running on the networks to be used by Euca (unless we are doing a SYSTEM install)
 
 Firewall
-- ports open to front-end (8443, 8773, 8888)
+- ports open to front-end (8443, 8773, 8888, 53, 8080)
 
 Storage
 - dedicated user/pass for eucalyptus
@@ -25,17 +26,22 @@ Storage
 
 OS Config
 - SElinux Disabled
-    “getenforce” -> disabled
+    “getenforce” -> disabled or permissive
 - IPtables disabled
 - Bonding configured (optional)
 - sysctl setting (shmmax/semmni/etc.)
+      sysctl -> nofile, file-max?
 - NTP (identical settings across servers?)
 - Ensure bind or dnsmasq are not running
+- NetworkManager disabled (preferably system-wide, but at least per interface for those to be used for Euca)
+- Preferably have their subscription package installed on all Euca nodes
+
 
 Hypervisor Config
 - configuring br0 (for every mode except MANAGED)
 
 Dependencies
+- SAN client package installed from SAN vendor, if applicable
 
 [Troubleshooting and Pre-install Checks for Walrus](Walrus-Troubleshooting)
 
