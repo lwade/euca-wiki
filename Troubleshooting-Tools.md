@@ -6,7 +6,7 @@ This is a survey of all tools we are currently using to troubleshoot issues with
 - Vic's EuTester script to gather system info: [debug.py](https://github.com/eucalyptus/eutester/blob/testing/testcases/cloud_admin/get_debug.py)
 
 ## Pre-install Checklist
-**Author: Jason Eden**
+**Authors: Jason Eden, Tom Ellis, and Pavan Yara**
 
 Network
 - Physical configuration - Network cables plugged into correct switches
