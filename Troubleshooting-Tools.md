@@ -50,3 +50,5 @@ Dependencies
 [Troubleshooting EBS/Volumes End-to-End](EBS-Troubleshooting)
 
 [Pre-Installation Checklist (authored by Lee Rich)](https://docs.google.com/document/d/1FBZuLf_pr2TbEHHWlEeObQXKO-oZ7bq1IF_I2mRVpwU/edit?usp=sharing)
+
+[Pre-Installation Checklist (version 3.0, so some outdated content)](https://docs.google.com/document/d/1f30bHOE3MY6MCZ2dMR4ZYBNS0Aq3qSemYaWoHZg2GUY/edit?usp=sharing)
