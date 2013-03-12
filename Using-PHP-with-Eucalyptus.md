@@ -143,6 +143,7 @@ PHP-AWS (https://github.com/tylerhall/php-aws/) is a collection of small PHP scr
         $dns = $instance["dns"];
         print_r($instance_id . ” ” . $image_id . ” ” . $state . ” ” . $dns . “\n”);
     }
+
     // terminate an instance
     $ec2->terminateInstances(“i-XXXXXXXX″);
     ````
