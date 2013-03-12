@@ -109,7 +109,7 @@ PHP-AWS (https://github.com/tylerhall/php-aws/) is a collection of small PHP scr
         // Credentials for ec2 function
         $ec2    = new EC2('your-access-key', 'your-secret-access-key');
 
-        $run = $ec2->runInstances('put-an-emi-id-here');
+        $run = $ec2->runInstances('put-an-emi-id-here', 1, 1, 'key_name');
     ?>
     ```
 
@@ -119,7 +119,34 @@ PHP-AWS (https://github.com/tylerhall/php-aws/) is a collection of small PHP scr
     php /var/www/php-aws/euca-test.php
     ````
 
-5. Profit?!?
+5. Some more code samples to describe images and instances, as well as terminate instances:
+
+
+    ````
+    // list all images
+    $images = $ec2->getImages();
+    foreach ($images as $image_id=>$image)
+    {
+        $image_location = $image["location"];
+        print_r($image_id . ” ” . $image_location . “\n”);
+    }
+
+    // start an instance
+    $ec2->runInstances(“emi-XXXXXXXX”, 1, 1, “key_name”);
+
+    // list all instances
+    $instances = $ec2->getInstances();
+    foreach ($instances as $instance_id=>$instance)
+    {
+        $image_id = $instance["imageId"];
+        $state = $instance["state"];
+        $dns = $instance["dns"];
+        print_r($instance_id . ” ” . $image_id . ” ” . $state . ” ” . $dns . “\n”);
+    }
+    // terminate an instance
+    $ec2->terminateInstances(“i-XXXXXXXX″);
+    ````
+
 
 *****
 
