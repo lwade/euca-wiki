@@ -18,7 +18,7 @@ Network
 - No DHCP server running on the networks to be used by Euca (unless we are doing a SYSTEM install)
 
 Firewall
-- ports open to front-end (8443, 8773, 8888, 53, 8080)
+- ports open to front-end (8443, 8773, 8888, 53)
 
 Storage
 - dedicated user/pass for eucalyptus
