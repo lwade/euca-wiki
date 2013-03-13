@@ -17,6 +17,9 @@ Network
 - Private Network - VLAN range assigned
 - No DHCP server running on the networks to be used by Euca (unless we are doing a SYSTEM install)
 
+Firewall
+- ports open to front-end (8443, 8773, 8888, 53, 8080)
+
 Storage
 - dedicated user/pass for eucalyptus
 - storage pools configured
