@@ -32,7 +32,7 @@ You can find us on Freenode IRC in #eucalyptus or #eucalyptus-docs, or at any of
 
 * [Design Docs](wiki/DesignDocs) - Internal Eucalyptus design documentation.
 * [Debugging Eucalyptus C language components](wiki/Debugging-Eucalyptus-C-language-components) - Tools and advice to debug the components of Eucalyptus written in C: Node Controller and Cluster Controller.
-* [UI Guide] - Information on the layout of the web UI and how to modify it.
+* [[UI Guide]] - Information on the layout of the web UI and how to modify it.
 
 ### Finding Pages
 
