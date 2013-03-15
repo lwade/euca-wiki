@@ -1,0 +1,8 @@
+# The Filesystem Overlay Block Storage Provider for Eucalyptus 3.1.x
+
+## Which filesystem should you use? 
+The only requirement is that the filesystem is Posix compliant. We test the SC with ext4 most extensively, but ext3 and xfs work as well (others like btrfs and reiserfs will probably work but have not been tested). We recommend configuring the filesystem with full journaling of both data and metadata rather than just metadata journaling. Full journaling will increase the robustness of the filesystem and minimize chances of data-loss due to machine failure. Eucalyptus does not currently support a shared filesystem for hosting the volumes because the SC has the expectation that the filesystem subtree it uses is under the sole control of the SC local and updates to that subtree made by another SC could cause file conflicts that the SC does not expect. Doing so can cause name conflicts, particularly for snapshots because snapshot names (i.e. snap-abc123) are globally unique in Eucalyptus.
+
+Where are the volumes stored on the filesystem? The SC operates on the filesystem at $EUCALYPTUS/var/lib/eucalyptus/volumes, where $EUCALYPTUS is the root of the Eucalyptus installation on the SC machine (the default is '/' if installed by packages). This point in the filesystem can be provided by a separate LVM volume and for best performance that LVM volume should be on its own high-performance disks (the more spindles the better for random I/O performance).
+
+What is the directory structure the SC uses?All volumes and snapshots on a Storage Controller are stored in a single flat directory structure at $EUCALYPTUS/var/lib/eucalyptus/volumes.
