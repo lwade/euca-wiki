@@ -2,7 +2,7 @@
 
 The core filesystem overlay system for Eucalyptus 3.2.1 has not changed fundamentally from that of 3.1.x. For that info see: [Eucalyptus Overlay Manager 3.1](Overlay-storage-3.1)
 
-The significant change from 3.1.x to 3.2.x is how and when volumes are exported via iSCSI and how loopback devices are used.
+The significant change from 3.1.x to 3.2.x is how and when volumes are exported via iSCSI and how loopback devices are used. Volumes are only exported as iSCSI targets on an 'attach-volume' command from the user, and loopbacks are only in use when the volume is attached. This frees up loopbacks and removes the total-volume limit on loopbacks from the SC. In 3.2.x the loopback limitation is only for _attached_ volumes, not extant volumes.
 
 ### Lifecycle of a Request (3.2.x)
 **Create volume**
