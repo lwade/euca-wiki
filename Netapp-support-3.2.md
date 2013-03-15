@@ -2,9 +2,13 @@
 
 ## Some Terminology
 _EBS Volume_ - The logical volume that the SC manages as part of the EBS service. euca-describe-volumes shows these
+
 _EBS Snapshot_ - The logical snapshot entity that the SC manages for the EBS service. euca-describe-snapshot shows these
+
 _FlexVolume_ - A Netapp container entity in Netapp ONTAP that allocates space and hosts LUNs
+
 _LUN_ - The actual data container on the Netapp that Eucalyptus uses to provide both EBS Volumes and EBS Snapshots
+
 _IGroup_ - A Netapp construct that is a logical grouping of iSCSI Initiators (basically, hosts) that is a mechanism to provide host access to a lun.
 
 ## Requirements of the Netapp for Eucalyptus
