@@ -24,6 +24,8 @@ See the Eucalyptus documentation for this here: [Configuring Eucalyptus SC for N
 
 ## Basic Overview of EBS with Eucalyptus and Netapp SANs
 
+Eucalyptus uses Igroups to control access to luns so that only the NC that needs to do the attach can access the LUN corresponding to the EBS Volume requested by the user. Eucalyptus configures one IGroup for each EBS Volume/LUN and adds the iqns for requesting NCs to that group to authorize access.
+
 ### Create
 1. User -> euca-create-volume -s 1 -z PARTITIONX -> CLC
 2. CLC -> createVolume() -> PARTITIONX's SC
@@ -33,10 +35,10 @@ See the Eucalyptus documentation for this here: [Configuring Eucalyptus SC for N
 ### Attach vol-x to instance-y
 1. User -> euca-attach-volume vol-X -d /dev/sdf -i i-YYYYY -> CLC
 2. CLC -> attachVolume(vol-X, host-iqn) -> SC
-3. SC -> check for existing igroup for iqn -> netapp
+3. SC -> check for existing igroup for volume -> netapp
 4. SC -> add iqn to existing igroup or create new one -> netapp
 5. SC -> map lun for vol-X to igroup -> netapp
-6. SC -> add auth to igroup -> netapp
+6. SC -> add auth rule for host iqn -> netapp
 vol-X is now ready for iSCSI connections from the NC host where instance-y is running.
 
 NOTE: The SC periodically sets the default iSCSI initiator authentication to "none" meaning that no host can connect a Netapp LUN even if the host is present in an IGroup thats mapped to the LUN unless there is an authentication rule overriding the default for that host. The overriding rule is added as a part of attach process (step 6), so this ensures that there are never any extra permissions left open except those explicitly allowed by Eucalyptus.
