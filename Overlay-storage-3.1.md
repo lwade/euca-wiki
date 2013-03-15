@@ -1,4 +1,6 @@
-# The Filesystem Overlay Block Storage Provider for Eucalyptus 3.1.x
+# The Filesystem Overlay Manager for Eucalyptus 3.1.x
+
+The Overlay Manager uses SC's local filesystem ($EUCA_HOME/var/lib/eucalyptus/volumes) to store volumes and snapshots. The advantage of this is that no dedicated disk is required and only as much disk is used as actual data is stored in the volumes and snapshots. To ensure that enough space for the full volume is available at creation time rather than at volume-write time, set `<partition>.storage.zero_fill_volumes=true`. Setting the 'zero-fill' property will ensure that volumes are zero-filled upon creation to ensure that sufficient space is available for the full volume size so that no any out-of-space issues are encountered at volume creation rather than on writes to the volume from instances that might fail due to insufficient space on the SC. This does, however, incur an overhead at volume creation time since each block must be zeroed first.
 
 ## Which filesystem should you use? 
 The only requirement is that the filesystem is Posix compliant. We test the SC with ext4 most extensively, but ext3 and xfs work as well (others like btrfs and reiserfs will probably work but have not been tested). We recommend configuring the filesystem with full journaling of both data and metadata rather than just metadata journaling. Full journaling will increase the robustness of the filesystem and minimize chances of data-loss due to machine failure. Eucalyptus does not currently support a shared filesystem for hosting the volumes because the SC has the expectation that the filesystem subtree it uses is under the sole control of the SC local and updates to that subtree made by another SC could cause file conflicts that the SC does not expect. Doing so can cause name conflicts, particularly for snapshots because snapshot names (i.e. snap-abc123) are globally unique in Eucalyptus.
@@ -24,8 +26,6 @@ What is the directory structure the SC uses?All volumes and snapshots on a Stora
 
 7.) SC creates the volume itself using these steps below for Filesystem- or SAN-backed
 
-_Filesystem-backed Storage Controller Volume Creation_
-
 Assuming /dev/loop0 is open and there are no other volumes, so target-id 1 is unused as well.
 
 7.1. Create a file: $EUCALYPTUS/var/lib/eucalyptus/volumes/vol-abc0123 of size 1GB + lvm header size (~4MB): `dd -if /dev/zero -of $EUCALYPTUS/var/lib/eucalyptus/volumes/vol-X count=1 bs=1M`
@@ -48,11 +48,7 @@ Assuming /dev/loop0 is open and there are no other volumes, so target-id 1 is un
 
 7.10. Bind the target to all interfaces: `tgtadm --lld iscsi --op bind --mode target --tid 1 -I ALL`
 
-_SAN-backed Storage Controller_
-
-In this case the SC issues the proper commands to the SAN device directly to have the SAN create a LUN of the proper size and setup the proper credentials for connection later.
-
-9.) Concurrently, the CLC is periodically checking the state of all volumes on every SC, so now that the volume is ready, the CLC sees it and sets the volume state to 'available' as viewable by the user via euca-describe-volumes commands.
+8.) Concurrently, the CLC is periodically checking the state of all volumes on every SC, so now that the volume is ready, the CLC sees it and sets the volume state to 'available' as viewable by the user via euca-describe-volumes commands.
 
 ***
 
@@ -71,8 +67,6 @@ In this case the SC issues the proper commands to the SAN device directly to hav
 6.) SC does attach stuff (see below) and returns the connection information necessary for clients to attach
 
 For Filesystem-backed SC, this is essentially a No-Op.
-
-For SAN-backed SC, the SC issues the proper commands to the SAN to configure credentials and expose the proper LUN to the proper NC.
 
 7.) CLC gets response and sends request to Cluster Controller (CC) in proper zone/cluster/partition to do the attach of the volume to the instance.
 
