@@ -17,6 +17,7 @@ Eucalyptus requires:
 * Administrative login credentials to the Netapp head-filer (For 7-mode Netapp SANs). Must be able to create/delete volumes using these credentials. With these credentials you should be able to ssh to the Netapp's management interface and perform operations like listing volumes.  Note: these are *NOT* CHAP credentials.
 * An available Aggregate with some free space. Eucalyptus does not require exclusive access to the aggregate, it will only operate on FlexVolumes/volumes that it has created, but as a best practice it is recommended to give each Eucalyptus cluster its own aggregate.
 * FlexClone license on the Netapp. Eucalyptus uses FlexVolumes to contain EBS volumes and uses FlexClone to create EBS snapshots and volumes.
+* iSCSI License for ONTAP. The default for Netapp is NFS, so iSCSI requires a specific license to work. Eucalyptus supports _only_ iSCSI with Netapp.
 
 ## Configuring Eucalyptus to use Netapp
 See the Eucalyptus documentation for this here: [Configuring Eucalyptus SC for Netapp](http://www.eucalyptus.com/docs/3.2/ig/configure_storage_controller.html#configure_storage_controller)
@@ -34,9 +35,11 @@ See the Eucalyptus documentation for this here: [Configuring Eucalyptus SC for N
 2. CLC -> attachVolume(vol-X, host-iqn) -> SC
 3. SC -> check for existing igroup for iqn -> netapp
 4. SC -> add iqn to existing igroup or create new one -> netapp
-5. SC -> add auth to igroup -> netapp
-6. SC -> map lun for vol-X to igroup -> netapp
+5. SC -> map lun for vol-X to igroup -> netapp
+6. SC -> add auth to igroup -> netapp
 vol-X is now ready for iSCSI connections from the NC host where instance-y is running.
+
+NOTE: The SC periodically sets the default iSCSI initiator authentication to "none" meaning that no host can connect a Netapp LUN even if the host is present in an IGroup thats mapped to the LUN unless there is an authentication rule overriding the default for that host. The overriding rule is added as a part of attach process (step 6), so this ensures that there are never any extra permissions left open except those explicitly allowed by Eucalyptus.
 
 ### Snapshot vol-X to snap-Y
 1. User -> euca-create-snapshot vol-X -> CLC
@@ -44,5 +47,5 @@ vol-X is now ready for iSCSI connections from the NC host where instance-y is ru
 3. SC -> clone flexvol vol-X to new flexvol snap-Y -> netapp
 4. SC -> split clone -> netapp
 5. SC -> check split status -> netapp (do this over and over until split is done)
-6. SC -> delete temp snapshot from flexvol vol-X -> netapp 
-Now the SC does an "attachVolume" for the SC itself so it can copy the snapshot to walrus.
+6. Now the SC does an "attachVolume" for the SC itself so it can copy the snapshot to walrus.
+
