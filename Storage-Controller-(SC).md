@@ -23,7 +23,7 @@ The SC operates on the filesystem at `$EUCALYPTUS/var/lib/eucalyptus/volumes`, w
 All volumes and snapshots on a Storage Controller are stored in a single flat directory structure at `$EUCALYPTUS/var/lib/eucalyptus/volumes`. 
 
 **DAS Storage (direct attached as block device), open-sourced in Eucalyptus 3.2**
-Basically the same operations as Overlay (filesystem), but without files on the filesystem and without loopback devices. Uses LVM operations on a block device directly. The storage device is assumed to be a single block device and it is carved into pieces for user volumes using LVM.
+Basically the same operations as Overlay (filesystem), but without files on the filesystem and without loopback devices. Uses LVM operations on a block device/volume group directly. It is carved into pieces for user volumes using LVM logical volumes. Each volume/snapshot in EBS corresponds to an LVM logical volume on the SC.
 
 For more information on how DAS Storage works see [DAS Manager (3.2)](DAS_Manager_3.2)
 
