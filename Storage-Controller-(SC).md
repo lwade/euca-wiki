@@ -24,7 +24,7 @@ For more information on how DAS Storage works see [DAS Manager (3.2)](DAS_Manage
 **SAN Storage (paid subscriptions only)**
 The SC can also be configured to interact with a SAN device to host EBS volumes. In this configuration the SC manages metadata for volumes and snapshots and issues commands to the SAN to perform required operations, but the volumes and snapshots themselves are hosted by the SAN and the SAN manages the iSCSI connections to the NCs. In this configuration the SC is not in the data path for EBS volume block traffic and therefore this configuration typically yields much better performance.
 
-For more information on our Netapp support see [Netapp Support (3.2)](Netapp_support_3.2)
+For more information on our Netapp support see [Netapp Support (3.2)](Netapp-support-3.2)
 
 For more information on our EMC VNX support see [EMC VNX Support (3.2)](EMC_VNV_Support_3.2)
 
