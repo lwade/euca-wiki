@@ -11,7 +11,7 @@ _LUN_ - The actual data container on the Netapp that Eucalyptus uses to provide 
 
 _IGroup_ - A Netapp construct that is a logical grouping of iSCSI Initiators (basically, hosts) that is a mechanism to provide host access to a lun.
 
-## Requirements of the Netapp for Eucalyptus
+## Requirements of the Netapp for Eucalyptus 3.2.x
 Eucalyptus requires:
 * Netapp SAN with ONTAP 7.0+. Supports ONTAP 7 and ONTAP 8+ (Eucalyptus 3.2 does not support cluster-mode/vServer on ONTAP 8.0+, but Eucalyptus 3.3 will add that support) 
 * Administrative login credentials to the Netapp head-filer (For 7-mode Netapp SANs). Must be able to create/delete volumes using these credentials. With these credentials you should be able to ssh to the Netapp's management interface and perform operations like listing volumes.  Note: these are *NOT* CHAP credentials.
