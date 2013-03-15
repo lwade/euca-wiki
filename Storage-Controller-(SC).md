@@ -25,8 +25,11 @@ For more information on how DAS Storage works see [DAS Manager (3.2)](DAS_Manage
 The SC can also be configured to interact with a SAN device to host EBS volumes. In this configuration the SC manages metadata for volumes and snapshots and issues commands to the SAN to perform required operations, but the volumes and snapshots themselves are hosted by the SAN and the SAN manages the iSCSI connections to the NCs. In this configuration the SC is not in the data path for EBS volume block traffic and therefore this configuration typically yields much better performance.
 
 For more information on our Netapp support see [Netapp Support (3.2)](Netapp_Support_3.2)
+
 For more information on our EMC VNX support see [EMC VNX Support (3.2)](EMC_VNV_Support_3.2)
+
 For more information on our Equallogic support see [Equallogic Support (3.2)](Equallogic_Support_3.2)
+
 ### Export Volumes (how the volumes are accessible by instances)
 **SAN-backed SCs**
 For SAN-backed SCs the SAN exports the volumes directly to NCs using iSCSI. This is very device specific and we will not discuss it further in this section. Eventually we will probably put up an entire section dedicated to SAN-backed SCs as well as the devices we support and how they are used, but that feature is not part of the open-source Eucalyptus (we have to save some good bits for the paying customers right?).
