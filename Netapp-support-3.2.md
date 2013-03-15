@@ -19,6 +19,9 @@ Eucalyptus requires:
 * FlexClone license on the Netapp. Eucalyptus uses FlexVolumes to contain EBS volumes and uses FlexClone to create EBS snapshots and volumes.
 * iSCSI License for ONTAP. The default for Netapp is NFS, so iSCSI requires a specific license to work. Eucalyptus supports _only_ iSCSI with Netapp.
 
+## Limitations of Netapp and Eucalyptus
+* Netapp ONTAP 8.x currently has a limitation of 500 FlexVols per controller. This limits the total number of EBS volumes and EBS snapshots that the Eucalyptus SC can put on a single Netapp SAN. We are working on solutions to get around this limitation.
+
 ## Configuring Eucalyptus to use Netapp
 See the Eucalyptus documentation for this here: [Configuring Eucalyptus SC for Netapp](http://www.eucalyptus.com/docs/3.2/ig/configure_storage_controller.html#configure_storage_controller)
 
