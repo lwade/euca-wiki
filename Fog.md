@@ -156,7 +156,7 @@ Tested the following commands:
 - storage.directories *lists buckets*
 
 **Note**: 
->Using fog with Walrus requires that you've properly set up Eucalyptus DNS, because fog thinks the way to access a bucket is by accessing it through its CNAME. It might be worth offering a patch to fog that changes a bucket URL to the <endpoint>/<bucket>/<file> pattern. This would produce no change at all to the amazon compatibility, and it would work with Walrus out of the box with no DNS support. If they don't like that patch, perhaps it's worth offering it as "eucalyptus" support, so that if Amazon chooses to mandate CNAMES somewhere down the line it will still work with Eucalyptus.
+>Using fog with Walrus requires that you've properly set up Eucalyptus DNS, because fog thinks the way to access a bucket is by accessing it through its CNAME. It might be worth offering a patch to fog that changes a bucket URL to the ``<endpoint>/<bucket>/<file>`` pattern. This would produce no change at all to the amazon compatibility, and it would work with Walrus out of the box with no DNS support. If they don't like that patch, perhaps it's worth offering it as "eucalyptus" support, so that if Amazon chooses to mandate CNAMES somewhere down the line it will still work with Eucalyptus.
 
 ## Additional Information
 
