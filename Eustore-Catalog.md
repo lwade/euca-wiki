@@ -61,7 +61,7 @@ The name is generated using code such as the following reference;
 
 The some fields such as the "stamp" are define in the image_id file description: https://projects.eucalyptus.com/redmine/projects/images/wiki/
 
-## Eustore Catalog Update script
+## Eustore Catalog Update Script
 
 For reference. This script should be checked in at some point.
 
@@ -102,3 +102,6 @@ print json.dumps(parsed_cat, indent=2)
 if __name__ == "__main__":
 main()
 </pre>
+
+*****
+[[category.eustore]]
