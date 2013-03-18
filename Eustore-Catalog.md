@@ -1,3 +1,7 @@
+## Eustore Client
+
+The Eustore client is a part of the euca2ools suite.  For more info, see: https://github.com/eucalyptus/euca2ools
+
 ## Eustore Image Catalog Format
 
 The Eustore Image Catalog is currently implemented as a single file that presents the images that are available to Eucalyptus users via the eustore command.
