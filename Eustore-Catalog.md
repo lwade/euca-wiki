@@ -8,6 +8,7 @@ There are images here: http://emis.eucalyptus.com/
 
 The catalog looks something like this:
 
+<pre>
 {
  "version": "eustore-catalog-2011-12-29",
  "images": [
@@ -41,6 +42,7 @@ The catalog looks something like this:
  }
  ]
 }
+</pre>
 
 Note, that url is relative to where this catalog was retrieved from, but can also be absolute.
 
@@ -48,12 +50,14 @@ Longer term, the catalog can be generated from a database on demand.
 
 The name is generated using code such as the following reference;
 
+<pre>
   file = open(filename, 'r')
   m = hashlib.md5()
   m.update(file.read())
   hash = m.hexdigest()
   crc = str(zlib.crc32(hash)& 0xffffffffL)
   print crc.rjust(10,"0")
+</pre>
 
 The some fields such as the "stamp" are define in the image_id file description: https://projects.eucalyptus.com/redmine/projects/images/wiki/
 
@@ -61,6 +65,7 @@ The some fields such as the "stamp" are define in the image_id file description:
 
 For reference. This script should be checked in at some point.
 
+<pre>
 #!/usr/bin/env python
  
 import os
@@ -96,3 +101,4 @@ print json.dumps(parsed_cat, indent=2)
  
 if __name__ == "__main__":
 main()
+</pre>
