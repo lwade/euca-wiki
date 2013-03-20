@@ -31,7 +31,7 @@ block device interface.
 
 Read more about [[Walrus]]
 
-Read more about [[Storage Controller (SC)]]
+Read more about [[Storage Controller]]
 
 Read more about EBS Instances and Large Instance-Store Instances [[EBS Instances Considerations and Large Instance-Store Images]]
 
