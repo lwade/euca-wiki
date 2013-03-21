@@ -1,3 +1,5 @@
+_(original author: Vivek Khurana / no_mind @ irc.freenode.net)_
+
 # Introduction
 
 The purpose of Eucalyptus-hadoop integration is to provide with a set of tools which will allow users to run hadoop based jobs inside eucalyptus based cloud without the need of deploying or configuring "hadoop":http://hadoop.apache.org/. This could be achieved by building APIs, a command line based tool and a web based tool that will allow the users to interact with eucalyptus-hadoop based cloud.
