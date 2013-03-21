@@ -14,7 +14,22 @@ This document covers the following
 
 # Overall Description
 
-Eucalyptus-Hadoop integration is aims to provide an easy to use hadoop based cloud setup which will allow users to run hadoop based jobs without the need to setup and configure hadoop. The overall system layout is shown in the following image.
+Eucalyptus-Hadoop integration is aims to provide an easy to use hadoop based cloud setup which will allow users to run hadoop based jobs without the need to setup and configure hadoop. The overall system layout:
+
+<pre>
+Clients:
+##########################################################
+#   Euca-Hadoop Web UI     #     Euca-Hadoop CLI Tool    #
+##########################################################
+
+Eucalyptus:
+##########################################################
+#                  Euca-Hadoop API                       #
+##########################################################
+#                  Hadoop Instance                       #
+##########################################################
+
+</pre>
 
 !euca-hadoop-integration-overall.png!
 
