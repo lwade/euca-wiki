@@ -17,9 +17,9 @@ Here's a list of the projects we're currently targeting (where "targeting" means
   <tr><td>AppScale</td><td>&nbsp;</td><td>[[shaon]]</td><td><font color="yellow">Yellow</font></td><td>http://mdshaonimran.wordpress.com/2013/03/01/run-appscale-on-eucalyptus/</td></tr>
   <tr><td>Scalr</td><td>&nbsp;</td><td>[[Vic Iglesias]]</td><td><font color="yellow">Yellow</font></td><td>http://testingclouds.wordpress.com/2013/01/23/using-scalr-for-automation-of-your-eucalyptus-cloud/</td></tr>
   <tr><td>Stackato</td><td>&nbsp;</td><td>[[Harold Spencer Jr.]]</td><td><font color="yellow">Yellow</font></td><td>Image runs, but the Stackato services do not yet work. More info: [[Stackato-Image]]</td></tr>
-  <tr><td>Netflix Edda</td><td>&nbsp;</td><td>Dan Nurmi</td><td><font color="yellow">Yellow</font></td><td>http://nurmiblog.wordpress.com/2013/01/22/inspired-by-netflix/</td></tr>
-  <tr><td>Netflix Asgard</td><td>&nbsp;</td><td>[[grze]]</td><td><font color="yellow">Yellow</font></td><td>&nbsp;</td></tr>
-  <tr><td>Netflix Chaos Monkey</td><td>&nbsp;</td><td>[[grze]]</td><td><font color="yellow">Yellow</font></td><td>&nbsp;</td></tr>
+  <tr><td>Netflix Edda</td><td>&nbsp;</td><td>Dan Nurmi</td><td><font color="yellow">Yellow</font></td><td><b>demoed at netflix</b> / http://nurmiblog.wordpress.com/2013/01/22/inspired-by-netflix/</td></tr>
+  <tr><td>Netflix Asgard</td><td>&nbsp;</td><td>[[grze]]</td><td><font color="yellow">Yellow</font></td><td><b>demoed at netflix</b></td></tr>
+  <tr><td>Netflix Chaos Monkey</td><td>&nbsp;</td><td>[[grze]]</td><td><font color="yellow">Yellow</font></td><td><b>demoed at netflix</b></td></tr>
   <tr><td>AWS .Net SDK</td><td>&nbsp;</td><td>open</td><td>&nbsp;</td><td>&nbsp;</td></tr>
   <tr><td>AWS SDK for Android</td><td>&nbsp;</td><td>open</td><td>&nbsp;</td><td>&nbsp;</td></tr>
   <tr><td>AWS toolkit for iOS</td><td>&nbsp;</td><td>open</td><td>&nbsp;</td><td>&nbsp;</td></tr>
