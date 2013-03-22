@@ -26,6 +26,7 @@ Once the SC is configured and running, you can check that the chapuser was corre
 * SC Paths
 * NC Paths
 * Licences for Snapview Clone, VNX-Snapshot
+* Clone-Private-LUN on each VNX SP. Each CPL need only be 1GB.
 * Navisphere Secure CLI installed and runnable (typically at /opt/Navisphere/bin/naviseccli)
 * If issues are encountered installing the CLI, using yum rather than rpm to install will properly resolve the 32-bit glibc dependency that can sometimes be problematic.
 
