@@ -34,7 +34,7 @@ The SC can also be configured to interact with a SAN device to host EBS volumes.
 
 For more information on our Netapp support see [Netapp Support (3.2)](Netapp-support-3.2)
 
-For more information on our EMC VNX support see [EMC VNX Support (3.2)](EMC_VNV_Support_3.2)
+For more information on our EMC VNX support see [EMC VNX Support (3.2)](EMC-VNX-Support-3.2)
 
 For more information on our Equallogic support see [Equallogic Support (3.2)](Equallogic_Support_3.2)
 
