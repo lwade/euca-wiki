@@ -6,7 +6,7 @@
 # to say, patches welcome.  (And yes, it's written in perl, I know.
 # It's the only language my hands remember without references handy.)
 
-$git_repo_path = "..";
+$git_repo_path = ".";
 # chdir($git_repo_path) or die "$!";
 
 # We assume a git pull is run here to start things off.
