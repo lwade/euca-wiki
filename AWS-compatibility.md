@@ -10,14 +10,13 @@ Green means a service "just works". Pointing region and credential variables of 
 
 Yellow means a service works well enough to be useful, though code tweaks are necessary and fully equivalent functionality may not be available.
 
+* _**AWS SDK for Java**_ 
+ * Owned by: Engineering
+ * Tested by: ??? 
+ * Notes: known issues with Walrus should be fixed as of 3.3m4, needs retesting
+ * Last update: 11 Mar 2013
+
 ## <font color="red">Red: Does Not Work</font>
-
-
-* _*AWS SDK for Java*_ 
-** Owned by: Engineering **
-** Tested by: ??? **
-** Notes: known issues with Walrus should be fixed as of 3.3m4, needs retesting
-** Last update: 11 Mar 2013
 
 Red means that a service cannot be made to work without substantial modification, or at all.
 
