@@ -1,6 +1,6 @@
-* [[index-of-categories]]
 * [[Integrating-Eutester-and-Nagios]]
 * [[Monitoring]]
+* [[index-of-categories]]
 
 
 *****

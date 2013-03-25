@@ -1,5 +1,5 @@
-* [[index-of-categories]]
 * [[Wiki-Statistics]]
+* [[index-of-categories]]
 
 
 *****

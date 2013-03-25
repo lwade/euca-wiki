@@ -1,5 +1,5 @@
-* [[EBS:-Import-a-Disk-Image]]
 * [[EBS:-Resize-a-Volume]]
+* [[EBS:-Import-a-Disk-Image]]
 * [[index-of-categories]]
 
 

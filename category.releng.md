@@ -1,6 +1,6 @@
-* [[index-of-categories]]
-* [[List-of-packages]]
 * [[Release-Checklist]]
+* [[List-of-packages]]
+* [[index-of-categories]]
 
 
 *****

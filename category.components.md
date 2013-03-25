@@ -1,7 +1,7 @@
-* [[index-of-categories]]
 * [[Storage-Controller]]
 * [[Storage]]
 * [[Walrus]]
+* [[index-of-categories]]
 
 
 *****

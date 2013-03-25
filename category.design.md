@@ -1,8 +1,8 @@
 * [[Designdocs-reporting]]
-* [[Designdocs-troubleshooting]]
 * [[Designdocs-ui]]
-* [[DesignDocs]]
 * [[index-of-categories]]
+* [[Designdocs-troubleshooting]]
+* [[DesignDocs]]
 
 
 *****

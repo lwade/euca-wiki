@@ -1,7 +1,7 @@
-* [[Blueprints]]
-* [[index-of-categories]]
 * [[NC-Blueprint]]
+* [[Blueprints]]
 * [[SC-Blueprint]]
+* [[index-of-categories]]
 
 
 *****

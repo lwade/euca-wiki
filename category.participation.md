@@ -1,5 +1,5 @@
-* [[index-of-categories]]
 * [[Reporting-Bugs]]
+* [[index-of-categories]]
 
 
 *****
