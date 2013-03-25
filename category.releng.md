@@ -1,3 +1,4 @@
+* [[index-of-categories]]
 * [[List-of-packages]]
 * [[Release-Checklist]]
 

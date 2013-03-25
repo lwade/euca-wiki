@@ -17,10 +17,7 @@ Here is the TODO list for [[Greg DeKoenigsberg]]. This is where I track my day-t
 
 (Clear, actionable work that gets a project moving. Next item always at top.)
 
-* (WIK) (15m) Check in wiki-stats script
-* (WIK) (15m) Check in and test formatting of wiki stats page
-* (CTP) (15m) Add Marten contributor list from 3.2 into recruits doc
-* (CTP) (15m) Add Haddad Said to potential contribs: reviewer of image docs (see his email of 1/14/13)
+* (EUS) (60m) Try Osamu Gentoo image on ECC
 * (WIK) (15m) Send a note to docs-list about "best-of" wiki tag
 * (WIK) (30m) Ask euca-users to categorize uncategorized pages
 * (MLP) (15m) Review members of imgs mailing list, encourage to move to euca-users 
@@ -40,6 +37,8 @@ Here is the TODO list for [[Greg DeKoenigsberg]]. This is where I track my day-t
 * (60m) (AMI) Ticket: Add code to examine volume size at bundle time
 * (60m) (AMI) Ticket: Add timestamp to all output
 * (60m) (AMI) Run more bitnami images
+* (CTP) (15m) Add Marten contributor list from 3.2 into recruits doc
+* (CTP) (15m) Add Haddad Said to potential contribs: reviewer of image docs (see his email of 1/14/13)
 
 *****
 

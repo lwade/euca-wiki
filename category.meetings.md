@@ -1,4 +1,5 @@
 * [[Documentation-Agenda-Items]]
+* [[index-of-categories]]
 
 
 *****

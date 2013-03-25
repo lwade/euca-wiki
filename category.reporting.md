@@ -1,5 +1,6 @@
 * [[Designdocs-reporting]]
 * [[Designdocs-troubleshooting]]
+* [[index-of-categories]]
 
 
 *****

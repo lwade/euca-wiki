@@ -1,4 +1,5 @@
 * [[AWS-compatibility]]
+* [[index-of-categories]]
 
 
 *****

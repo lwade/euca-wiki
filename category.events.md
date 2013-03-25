@@ -1,4 +1,5 @@
 * [[Community-Events]]
+* [[index-of-categories]]
 
 
 *****

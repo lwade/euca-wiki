@@ -1,4 +1,5 @@
 * [[Eustore-Catalog]]
+* [[index-of-categories]]
 
 
 *****

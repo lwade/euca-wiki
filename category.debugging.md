@@ -1,4 +1,5 @@
 * [[Debugging-Eucalyptus-C-language-components]]
+* [[index-of-categories]]
 
 
 *****

@@ -1,4 +1,5 @@
 * [[Contributing]]
+* [[index-of-categories]]
 
 
 *****
