@@ -1,5 +1,4 @@
 * [[ChangeLog]]
-* [[index-of-categories]]
 
 
 *****

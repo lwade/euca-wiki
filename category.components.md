@@ -1,5 +1,4 @@
-* [[index-of-categories]]
-* [[Storage-Controller-(SC)]]
+* [[Storage-Controller]]
 * [[Storage]]
 * [[Walrus]]
 

@@ -1,5 +1,4 @@
 * [[eucabot]]
-* [[index-of-categories]]
 
 
 *****

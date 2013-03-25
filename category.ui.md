@@ -1,5 +1,4 @@
 * [[Designdocs-ui]]
-* [[index-of-categories]]
 
 
 *****

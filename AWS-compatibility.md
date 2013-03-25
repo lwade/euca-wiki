@@ -2,7 +2,32 @@ Eucalyptus strives for 100% API compatibility with all AWS services that we curr
 
 To that end, we want to test against all AWS tools in the open source ecosystem, identify those places where we are compatible, and find and fix all places where we are not compatible.
 
+## <font color="green">Green: Just Works</font>
+
+Green means a service "just works". Pointing region and credential variables of the service to Eucalyptus results in a perfectly working service.
+
+## <font background="black" color="yellow">Yellow: Works with Tweaks</font>
+
+Yellow means a service works well enough to be useful, though code tweaks are necessary and fully equivalent functionality may not be available.
+
+## <font color="red">Red: Does Not Work</font>
+
+
+* _*AWS SDK for Java*_ 
+** Owned by: Engineering **
+** Tested by: ??? **
+** Notes: known issues with Walrus should be fixed as of 3.3m4, needs retesting
+** Last update: 11 Mar 2013
+
+Red means that a service cannot be made to work without substantial modification, or at all.
+
 Here's a list of the projects we're currently targeting (where "targeting" means "we have identified an individual who is responsible for assessing our compatibility):
+
+*****
+
+## Old Table
+
+For reference until this is all changed.
 
 **Status**. <font color="red">Red</font> means "known broken". <font color="yellow">Yellow</font> means "works well with tweaks."  <font color="green">Green</font> means "works out of the box with simple configuration".
 

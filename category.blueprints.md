@@ -1,5 +1,4 @@
 * [[Blueprints]]
-* [[index-of-categories]]
 * [[NC-Blueprint]]
 * [[SC-Blueprint]]
 

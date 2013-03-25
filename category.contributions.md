@@ -1,5 +1,4 @@
 * [[Documentation-Contributions]]
-* [[index-of-categories]]
 
 
 *****

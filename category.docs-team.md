@@ -1,6 +1,5 @@
 * [[Documentation-Agenda-Items]]
 * [[Documentation-Contributions]]
-* [[index-of-categories]]
 
 
 *****

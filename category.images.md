@@ -3,7 +3,6 @@
 * [[Convert-AMI-to-EMI]]
 * [[Eucalyptus-Starter-Image]]
 * [[Image-Wizard]]
-* [[index-of-categories]]
 * [[Kexec-Images]]
 * [[Kexec-loader]]
 * [[Manually-Convert-BFEBS-EMI-to-AMI]]

@@ -1,6 +1,5 @@
 * [[GSOC-Applications]]
 * [[GSOC-ideas]]
-* [[index-of-categories]]
 * [[Google-Summer-of-Code-2011]]
 * [[Google-Summer-of-Code-2012]]
 

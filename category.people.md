@@ -7,7 +7,6 @@
 * [[Harold-Spencer-Jr]]
 * [[Harold-Spencer-Jr]]
 * [[Home]]
-* [[index-of-categories]]
 * [[Jason-Eden]]
 * [[Jenny-Loza]]
 * [[Lester-Wade]]
