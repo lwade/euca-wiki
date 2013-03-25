@@ -2,7 +2,7 @@
 # A simple bash script that runs regular statistics on the wiki page.
 
 STATSFILE="Wiki-Statistics.md"
-GITPATH=".."
+GITPATH="."
 
 cd ${GITPATH}
 
