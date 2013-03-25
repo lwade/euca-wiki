@@ -17,7 +17,6 @@ Here is the TODO list for [[Greg DeKoenigsberg]]. This is where I track my day-t
 
 (Clear, actionable work that gets a project moving. Next item always at top.)
 
-* (3PC) (30m) Simplify AWS Contribution wiki page
 * (WIK) (15m) Check in wiki-stats script
 * (WIK) (15m) Check in and test formatting of wiki stats page
 * (CTP) (15m) Add Marten contributor list from 3.2 into recruits doc

@@ -1,7 +1,11 @@
 # Wiki Statistics
 ## Last 25 Commits
 <pre>
-hspencer77, Updated Old Images (markdown) (79933a1), 2 days ago
+Greg DeKoenigsberg, Updating the AWS compat page (96f2fec), 9 hours ago
+Greg DeKoenigsberg, Testing format changes to AWS compat page (0497833), 12 hours ago
+Greg DeKoenigsberg, New category: releng (d810838), 12 hours ago
+Greg DeKoenigsberg, New category pages and various additions (b62be50), 12 hours ago
+hspencer77, Updated Old Images (markdown) (79933a1), 3 days ago
 zhill, Updated SC Troubleshooting (markdown) (46bf801), 3 days ago
 zhill, Destroyed Emc vnv support 3.2 (markdown) (21d086c), 3 days ago
 zhill, Updated Emc vnx support 3.2 (markdown) (2513d34), 3 days ago
@@ -9,32 +13,29 @@ zhill, Updated Emc vnx support 3.2 (markdown) (90f38cc), 3 days ago
 zhill, Created Emc vnx support 3.2 (markdown) (d5e262e), 3 days ago
 zhill, Updated Storage Controller (markdown) (13c928e), 3 days ago
 zhill, Created Emc vnv support 3.2 (markdown) (b1d7811), 3 days ago
-gregdek, Updated AWS compatibility (markdown) (a5a8d4f), 3 days ago
-gregdek, Updated AWS compatibility (markdown) (69fbb4e), 3 days ago
-gregdek, Updated AWS compatibility (markdown) (a0b22b7), 3 days ago
-gregdek, Created Old images single kernel initrd (markdown) (2456fea), 3 days ago
-gregdek, Created Old images single kernel (markdown) (7aa0211), 3 days ago
-gregdek, Created Old Images Partner Images (markdown) (0f0e0fa), 3 days ago
-gregdek, Created Inject ephemeral disk into root disk (markdown) (e1fbdbf), 3 days ago
-gregdek, Created Old images image info (markdown) (aabb5d0), 3 days ago
-gregdek, Created Old Images Image IDs (markdown) (b7e4855), 3 days ago
-gregdek, Created Old Images (markdown) (b1b98fc), 3 days ago
-gregdek, Updated Hadoopalyptus (markdown) (f5e0646), 3 days ago
-gregdek, Updated Hadoopalyptus (markdown) (0417454), 3 days ago
-gregdek, Created Hadoopalyptus (markdown) (8a7838c), 3 days ago
-zhill, Updated Storage (markdown) (ea4c62d), 5 days ago
-zhill, Updated Storage Controller (SC) (markdown) (250594f), 5 days ago
-mspaulding06, Created Promoting a Release Build (markdown) (d9efc2a), 6 days ago
-gregdek, Updated Eustore Catalog (markdown) (d26c28e), 6 days ago
+gregdek, Updated AWS compatibility (markdown) (a5a8d4f), 4 days ago
+gregdek, Updated AWS compatibility (markdown) (69fbb4e), 4 days ago
+gregdek, Updated AWS compatibility (markdown) (a0b22b7), 4 days ago
+gregdek, Created Old images single kernel initrd (markdown) (2456fea), 4 days ago
+gregdek, Created Old images single kernel (markdown) (7aa0211), 4 days ago
+gregdek, Created Old Images Partner Images (markdown) (0f0e0fa), 4 days ago
+gregdek, Created Inject ephemeral disk into root disk (markdown) (e1fbdbf), 4 days ago
+gregdek, Created Old images image info (markdown) (aabb5d0), 4 days ago
+gregdek, Created Old Images Image IDs (markdown) (b7e4855), 4 days ago
+gregdek, Created Old Images (markdown) (b1b98fc), 4 days ago
+gregdek, Updated Hadoopalyptus (markdown) (f5e0646), 4 days ago
+gregdek, Updated Hadoopalyptus (markdown) (0417454), 4 days ago
+gregdek, Created Hadoopalyptus (markdown) (8a7838c), 4 days ago
 </pre>
 ## Most Active Contributors, Last Month:\n\n
 <pre>
   53 zhill
   29 gregdek
-   8 a13m
-   6 hspencer77
+   7 a13m
    5 schue
    4 jasondeden
+   4 hspencer77
+   4 Greg DeKoenigsberg
    2 tomellis
    2 tjcramer
    2 qyjohn
@@ -52,7 +53,7 @@ gregdek, Updated Eustore Catalog (markdown) (d26c28e), 6 days ago
   46 hspencer77
   39 a13m
   33 tomellis
-  28 Greg DeKoenigsberg
+  32 Greg DeKoenigsberg
   24 tgerla
   23 monolive
   21 lwade
