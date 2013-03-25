@@ -1,89 +1,74 @@
 # Wiki Statistics
 ## Last 25 Commits
 <pre>
-Greg DeKoenigsberg, New TODOs for gdk, new wiki stats page (3ac24b7), 82 seconds ago
-Greg DeKoenigsberg, Updating the AWS compat page (96f2fec), 9 hours ago
-Greg DeKoenigsberg, Testing format changes to AWS compat page (0497833), 12 hours ago
-Greg DeKoenigsberg, New category: releng (d810838), 12 hours ago
-Greg DeKoenigsberg, New category pages and various additions (b62be50), 12 hours ago
+Garrett Holmstrom, Move repo path from .. -> . (a22ad03), 15 seconds ago
+Jenkins, Generate categories for commit $(echo $GIT_COMMIT | cut -c-7) (2361849), 9 minutes ago
+Greg DeKoenigsberg, Now sorting category pages, and committing the script that does the sorting (786ba51), 10 minutes ago
+Jenkins, Generate categories for commit $(echo $GIT_COMMIT | cut -c-7) (05d738f), 22 minutes ago
+Garrett Holmstrom, Move repo path from .. -> . (5b2395f), 26 minutes ago
+Greg DeKoenigsberg, Recategorization, addition of scripts directory within wiki (cae6cf6), 31 minutes ago
+Greg DeKoenigsberg, New wiki stats page (55d6b82), 7 hours ago
+Greg DeKoenigsberg, New TODOs for gdk, new wiki stats page (3ac24b7), 7 hours ago
+Greg DeKoenigsberg, Updating the AWS compat page (96f2fec), 16 hours ago
+Greg DeKoenigsberg, Testing format changes to AWS compat page (0497833), 18 hours ago
+Greg DeKoenigsberg, New category: releng (d810838), 18 hours ago
+Greg DeKoenigsberg, New category pages and various additions (b62be50), 18 hours ago
 hspencer77, Updated Old Images (markdown) (79933a1), 3 days ago
-zhill, Updated SC Troubleshooting (markdown) (46bf801), 3 days ago
-zhill, Destroyed Emc vnv support 3.2 (markdown) (21d086c), 3 days ago
-zhill, Updated Emc vnx support 3.2 (markdown) (2513d34), 3 days ago
-zhill, Updated Emc vnx support 3.2 (markdown) (90f38cc), 3 days ago
-zhill, Created Emc vnx support 3.2 (markdown) (d5e262e), 3 days ago
-zhill, Updated Storage Controller (markdown) (13c928e), 3 days ago
-zhill, Created Emc vnv support 3.2 (markdown) (b1d7811), 3 days ago
+zhill, Updated SC Troubleshooting (markdown) (46bf801), 4 days ago
+zhill, Destroyed Emc vnv support 3.2 (markdown) (21d086c), 4 days ago
+zhill, Updated Emc vnx support 3.2 (markdown) (2513d34), 4 days ago
+zhill, Updated Emc vnx support 3.2 (markdown) (90f38cc), 4 days ago
+zhill, Created Emc vnx support 3.2 (markdown) (d5e262e), 4 days ago
+zhill, Updated Storage Controller (markdown) (13c928e), 4 days ago
+zhill, Created Emc vnv support 3.2 (markdown) (b1d7811), 4 days ago
 gregdek, Updated AWS compatibility (markdown) (a5a8d4f), 4 days ago
 gregdek, Updated AWS compatibility (markdown) (69fbb4e), 4 days ago
 gregdek, Updated AWS compatibility (markdown) (a0b22b7), 4 days ago
 gregdek, Created Old images single kernel initrd (markdown) (2456fea), 4 days ago
 gregdek, Created Old images single kernel (markdown) (7aa0211), 4 days ago
-gregdek, Created Old Images Partner Images (markdown) (0f0e0fa), 4 days ago
-gregdek, Created Inject ephemeral disk into root disk (markdown) (e1fbdbf), 4 days ago
-gregdek, Created Old images image info (markdown) (aabb5d0), 4 days ago
-gregdek, Created Old Images Image IDs (markdown) (b7e4855), 4 days ago
-gregdek, Created Old Images (markdown) (b1b98fc), 4 days ago
-gregdek, Updated Hadoopalyptus (markdown) (f5e0646), 4 days ago
-gregdek, Updated Hadoopalyptus (markdown) (0417454), 4 days ago
 </pre>
 ## Most Active Contributors, Last Month:
 <pre>
-  53 zhill
-  29 gregdek
-   7 a13m
-   5 schue
-   5 Greg DeKoenigsberg
-   4 jasondeden
-   4 hspencer77
-   2 tomellis
-   2 tjcramer
-   2 qyjohn
-   2 mspaulding06
-   2 lwade
-   2 kderr-r7
-   2 jeevanullas
-   1 mdshaonimran
-   1 eucacolby
 </pre>
 ## Most Active Contributors, All Time:
 <pre>
- 173 gregdek
-  89 zhill
-  46 hspencer77
-  39 a13m
-  33 tomellis
-  33 Greg DeKoenigsberg
-  24 tgerla
-  23 monolive
-  21 lwade
-  16 dmitrii
-  15 gholms
-  12 noirin
-  10 eucacolby
-   6 tybstar
-   6 obino
-   6 jeevanullas
-   5 schue
-   5 jasondeden
-   5 iamfuzz
-   4 grze
-   4 dfederlein
-   3 smarvin
-   3 mspaulding06
-   3 JMoLo
-   2 tjcramer
-   2 qyjohn
-   2 kderr-r7
-   2 dkavanagh
-   2 Garrett Holmstrom
-   1 yarapavan
-   1 skyzyx
-   1 mdshaonimran
-   1 graziano obertelli
-   1 eucalyptus
-   1 Dmitrii Zagorodnov
-   1 Andy Grimm
+     89 zhill
+      6 tybstar
+      6 obino
+      6 jeevanullas
+      5 schue
+      5 jasondeden
+      5 iamfuzz
+      4 grze
+      4 Garrett Holmstrom
+      4 dfederlein
+     46 hspencer77
+      3 smarvin
+      3 mspaulding06
+      3 JMoLo
+     39 a13m
+     36 Greg DeKoenigsberg
+     33 tomellis
+      2 tjcramer
+      2 qyjohn
+      2 kderr-r7
+      2 Jenkins
+      2 dkavanagh
+     24 tgerla
+     23 monolive
+     21 lwade
+      1 yarapavan
+      1 skyzyx
+      1 mdshaonimran
+      1 graziano obertelli
+      1 eucalyptus
+      1 Dmitrii Zagorodnov
+      1 Andy Grimm
+    173 gregdek
+     16 dmitrii
+     15 gholms
+     12 noirin
+     10 eucacolby
 </pre>
 *****
 [[category.stats]]

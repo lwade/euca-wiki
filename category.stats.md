@@ -1,4 +1,3 @@
-* [[Wiki-Statistics]]
 * [[index-of-categories]]
 
 *****
