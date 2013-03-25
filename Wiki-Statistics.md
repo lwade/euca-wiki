@@ -1,12 +1,13 @@
 # Wiki Statistics
 ## Last 25 Commits
 <pre>
-Garrett Holmstrom, Move repo path from .. -> . (a22ad03), 15 seconds ago
-Jenkins, Generate categories for commit $(echo $GIT_COMMIT | cut -c-7) (2361849), 9 minutes ago
-Greg DeKoenigsberg, Now sorting category pages, and committing the script that does the sorting (786ba51), 10 minutes ago
-Jenkins, Generate categories for commit $(echo $GIT_COMMIT | cut -c-7) (05d738f), 22 minutes ago
+Jenkins, Generate categories for commit $GIT_ABBREV_COMMIT (fd99d3f), 48 seconds ago
+Garrett Holmstrom, Move repo path from .. -> . (a22ad03), 63 seconds ago
+Jenkins, Generate categories for commit $(echo $GIT_COMMIT | cut -c-7) (2361849), 10 minutes ago
+Greg DeKoenigsberg, Now sorting category pages, and committing the script that does the sorting (786ba51), 11 minutes ago
+Jenkins, Generate categories for commit $(echo $GIT_COMMIT | cut -c-7) (05d738f), 23 minutes ago
 Garrett Holmstrom, Move repo path from .. -> . (5b2395f), 26 minutes ago
-Greg DeKoenigsberg, Recategorization, addition of scripts directory within wiki (cae6cf6), 31 minutes ago
+Greg DeKoenigsberg, Recategorization, addition of scripts directory within wiki (cae6cf6), 32 minutes ago
 Greg DeKoenigsberg, New wiki stats page (55d6b82), 7 hours ago
 Greg DeKoenigsberg, New TODOs for gdk, new wiki stats page (3ac24b7), 7 hours ago
 Greg DeKoenigsberg, Updating the AWS compat page (96f2fec), 16 hours ago
@@ -25,7 +26,6 @@ gregdek, Updated AWS compatibility (markdown) (a5a8d4f), 4 days ago
 gregdek, Updated AWS compatibility (markdown) (69fbb4e), 4 days ago
 gregdek, Updated AWS compatibility (markdown) (a0b22b7), 4 days ago
 gregdek, Created Old images single kernel initrd (markdown) (2456fea), 4 days ago
-gregdek, Created Old images single kernel (markdown) (7aa0211), 4 days ago
 </pre>
 ## Most Active Contributors, Last Month:
 <pre>
@@ -46,13 +46,13 @@ gregdek, Created Old images single kernel (markdown) (7aa0211), 4 days ago
       3 smarvin
       3 mspaulding06
       3 JMoLo
+      3 Jenkins
      39 a13m
      36 Greg DeKoenigsberg
      33 tomellis
       2 tjcramer
       2 qyjohn
       2 kderr-r7
-      2 Jenkins
       2 dkavanagh
      24 tgerla
      23 monolive
