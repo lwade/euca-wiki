@@ -40,7 +40,6 @@
 * [[Typica]]
 * [[Ui-Guide]]
 * [[Walrus-Troubleshooting]]
-* [[]]
 * [[ami2emi]]
 * [[index-of-categories]]
 * [[libvirt-network-configuration]]
