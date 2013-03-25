@@ -1,6 +1,7 @@
 # Wiki Statistics
 ## Last 25 Commits
 <pre>
+Greg DeKoenigsberg, New TODOs for gdk, new wiki stats page (3ac24b7), 82 seconds ago
 Greg DeKoenigsberg, Updating the AWS compat page (96f2fec), 9 hours ago
 Greg DeKoenigsberg, Testing format changes to AWS compat page (0497833), 12 hours ago
 Greg DeKoenigsberg, New category: releng (d810838), 12 hours ago
@@ -25,17 +26,16 @@ gregdek, Created Old Images Image IDs (markdown) (b7e4855), 4 days ago
 gregdek, Created Old Images (markdown) (b1b98fc), 4 days ago
 gregdek, Updated Hadoopalyptus (markdown) (f5e0646), 4 days ago
 gregdek, Updated Hadoopalyptus (markdown) (0417454), 4 days ago
-gregdek, Created Hadoopalyptus (markdown) (8a7838c), 4 days ago
 </pre>
-## Most Active Contributors, Last Month:\n\n
+## Most Active Contributors, Last Month:
 <pre>
   53 zhill
   29 gregdek
    7 a13m
    5 schue
+   5 Greg DeKoenigsberg
    4 jasondeden
    4 hspencer77
-   4 Greg DeKoenigsberg
    2 tomellis
    2 tjcramer
    2 qyjohn
@@ -46,14 +46,14 @@ gregdek, Created Hadoopalyptus (markdown) (8a7838c), 4 days ago
    1 mdshaonimran
    1 eucacolby
 </pre>
-\n\n## Most Active Contributors, All Time:\n\n
+## Most Active Contributors, All Time:
 <pre>
  173 gregdek
   89 zhill
   46 hspencer77
   39 a13m
   33 tomellis
-  32 Greg DeKoenigsberg
+  33 Greg DeKoenigsberg
   24 tgerla
   23 monolive
   21 lwade
