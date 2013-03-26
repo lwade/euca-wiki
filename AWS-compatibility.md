@@ -74,9 +74,16 @@ Yellow means a service works well enough to be useful, though code tweaks are ne
  * Notes: Version 1.17 of the EC2 plugin does not work. Jenkins tries to get endpoints via the register URL which fails unless endpoint is https://cloudIP:8443/register. Once past this point, connectivity test yields "login failure: all modules ignored". Version 1.14 works however.
  * Last update: FIXME
 
-Red means that a service cannot be made to work without substantial modification, or at all.
+## <font color="red">Red: Not working / Unknown</font>
 
-Here's a list of the projects we're currently targeting (where "targeting" means "we have identified an individual who is responsible for assessing our compatibility):
+Red means that a service cannot be made to work without substantial modification, or at all -- or that status is completely unknown.
+
+* _**AWS SDK for Ruby**_ 
+ * Project URL: https://github.com/aws/aws-sdk-ruby
+ * Driver: FIXME
+ * Known bugs: FIXME
+ * Notes: FIXME
+ * Last update: none
 
 *****
 
