@@ -13,63 +13,63 @@ Yellow means a service works well enough to be useful, though code tweaks are ne
 
 * _**Fog**_
  * Project URL: http://fog.io
- * Tested by: [[Harold Spencer Jr.]]
+ * Driver: [[Harold Spencer Jr.]]
  * Known bugs: FIXME
  * Notes: [[Fog]]. **Notable: Fog with Walrus requires Euca DNS to be set up?**
  * Last update: 16 Mar 2013
 
 * _**AWS Toolkit for Eclipse**_
  * Project URL: https://github.com/aws/aws-toolkit-eclipse
- * Tested by: [[Colby Dyess]]
+ * Driver: [[Colby Dyess]]
  * Known bugs: FIXME
  * Notes: EC2 functionality mostly "just works", some known issues around S3 functionality. More details here: [[Eclipse Plugin]]
  * Last update: 12 Mar 2013
 
 * _**AWS SDK for Java**_ 
  * Project URL: FIXME
- * Tested by: FIXME
+ * Driver: FIXME
  * Known bugs: FIXME
  * Notes: known issues with Walrus should be fixed as of 3.3m4, needs retesting
  * Last update: 11 Mar 2013
 
 * _**NetflixOSS Edda**_
  * Project URL: FIXME
- * Tested by: Dan Nurmi
+ * Driver: Dan Nurmi
  * Known bugs: FIXME
  * Notes: Demoed at Netflix, 13 Mar 2013. Blog post describing setup: http://nurmiblog.wordpress.com/2013/01/22/inspired-by-netflix/
  * Last update: 13 Mar 2013
 
 * _**Netflix Asgard**_
  * Project URL: FIXME
- * Tested by: [[grze]]
+ * Driver: [[grze]]
  * Known bugs: FIXME
  * Notes: demoed at Netflix, 13 Mar 2013.
  * Last update: 13 Mar 2013
 
 * _**Netflix Chaos Monkey**_
  * Project URL: FIXME
- * Tested by: [[grze]]
+ * Driver: [[grze]]
  * Known bugs: FIXME
  * Notes: demoed at Netflix, 13 Mar 2013.
  * Last update: 13 Mar 2013
 
 * _**AWS SDK for PHP**_
  * Project URL: FIXME
- * Tested by: John Jiang
+ * Driver: John Jiang
  * Known bugs: FIXME
  * Notes: [[AWS SDK for PHP]]
  * Last update: 11 Mar 2013
 
 * _**AWS CLI**_
  * Project URL: http://aws.amazon.com/cli/
- * Tested by: Andy Grimm
+ * Driver: Andy Grimm
  * Known bugs: FIXME
  * Notes: http://agrimmsreality.blogspot.com/2013/01/using-aws-cli-with-eucalyptus.html
  * Last update: 3 Jan 2013
 
 * _**Jenkins for EC2**_
  * Project URL: https://wiki.jenkins-ci.org/display/JENKINS/Amazon+EC2+Plugin
- * Tested by: [[Lester Wade]]
+ * Driver: [[Lester Wade]]
  * Known bugs: FIXME
  * Notes: Version 1.17 of the EC2 plugin does not work. Jenkins tries to get endpoints via the register URL which fails unless endpoint is https://cloudIP:8443/register. Once past this point, connectivity test yields "login failure: all modules ignored". Version 1.14 works however.
  * Last update: FIXME
