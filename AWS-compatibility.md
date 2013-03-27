@@ -4,7 +4,7 @@ To that end, we want to test against all AWS tools in the open source ecosystem,
 
 ## <font color="green">Green: Just Works</font>
 
-Green means a service "just works". Pointing region and credential variables of the service to a properly-configured Eucalyptus results in a perfectly working service.
+Green means a service "just works". Pointing region and credential variables of the service to a properly-configured Eucalyptus results in a near-perfectly working service.
 
 ## <font background="black" color="yellow">Yellow: Works with Tweaks</font>
 
