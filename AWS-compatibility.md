@@ -34,7 +34,7 @@ Yellow means a service works well enough to be useful, though code tweaks are ne
 
 * _**NetflixOSS Edda**_
  * Project URL: FIXME
- * Driver: Dan Nurmi
+ * Driver: Dan Nurmi, [[grze]]
  * Known bugs: FIXME
  * Notes: Demoed at Netflix, 13 Mar 2013. Blog post describing setup: http://nurmiblog.wordpress.com/2013/01/22/inspired-by-netflix/
  * Last update: 13 Mar 2013
