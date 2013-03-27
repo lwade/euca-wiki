@@ -6,6 +6,12 @@ To that end, we want to test against all AWS tools in the open source ecosystem,
 
 Green means a service "just works". Pointing region and credential variables of the service to a properly-configured Eucalyptus results in a near-perfectly working service.
 
+* _**Vagrant AWS Plug-in**_
+ * Project URL: https://github.com/mitchellh/vagrant-aws
+ * Known bugs: None
+ * Notes: On 16 Mar 2013, Github user "carlsverre" submitted a [https://github.com/mitchellh/vagrant-aws/pull/6](patch) to the new Vagrant AWS plug-in to allow it to work against EMIs as well as AMIs.  On 21 Mar 2013, Github user "svanzoest" +1'd it.  The patch was merged by Github user "mitchellh" (upstream) on 22 Mar 2013.
+ * Last update: 27 Mar 2013
+
 ## <font background="black" color="yellow">Yellow: Works with Tweaks</font>
 
 Yellow means a service works well enough to be useful, though code tweaks are necessary and fully equivalent functionality may not be available.
