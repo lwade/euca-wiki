@@ -10,19 +10,19 @@ Green means a service "just works". Pointing region and credential variables of 
 
 Yellow means a service works well enough to be useful, though code tweaks are necessary and fully equivalent functionality may not be available.
 
-* _**Fog**_
- * Project URL: http://fog.io
- * Driver: [[Harold Spencer Jr.]]
+* _**AWS SDK for PHP**_
+ * Project URL: FIXME
+ * Driver: **John Jiang**
  * Known bugs: FIXME
- * Notes: [[Fog]]. **Notable: Fog with Walrus requires Euca DNS to be set up?**
- * Last update: 16 Mar 2013
+ * Notes: [[AWS SDK for PHP]]
+ * Last update: 11 Mar 2013
 
-* _**AWS Toolkit for Eclipse**_
- * Project URL: https://github.com/aws/aws-toolkit-eclipse
- * Driver: [[Colby Dyess]]
+* _**AWS SDK for Ruby**_ 
+ * Project URL: https://github.com/aws/aws-sdk-ruby
+ * Driver: (jeevan_ullas)
  * Known bugs: FIXME
- * Notes: EC2 functionality mostly "just works", some known issues around S3 functionality. More details here: [[Eclipse Plugin]]
- * Last update: 12 Mar 2013
+ * Notes: FIXME
+ * Last update: none
 
 * _**AWS SDK for Java**_ 
  * Project URL: http://aws.amazon.com/sdkforjava/
@@ -31,12 +31,19 @@ Yellow means a service works well enough to be useful, though code tweaks are ne
  * Notes: known issues with Walrus should be fixed as of 3.3m4, needs retesting
  * Last update: 11 Mar 2013
 
-* _**AWS SDK for PHP**_
- * Project URL: FIXME
- * Driver: John Jiang
+* _**AWS Toolkit for Eclipse**_
+ * Project URL: https://github.com/aws/aws-toolkit-eclipse
+ * Driver: [[Colby Dyess]]
  * Known bugs: FIXME
- * Notes: [[AWS SDK for PHP]]
- * Last update: 11 Mar 2013
+ * Notes: EC2 functionality mostly "just works", some known issues around S3 functionality. More details here: [[Eclipse Plugin]]
+ * Last update: 12 Mar 2013
+
+* _**Fog**_
+ * Project URL: http://fog.io
+ * Driver: [[Harold Spencer Jr.]]
+ * Known bugs: FIXME
+ * Notes: [[Fog]]. **Notable: Fog with Walrus requires Euca DNS to be set up?**
+ * Last update: 16 Mar 2013
 
 * _**NetflixOSS Edda**_
  * Project URL: FIXME
@@ -76,13 +83,6 @@ Yellow means a service works well enough to be useful, though code tweaks are ne
 ## <font color="red">Red: Not working / Unknown</font>
 
 Red means that a service cannot be made to work without substantial modification, or at all -- or that status is completely unknown.
-
-* _**AWS SDK for Ruby**_ 
- * Project URL: https://github.com/aws/aws-sdk-ruby
- * Driver: FIXME
- * Known bugs: FIXME
- * Notes: FIXME
- * Last update: none
 
 *****
 
