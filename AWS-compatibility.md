@@ -26,7 +26,7 @@ Yellow means a service works well enough to be useful, though code tweaks are ne
  * Last update: 12 Mar 2013
 
 * _**AWS SDK for Java**_ 
- * Project URL: FIXME
+ * Project URL: http://aws.amazon.com/sdkforjava/
  * Driver: FIXME
  * Known bugs: FIXME
  * Notes: known issues with Walrus should be fixed as of 3.3m4, needs retesting
