@@ -2,7 +2,6 @@ Eucalyptus strives for 100% API compatibility with all AWS services that we curr
 
 To that end, we want to test against all AWS tools in the open source ecosystem, identify those places where we are compatible, and find and fix all places where we are not compatible. All issues should be filed against the [AWS Compatibility component](https://eucalyptus.atlassian.net/browse/EUCA/component/10201).
 
-
 ## <font color="green">Green: Just Works</font>
 
 Green means a service "just works". Pointing region and credential variables of the service to a properly-configured Eucalyptus results in a perfectly working service.
@@ -32,6 +31,13 @@ Yellow means a service works well enough to be useful, though code tweaks are ne
  * Notes: known issues with Walrus should be fixed as of 3.3m4, needs retesting
  * Last update: 11 Mar 2013
 
+* _**AWS SDK for PHP**_
+ * Project URL: FIXME
+ * Driver: John Jiang
+ * Known bugs: FIXME
+ * Notes: [[AWS SDK for PHP]]
+ * Last update: 11 Mar 2013
+
 * _**NetflixOSS Edda**_
  * Project URL: FIXME
  * Driver: Dan Nurmi, [[grze]]
@@ -52,13 +58,6 @@ Yellow means a service works well enough to be useful, though code tweaks are ne
  * Known bugs: FIXME
  * Notes: demoed at Netflix, 13 Mar 2013.
  * Last update: 13 Mar 2013
-
-* _**AWS SDK for PHP**_
- * Project URL: FIXME
- * Driver: John Jiang
- * Known bugs: FIXME
- * Notes: [[AWS SDK for PHP]]
- * Last update: 11 Mar 2013
 
 * _**AWS CLI**_
  * Project URL: http://aws.amazon.com/cli/
