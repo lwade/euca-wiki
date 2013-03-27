@@ -10,6 +10,13 @@ Green means a service "just works". Pointing region and credential variables of 
 
 Yellow means a service works well enough to be useful, though code tweaks are necessary and fully equivalent functionality may not be available.
 
+* _**AWS Toolkit for Eclipse**_
+ * Project URL: https://github.com/aws/aws-toolkit-eclipse
+ * Driver: [[Colby Dyess]]
+ * Known bugs: FIXME
+ * Notes: EC2 functionality mostly "just works", some known issues around S3 functionality. More details here: [[Eclipse Plugin]]
+ * Last update: 12 Mar 2013
+
 * _**AWS SDK for PHP**_
  * Project URL: FIXME
  * Driver: **John Jiang**
@@ -30,13 +37,6 @@ Yellow means a service works well enough to be useful, though code tweaks are ne
  * Known bugs: FIXME
  * Notes: known issues with Walrus should be fixed as of 3.3m4, needs retesting
  * Last update: 11 Mar 2013
-
-* _**AWS Toolkit for Eclipse**_
- * Project URL: https://github.com/aws/aws-toolkit-eclipse
- * Driver: [[Colby Dyess]]
- * Known bugs: FIXME
- * Notes: EC2 functionality mostly "just works", some known issues around S3 functionality. More details here: [[Eclipse Plugin]]
- * Last update: 12 Mar 2013
 
 * _**Fog**_
  * Project URL: http://fog.io
