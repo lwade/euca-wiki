@@ -16,6 +16,7 @@ Network
 - Multicast working between CLC, Walrus, and SC
 - Private Network - VLAN range assigned
 - No DHCP server running on the networks to be used by Euca (unless we are doing a SYSTEM install)
+- Network Bridges [configured](http://www.eucalyptus.com/docs/3.2/ig/configuring_bridge.html#configuring_bridge) on the Node Controllers
 
 Firewall
 - ports open to front-end (8443, 8773, 8888, 53)
