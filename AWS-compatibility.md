@@ -18,7 +18,7 @@ Green means a service works well enough to be useful, though code tweaks are nec
 
 * _**AWS Toolkit for Eclipse**_
  * Project URL: https://github.com/aws/aws-toolkit-eclipse
- * Driver: [[Colby Dyess]]
+ * Driver: **[[Colby Dyess]]**
  * Known bugs: FIXME
  * Notes: EC2 functionality mostly "just works", some known issues around S3 functionality. More details here: [[Eclipse Plugin]]
  * Last update: 12 Mar 2013
@@ -32,7 +32,7 @@ Green means a service works well enough to be useful, though code tweaks are nec
 
 * _**AWS SDK for Ruby**_ 
  * Project URL: https://github.com/aws/aws-sdk-ruby
- * Driver: (jeevan_ullas)
+ * Driver: **jeevan_ullas**
  * Known bugs: FIXME
  * Notes: FIXME
  * Last update: none
