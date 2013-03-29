@@ -60,3 +60,7 @@ Now you can run any of the Arado tools that you would like. If you want to check
     vblade-14-7.el6.x86_64.rpm
 
 In order to use the _arado-describe-build_ tool, you will need to specify a _project_ and _commit_ as was done for the example above. A commit can be any type of commit reference that Git understands, like a commit hash, tag or branch. After the running the command and verifying that the packages you want to promote are available and the correct ones, you can run the promotion process.
+
+*****
+
+[[category.releng]]
