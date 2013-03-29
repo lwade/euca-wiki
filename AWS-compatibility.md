@@ -39,7 +39,7 @@ Green means a service works well enough to be useful, though code tweaks are nec
 
 * _**AWS SDK for Java**_ 
  * Project URL: http://aws.amazon.com/sdkforjava/
- * Driver: FIXME
+ * Driver: **Tony Beckham**
  * Known bugs: FIXME
  * Notes: known issues with Walrus should be fixed as of 3.3m4, needs retesting
  * Last update: 11 Mar 2013
