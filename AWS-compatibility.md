@@ -46,7 +46,7 @@ Green means a service works well enough to be useful, though code tweaks are nec
 
 * _**Fog**_
  * Project URL: http://fog.io
- * Driver: [[Harold Spencer Jr.]]
+ * Driver: **[[Harold Spencer Jr.]]**
  * Known bugs: FIXME
  * Notes: [[Fog]]. **Notable: Fog with Walrus requires Euca DNS to be set up?**
  * Last update: 16 Mar 2013
