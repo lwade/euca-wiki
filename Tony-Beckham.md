@@ -1,5 +1,6 @@
 ![](http://cl.ly/image/2p3h3n1j3U0m/qr.jpeg) <br>
-**irc**: tbeckham <br>
+**irc**: tbeckham on freenode<br>
+**channels frequented**: #eucalyptus-qa, #eucalytpus-services, #eucalyptus <br>
 **email**: [tony@eucalyptus.com](mailto:tony@eucalyptus.com) <br>
 **company**: [Eucalyptus Systems](http://eucalyptus.com) <br>
 **more**: [about.me](http://about.me/tonybeckham) <br>
