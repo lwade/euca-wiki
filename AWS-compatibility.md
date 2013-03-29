@@ -4,7 +4,7 @@ To that end, we want to test against all AWS tools in the open source ecosystem,
 
 ## <font color="gold">Golden: Just Works</font>
 
-Gold means a service "just works". Pointing region and credential variables of the service to a properly-configured Eucalyptus results in a near-perfectly working service.
+Golden means a service "just works". Pointing region and credential variables of the service to a properly-configured Eucalyptus results in a near-perfectly working service.
 
 * _**Vagrant AWS Plug-in**_
  * Project URL: https://github.com/mitchellh/vagrant-aws
