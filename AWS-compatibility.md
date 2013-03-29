@@ -2,9 +2,9 @@ Eucalyptus strives for 100% API compatibility with all AWS services that we curr
 
 To that end, we want to test against all AWS tools in the open source ecosystem, identify those places where we are compatible, and find and fix all places where we are not compatible. All issues should be filed against the [AWS Compatibility component](https://eucalyptus.atlassian.net/browse/EUCA/component/10201).
 
-## <font color="green">Green: Just Works</font>
+## <font color="gold">Gold: Just Works</font>
 
-Green means a service "just works". Pointing region and credential variables of the service to a properly-configured Eucalyptus results in a near-perfectly working service.
+Gold means a service "just works". Pointing region and credential variables of the service to a properly-configured Eucalyptus results in a near-perfectly working service.
 
 * _**Vagrant AWS Plug-in**_
  * Project URL: https://github.com/mitchellh/vagrant-aws
