@@ -12,6 +12,12 @@ Golden means a service "just works". Pointing region and credential variables of
  * Notes: On 16 Mar 2013, Github user "carlsverre" submitted a [https://github.com/mitchellh/vagrant-aws/pull/6](patch) to the new Vagrant AWS plug-in to allow it to work against EMIs as well as AMIs.  On 21 Mar 2013, Github user "svanzoest" +1'd it.  The patch was merged by Github user "mitchellh" (upstream) on 22 Mar 2013.
  * Last update: 27 Mar 2013
 
+* _**s3curl**_
+ * Project URL: http://aws.amazon.com/code/128
+ * Known bugs: None
+ * Notes: The recommended tool for talking to Walrus. For more info, see: http://www.eucalyptus.com/eucalyptus-cloud/tools/s3curl
+ * Last update: 29 May 2013
+
 ## <font background="black" color="green">Green: Works with Tweaks</font>
 
 Green means a service works well enough to be useful, though code tweaks are necessary and fully equivalent functionality may not yet be available.  Problems with tools in the "green" state are considered bugs, and will be handled accordingly.
