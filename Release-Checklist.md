@@ -15,9 +15,14 @@ The release process generally occurs in two steps:  the final compose, and gener
 * Sign final packages
   * Make sure to use sigv3
 * Upload to staging server (release-repo)
-  * final tarball
-  * tarball signature (*.tar.gz.asc)
-  * all packages to staging server
+  * source tarball (*.tar.gz)
+     * /releases/$program/$series/source/*.tar.gz
+  * source tarball signature (*.tar.gz.asc)
+     * /releases/$program/$series/source/*.tar.gz.asc
+  * source package (*.src.rpm)
+     * /releases/$program/$series/$distro/$releasever/source/*.src.rpm)
+  * binary packages (*.rpm _except_ *.src.rpm)
+     * /releases/$program/$series/$distro/$releasever/$basearch/*.rpm
 
 # General Availability (GA)
 
