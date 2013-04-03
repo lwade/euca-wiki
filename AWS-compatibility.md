@@ -25,7 +25,8 @@ Golden means a service "just works". Pointing region and credential variables of
  * Versions tested: FIXME
  * Known bugs: None (with latest 1.5.0 build)
  * Notes: Recommended tool for talking to Walrus. For more info, see: 
-http://www.eucalyptus.com/eucalyptus-cloud/tools/s3cmd
+        * http://www.eucalyptus.com/eucalyptus-cloud/tools/s3cmd
+        * https://github.com/eucalyptus/eucalyptus/wiki/HowTo-use-s3cmd-with-Eucalyptus
  * Last update: 02 April 2013
 
 ## <font background="black" color="green">Green: Works with Tweaks</font>
