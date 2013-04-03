@@ -1,5 +1,5 @@
-
-***
+Tested Versions (AWS Java SDK/Euca Version)
+* 1.4.1/3.3m5
 
 # EC2
 * EC2 Connection (Euca endpoint)
