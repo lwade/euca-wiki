@@ -35,11 +35,12 @@ Green means a service works well enough to be useful, though code tweaks are nec
 
 * _**AWS Toolkit for Eclipse**_
  * Project URL: https://github.com/aws/aws-toolkit-eclipse
- * Versions tested: FIXME
+ * Versions tested:  Eclipse: Juno Service Release 1 --  AWS Java SDK: 1.4.0 -- Eucalyptus: 3.3 Milestone 3
  * Driver: **[[Colby Dyess]]**
- * Known bugs: FIXME
+ * Known bugs: ECUA-5275
  * Notes: EC2 functionality mostly "just works", some known issues around S3 functionality. More details here: [[Eclipse Plugin]]
  * Last update: 12 Mar 2013
+
 
 * _**AWS SDK for PHP**_
  * Project URL: FIXME
