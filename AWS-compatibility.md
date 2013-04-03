@@ -18,11 +18,11 @@ Golden means a service "just works". Pointing region and credential variables of
  * Notes: The most basic tool for talking to Walrus. For more info, see: http://www.eucalyptus.com/eucalyptus-cloud/tools/s3curl
  * Last update: 29 May 2013
 
-* _**s3curl**_
+* _**s3cmd**_
  * Project URL: https://github.com/s3tools/s3cmd
  * Known bugs: None (with latest 1.5.0 build)
  * Notes: Recommended tool for talking to Walrus. For more info, see: 
-http://www.eucalyptus.com/eucalyptus-cloud/tools/s3
+http://www.eucalyptus.com/eucalyptus-cloud/tools/s3cmd
  * Last update: 02 April 2013
 
 ## <font background="black" color="green">Green: Works with Tweaks</font>
