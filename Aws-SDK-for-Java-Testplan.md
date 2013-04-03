@@ -1,54 +1,65 @@
-Tested Versions (AWS Java SDK/Euca Version)
-* 1.4.1/3.3m5
+
+
+### Tested Versions
+AWS Java SDK 1.4.1/Euca Version 3.3m5
+
+### Legend
+<font color="green">GREEN</font> Working <br>
+<font color="gold">YELLOW</font> Unknown <br>
+<font color="red">RED</font> Not Working <br>
 
 # EC2
-* EC2 Connection (Euca endpoint)
-* KeyPair CRUD
-* Run Instance
-* Terminate Instance
-* Security group CRUD
-* Describe Instances
-* Tag CRUD
-* Get Availability Zones
-* Instance Profile CRUD
-* Instance Status
+* <font color="green">EC2 Connection (Euca endpoint)</font> 
+* <font color="green">KeyPair CRUD</font> 
+* <font color="green">Run Instance</font> 
+* <font color="green">Terminate Instance</font> 
+* <font color="green">Security group CRUD</font> 
+* <font color="green">Describe Instances</font> 
+* <font color="green">Tag CRUD</font> 
+* <font color="green">Get Availability Zones</font> 
+* <font color="green">Instance Profile CRUD</font> 
+* <font color="green">Instance Status</font> 
 
 # S3
-* S3 Connection (Euca endpoint)
-* Create Bucket
-* Put to Bucket
-* Get from Bucket
-* List Bucket
-* Delete Bucket
-* Version bucket
+* <font color="gold">S3 Connection (Euca endpoint)</font> 
+* <font color="gold">Create Bucket</font>
+* <font color="gold">Put to Bucket</font>
+* <font color="gold">Get from Bucket</font>
+* <font color="gold">List Bucket</font>
+* <font color="gold">Delete Bucket</font>
+* <font color="gold">Version bucket</font>
 
 # Auto Scale  
-* AS Connection (Euca endpoint)
-* Create Launch Config
-* Delete Launch Config
-* Create AS Group
-* Update AS Group
-* Describe AS Instances
-* AS Policy CRUD
-* Execute policy
-* Trigger Alarm
-* Tag CRUD
-* Metric Submission to Cloud Watch
-* Get Metrics from Cloud Watch
-* Instance Health monitoring
+* <font color="green">AS Connection (Euca endpoint)</font> 
+* <font color="green">Create Launch Config</font> 
+* <font color="green">Delete Launch Config</font> 
+* <font color="green">Create AS Group</font> 
+* <font color="green">Update AS Group</font> 
+* <font color="green">Describe AS Instances</font> 
+* <font color="green">AS Policy CRUD</font> 
+* <font color="green">Execute policy</font> 
+* <font color="green">Trigger Alarm</font> 
+* <font color="green">Tag CRUD</font> 
+* <font color="green">Metric Submission to Cloud Watch</font> 
+* <font color="green">Get Metrics from Cloud Watch</font> 
+* <font color="green">Instance Health monitoring</font> 
 
 # ELB
-* ELB Connection (Euca endpoint)
-* Register instance with ELB
-* Add ELB to AS group
-* ELB instance health monitoring
+* <font color="red">ELB Connection (Euca endpoint)</font>
+* <font color="red">Register instance with ELB</font>
+* <font color="red">Add ELB to AS group</font>
+* <font color="red">ELB instance health monitoring</font>
 
 # Cloud Watch
-* CW Connection (Euca endpoint)
-* Put metric data
-* Get metric Data
+* <font color="green">CW Connection (Euca endpoint)</font> 
+* <font color="green">Put metric data</font> 
+* <font color="green">Get metric Data</font> 
 
 # IAM
-* IAM Connection (Euca endpoint)
-* Roles CRUD
-* Instance Profile CRUD
+* <font color="green">IAM Connection (Euca endpoint)</font> 
+* <font color="green">Roles CRUD</font> 
+* <font color="green">Instance Profile CRUD</font> 
+
+*****
+
+[[category.aws-compatibility]]
