@@ -59,9 +59,9 @@ Green means a service works well enough to be useful, though code tweaks are nec
 
 * _**AWS SDK for Java**_ 
  * Project URL: http://aws.amazon.com/sdkforjava/
- * Versions tested: FIXME
+ * Versions tested: [AWS JAVA SDK 1.4.1, Euca 3.3 m5]
  * Driver: **Tony Beckham**
- * Known bugs: FIXME
+ * Known bugs: Cannot connect to ELB endpoint.
  * Notes: known issues with Walrus should be fixed as of 3.3m4, needs retesting
  * Last update: 11 Mar 2013
 
