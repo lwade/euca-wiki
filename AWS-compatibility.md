@@ -19,7 +19,7 @@ Golden means a service "just works". Pointing region and credential variables of
  * Last update: 29 May 2013
 
 * _**s3cmd**_
- * Project URL: https://github.com/s3tools/s3cmd
+ * Project URL: http://s3tools.org/s3cmd and https://github.com/s3tools/s3cmd
  * Known bugs: None (with latest 1.5.0 build)
  * Notes: Recommended tool for talking to Walrus. For more info, see: 
 http://www.eucalyptus.com/eucalyptus-cloud/tools/s3cmd
