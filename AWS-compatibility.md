@@ -8,18 +8,21 @@ Golden means a service "just works". Pointing region and credential variables of
 
 * _**Vagrant AWS Plug-in**_
  * Project URL: https://github.com/mitchellh/vagrant-aws
+ * Versions tested: Vagrant 1.1+ (against Euca 3.2.2)
  * Known bugs: None
  * Notes: On 16 Mar 2013, Github user "carlsverre" submitted a [https://github.com/mitchellh/vagrant-aws/pull/6](patch) to the new Vagrant AWS plug-in to allow it to work against EMIs as well as AMIs.  On 21 Mar 2013, Github user "svanzoest" +1'd it.  The patch was merged by Github user "mitchellh" (upstream) on 22 Mar 2013.
  * Last update: 27 Mar 2013
 
 * _**s3curl**_
  * Project URL: http://aws.amazon.com/code/128
+ * Versions tested: FIXME
  * Known bugs: None
  * Notes: The most basic tool for talking to Walrus. For more info, see: http://www.eucalyptus.com/eucalyptus-cloud/tools/s3curl
  * Last update: 29 May 2013
 
 * _**s3cmd**_
  * Project URL: http://s3tools.org/s3cmd and https://github.com/s3tools/s3cmd
+ * Versions tested: FIXME
  * Known bugs: None (with latest 1.5.0 build)
  * Notes: Recommended tool for talking to Walrus. For more info, see: 
 http://www.eucalyptus.com/eucalyptus-cloud/tools/s3cmd
@@ -31,6 +34,7 @@ Green means a service works well enough to be useful, though code tweaks are nec
 
 * _**AWS Toolkit for Eclipse**_
  * Project URL: https://github.com/aws/aws-toolkit-eclipse
+ * Versions tested: FIXME
  * Driver: **[[Colby Dyess]]**
  * Known bugs: FIXME
  * Notes: EC2 functionality mostly "just works", some known issues around S3 functionality. More details here: [[Eclipse Plugin]]
@@ -38,6 +42,7 @@ Green means a service works well enough to be useful, though code tweaks are nec
 
 * _**AWS SDK for PHP**_
  * Project URL: FIXME
+ * Versions tested: FIXME
  * Driver: **John Jiang**
  * Known bugs: FIXME
  * Notes: [[AWS SDK for PHP]]
@@ -45,6 +50,7 @@ Green means a service works well enough to be useful, though code tweaks are nec
 
 * _**AWS SDK for Ruby**_ 
  * Project URL: https://github.com/aws/aws-sdk-ruby
+ * Versions tested: FIXME
  * Driver: **jeevan_ullas**
  * Known bugs: FIXME
  * Notes: FIXME
@@ -52,6 +58,7 @@ Green means a service works well enough to be useful, though code tweaks are nec
 
 * _**AWS SDK for Java**_ 
  * Project URL: http://aws.amazon.com/sdkforjava/
+ * Versions tested: FIXME
  * Driver: **Tony Beckham**
  * Known bugs: FIXME
  * Notes: known issues with Walrus should be fixed as of 3.3m4, needs retesting
@@ -59,6 +66,7 @@ Green means a service works well enough to be useful, though code tweaks are nec
 
 * _**Fog**_
  * Project URL: http://fog.io
+ * Versions tested: FIXME
  * Driver: **[[Harold Spencer Jr.]]**
  * Known bugs: FIXME
  * Notes: [[Fog]]. **Notable: Fog with Walrus requires Euca DNS to be set up?**
