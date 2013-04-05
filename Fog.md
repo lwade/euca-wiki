@@ -100,6 +100,7 @@ Tested the following commands:
 - connection.describe_key_pairs
 - connection.describe_instances
 - connection.describe_volumes
+- connection.describe_security_groups
 
 ### S3/Walrus
 
