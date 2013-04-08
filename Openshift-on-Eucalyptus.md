@@ -78,7 +78,7 @@ The default login to the instance is as ec2-user , who has sudo privileges, the 
 TODO: one liner sed for this job?
 ```
 
-Next we need to run the following command after changing directory to the playbook directory
+Next we need to run the following command after changing directory to the playbook directory, replace the private key with your environment specific configuration:
 
 ```
 ansible-playbook --private-key=/home/jeevanullas/sshlogin --user=ec2-user --sudo broker.yml
@@ -88,7 +88,7 @@ That should do it , and setup the broker.
 
 An output from a sample run in lab is available [here](https://gist.github.com/jeevanullas/5335541#file-openshift-ansible-playbook-broker-output-txt)
 
-Next would be the node:
+Next would be the node, replace the private key with your environment specific configuration:
 
 ```
 ansible-playbook --private-key=/home/jeevanullas/sshlogin --user=ec2-user --sudo node.yml
