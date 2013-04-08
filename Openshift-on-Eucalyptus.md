@@ -72,17 +72,26 @@ It is hence advice to modify the broker.yml to include audit in the develpks tas
 
 ### Run the ansible playbook
 
-The default login to the instance is as ec2-user , who has sudo privileges, the playbook has user set to root, you would need to modify that in both broker.yml and node.yml to use ec2-user
+The default login to the instance is as ec2-user , who has sudo privileges, the playbook has user set to root, you would need to modify that in both broker.yml and node.yml
 
 ```
-TODO: one liner sed to do the job?
+TODO: one liner sed for this job?
 ```
 
 Next you need to run the following command after changing directory to the playbook directory
 
 ```
-cd ansible-openshift_origin
 ansible-playbook --private-key=/home/jeevanullas/sshlogin --user=ec2-user --sudo broker.yml
 ```
 
 That should do it , and setup the broker in approx 10 minutes , if you have a decent internet connection.
+
+An output from a sample run in lab is available [here](https://gist.github.com/jeevanullas/5335541#file-openshift-ansible-playbook-broker-output-txt)
+
+Next would be the node:
+
+```
+ansible-playbook --private-key=/home/jeevanullas/sshlogin --user=ec2-user --sudo node.yml
+```
+
+An output from a sample run in lab is available [here](https://gist.github.com/jeevanullas/5336280#file-openshift-ansible-playbook-node-output-txt)
