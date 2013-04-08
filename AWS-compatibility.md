@@ -75,6 +75,14 @@ Green means a service works well enough to be useful, though code tweaks are nec
  * Notes: [[Fog]]. **Notable: Fog with Walrus requires Euca DNS to be set up?**
  * Last update: 16 Mar 2013
 
+* _**Elastic Wolf**_
+ * Project URL: http://www.elasticwolf.com/
+ * Versions tested: FIXME
+ * Driver: **[[Vic Iglesias]]**
+ * Known bugs: FIXME
+ * Notes: FIXME
+ * Last update: 8 April 2013
+
 * _**NetflixOSS Edda**_
  * Project URL: FIXME
  * Driver: Dan Nurmi, [[grze]]
