@@ -70,6 +70,8 @@ An output from a sample run in lab is available [here](https://gist.github.com/j
 
 * Modify /var/named/example.com.db and replace the private IP with public IP wherever mentioned
 
+* Modify /etc/openshift/plugins.d/openshift-origin-dns-bind.conf and replace the private IP with public IP wherever mentioned
+
 * Reboot the instance
 
 ## Start using Openshift
@@ -81,7 +83,7 @@ This section would walk through verifying the install and then provide example o
 In order to quickly check if broker API endpoint is working, we do the following inside the instance
 
 ```
-$ curl -Ik https://localhost/broker/rest/api
+curl -Ik https://localhost/broker/rest/api
 ```
 
 The output should look something like below
@@ -118,3 +120,17 @@ rhc setup
 ```
 
 A sample run from lab is available [here](https://gist.github.com/jeevanullas/5338472#file-rhc-setup-txt)
+
+### Setup a demo app
+
+```
+rhc app create demoeuca diy-0.1
+```
+
+A sample run from lab is available [here](https://gist.github.com/jeevanullas/5338785#file-rhc-app-create-demoeuca-diy-0-1)
+
+Now open in web browser the web page for our demo app
+
+```
+https://demoeuca-jeevanullas.app.example.com/
+```
