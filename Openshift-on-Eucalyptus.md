@@ -98,4 +98,25 @@ An output from a sample run in lab is available [here](https://gist.github.com/j
 
 ### Start using Openshift
 
-TODO
+In order to quickly check if broker API endpoint is working, do the following inside the instance
+
+```
+$ curl -Ik https://localhost/broker/rest/api
+```
+
+The output should look something like below
+
+```
+HTTP/1.1 200 
+Date: Mon, 08 Apr 2013 13:49:28 GMT
+Server: Apache/2.4.4 (Fedora)
+X-Powered-By: Phusion Passenger (mod_rails/mod_rack) 3.0.17
+X-UA-Compatible: IE=Edge,chrome=1
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 828a632f548672f76150cf51e726fb9e
+X-Runtime: 0.009659
+X-Rack-Cache: miss
+ETag: "850315cef2c28482d633170c5877d148"
+Status: 200
+Content-Type: application/json; charset=utf-8
+```
