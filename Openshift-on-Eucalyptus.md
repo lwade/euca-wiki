@@ -95,3 +95,7 @@ ansible-playbook --private-key=/home/jeevanullas/sshlogin --user=ec2-user --sudo
 ```
 
 An output from a sample run in lab is available [here](https://gist.github.com/jeevanullas/5336280#file-openshift-ansible-playbook-node-output-txt)
+
+### Start using Openshift
+
+TODO
