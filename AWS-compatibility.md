@@ -80,7 +80,7 @@ Green means a service works well enough to be useful, though code tweaks are nec
  * Versions tested: FIXME
  * Driver: **[[Vic Iglesias]]**
  * Known bugs: FIXME
- * Notes: FIXME
+ * Notes: Current repo for Euca-specific work set up at https://github.com/viglesiasce/ElasticWolf
  * Last update: 8 April 2013
 
 * _**NetflixOSS Edda**_
