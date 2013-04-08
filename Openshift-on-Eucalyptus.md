@@ -48,7 +48,7 @@ The default login to the instance is as ec2-user , who has sudo privileges, the 
 TODO: one liner sed for this job?
 ```
 
-Next we need to run the following command after changing directory to the playbook directory, replace the private key with your environment specific configuration:
+Next we need to run the following command after changing current working directory to the playbook directory, replace the private key with your environment specific configuration:
 
 ```
 ansible-playbook --private-key=/home/jeevanullas/sshlogin --user=ec2-user --sudo broker.yml
@@ -68,7 +68,9 @@ An output from a sample run in lab is available [here](https://gist.github.com/j
 
 ### Finalizing the install 
 
-**TODO**
+* Modify /var/named/example.com.db and replace the private IP with public IP wherever mentioned
+
+* Reboot the instance
 
 ## Start using Openshift
 
