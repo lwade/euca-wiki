@@ -96,7 +96,11 @@ ansible-playbook --private-key=/home/jeevanullas/sshlogin --user=ec2-user --sudo
 
 An output from a sample run in lab is available [here](https://gist.github.com/jeevanullas/5336280#file-openshift-ansible-playbook-node-output-txt)
 
-### Start using Openshift
+## Start using Openshift
+
+This section would walk through verifying the install and then provide example on how to use the openshift origin PaaS
+
+### Verifying the broker
 
 In order to quickly check if broker API endpoint is working, do the following inside the instance
 
