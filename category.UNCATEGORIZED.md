@@ -25,6 +25,7 @@
 * [[Old-images-image-info]]
 * [[Old-images-single-kernel-initrd]]
 * [[Old-images-single-kernel]]
+* [[Openshift-on-Eucalyptus]]
 * [[Overlay-storage-3]]
 * [[Overlay-storage-3]]
 * [[Project-Images]]
