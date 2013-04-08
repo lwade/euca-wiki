@@ -107,7 +107,7 @@ We can open the console from a web browser, after making sure DNS client points 
 https://broker.example.com/console
 ```
 
-### Installing / Configure rhc
+### Install / Configure rhc
 
 On the local machine , install rhc RPM that provides the client tools to connect to openshift PaaS, one could get the RPM for fedora 18 here [https://mirror.openshift.com/pub/origin-server/nightly/fedora-18/latest/x86_64/ ](https://mirror.openshift.com/pub/origin-server/nightly/fedora-18/latest/x86_64/ )
 
