@@ -40,38 +40,6 @@ Note that 10.104.3.10 is public IP address of the instance, replace with correct
 git clone https://github.com/maxamillion/ansible-openshift_origin.git
 ```
 
-Currently there is **1 problem**:
-
-* The playbook tries to install gcc that tries to update glibc on the instance, that in turns fails complaining for audit package been old version.
-
-```
-Transaction Check Error:
-file /usr/lib64/audit from install of glibc-2.16-30.fc18.x86_64 conflicts with file from package audit-2.2.1-2.fc18.x86_64
-```
-
-It is hence advice to modify the broker.yml to include audit in the 'develpkgs' task
-
-```
-- name: Devel Packages Install
-  hosts: brokers
-  user: root
-  vars_files:
-    - varfiles/origin_vars.yml
-  tasks:
-    ### Dev tools needed by some gem installs for native modules/extensions
-    - name: Install dev-tool deps for gem installs
-      yum: pkg=$item state=latest
-      with_items:
-        - ruby-devel
-        - audit
-        - mysql-devel
-        - mongodb-devel
-        - gcc
-        - make
-  tags:
-    - develpkgs
-```
-
 ### Run the ansible playbook
 
 The default login to the instance is as ec2-user , who has sudo privileges, the playbook has user set to root, we would need to modify that in both broker.yml and node.yml
