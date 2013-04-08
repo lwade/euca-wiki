@@ -40,7 +40,9 @@ Note that 10.104.3.10 is public IP address of the instance, replace with correct
 git clone https://github.com/maxamillion/ansible-openshift_origin.git
 ```
 
-Currently there is a problem, the playbook tries to install gcc that tries to update glibc on the instance, that in turns fails complaining for audit package been old version.
+Currently there are **2 problems**:
+
+* The playbook tries to install gcc that tries to update glibc on the instance, that in turns fails complaining for audit package been old version.
 
 ```
 Transaction Check Error:
@@ -68,6 +70,12 @@ It is hence advice to modify the broker.yml to include audit in the develpkgs ta
         - make
   tags:
     - develpkgs
+```
+
+* The broker seems to have a remote auth mechanism that uses a specific ruby gem that is missing in broker.yml, so add the following under brokerpkgs task 
+
+```
+        - rubygem-openshift-origin-auth-remote-user
 ```
 
 ### Run the ansible playbook
