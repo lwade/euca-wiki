@@ -14,7 +14,7 @@ In order to setup Openshift origin we rely on the [openshift ansible playbook](h
 
 ### Install git and ansible 
 
-The instance does not have ansible and git installed, so the first thing to do would be get that, one could do it at runtime (when the instance gets created) or after logging into the instance.
+On your local machine get ansible and git installed:
 
 ```
 yum -y install git ansible
@@ -32,7 +32,7 @@ Edit the ansible hosts file (/etc/ansible/hosts) on the instance to add broker a
 10.104.3.10
 ```
 
-Note that 10.104.3.10 is public IP address of the instance. 
+Note that 10.104.3.10 is public IP address of the instance, replace with your settings.
 
 ### Get the ansible playbook
 
@@ -69,3 +69,20 @@ It is hence advice to modify the broker.yml to include audit in the develpks tas
   tags:
     - develpkgs
 ```
+
+### Run the ansible playbook
+
+The default login to the instance is as ec2-user , who has sudo privileges, the playbook has user set to root, you would need to modify that in both broker.yml and node.yml to use ec2-user
+
+```
+TODO: one liner sed to do the job?
+```
+
+Next you need to run the following command after changing directory to the playbook directory
+
+```
+cd ansible-openshift_origin
+ansible-playbook --private-key=/home/jeevanullas/sshlogin --user=ec2-user --sudo broker.yml
+```
+
+That should do it , and setup the broker in approx 10 minutes , if you have a decent internet connection.
