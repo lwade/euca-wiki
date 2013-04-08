@@ -1,6 +1,6 @@
 ## Introduction
 
-This article explains how to setup openshift origin on a, Fedora 18 instance running on a Eucalyptus private cloud. In order to get Fedora 18 up and running as an instance on Eucalyptus you should follow this article , [Fedora 18 EMI](https://github.com/eucalyptus/eucalyptus/wiki/Fedora-18-Image)
+This article explains how to setup openshift origin on a, Fedora 18 instance running on a Eucalyptus private cloud. In order to get Fedora 18 up and running as an instance on Eucalyptus one should follow this article , [Fedora 18 EMI](https://github.com/eucalyptus/eucalyptus/wiki/Fedora-18-Image)
 
 ## Setup
 
@@ -14,7 +14,7 @@ In order to setup Openshift origin we rely on the [openshift ansible playbook](h
 
 ### Install git and ansible 
 
-On your local machine get ansible and git installed:
+On the local machine get ansible and git installed:
 
 ```
 yum -y install git ansible
@@ -22,7 +22,7 @@ yum -y install git ansible
 
 ### Configure ansible hosts
 
-Edit the ansible hosts file (/etc/ansible/hosts) on the instance to add broker and node information like this
+Edit the ansible hosts file (/etc/ansible/hosts) on to add broker and node information
 
 ```
 [brokers]
@@ -32,7 +32,7 @@ Edit the ansible hosts file (/etc/ansible/hosts) on the instance to add broker a
 10.104.3.10
 ```
 
-Note that 10.104.3.10 is public IP address of the instance, replace with your settings.
+Note that 10.104.3.10 is public IP address of the instance, replace with correct settings.
 
 ### Get the ansible playbook
 
@@ -40,14 +40,14 @@ Note that 10.104.3.10 is public IP address of the instance, replace with your se
 git clone https://github.com/maxamillion/ansible-openshift_origin.git
 ```
 
-Currently there is a problem, the playbook tries to install gcc that tries to update glibc on the instance, that in turns fails complaining for audit been old version.
+Currently there is a problem, the playbook tries to install gcc that tries to update glibc on the instance, that in turns fails complaining for audit package been old version.
 
 ```
 Transaction Check Error:
 file /usr/lib64/audit from install of glibc-2.16-30.fc18.x86_64 conflicts with file from package audit-2.2.1-2.fc18.x86_64
 ```
 
-It is hence advice to modify the broker.yml to include audit in the develpks task, see below
+It is hence advice to modify the broker.yml to include audit in the develpkgs task, see below
 
 ```
 - name: Devel Packages Install
@@ -72,19 +72,19 @@ It is hence advice to modify the broker.yml to include audit in the develpks tas
 
 ### Run the ansible playbook
 
-The default login to the instance is as ec2-user , who has sudo privileges, the playbook has user set to root, you would need to modify that in both broker.yml and node.yml
+The default login to the instance is as ec2-user , who has sudo privileges, the playbook has user set to root, we would need to modify that in both broker.yml and node.yml
 
 ```
 TODO: one liner sed for this job?
 ```
 
-Next you need to run the following command after changing directory to the playbook directory
+Next we need to run the following command after changing directory to the playbook directory
 
 ```
 ansible-playbook --private-key=/home/jeevanullas/sshlogin --user=ec2-user --sudo broker.yml
 ```
 
-That should do it , and setup the broker in approx 10 minutes , if you have a decent internet connection.
+That should do it , and setup the broker.
 
 An output from a sample run in lab is available [here](https://gist.github.com/jeevanullas/5335541#file-openshift-ansible-playbook-broker-output-txt)
 
