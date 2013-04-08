@@ -49,7 +49,7 @@ Transaction Check Error:
 file /usr/lib64/audit from install of glibc-2.16-30.fc18.x86_64 conflicts with file from package audit-2.2.1-2.fc18.x86_64
 ```
 
-It is hence advice to modify the broker.yml to include audit in the develpkgs task, see below
+It is hence advice to modify the broker.yml to include audit in the 'develpkgs' task
 
 ```
 - name: Devel Packages Install
@@ -72,7 +72,7 @@ It is hence advice to modify the broker.yml to include audit in the develpkgs ta
     - develpkgs
 ```
 
-* The broker seems to have a remote auth mechanism that uses a specific ruby gem that is missing in broker.yml, so add the following under brokerpkgs task 
+* The broker seems to have a remote auth mechanism that uses a specific ruby gem that is missing in broker.yml, so we added the following under 'brokerpkgs' task 
 
 ```
         - rubygem-openshift-origin-auth-remote-user
@@ -104,13 +104,17 @@ ansible-playbook --private-key=/home/jeevanullas/sshlogin --user=ec2-user --sudo
 
 An output from a sample run in lab is available [here](https://gist.github.com/jeevanullas/5336280#file-openshift-ansible-playbook-node-output-txt)
 
+### Finalizing the install 
+
+**TODO**
+
 ## Start using Openshift
 
 This section would walk through verifying the install and then provide example on how to use the openshift origin PaaS
 
 ### Verifying the broker
 
-In order to quickly check if broker API endpoint is working, do the following inside the instance
+In order to quickly check if broker API endpoint is working, we do the following inside the instance
 
 ```
 $ curl -Ik https://localhost/broker/rest/api
@@ -131,4 +135,10 @@ X-Rack-Cache: miss
 ETag: "850315cef2c28482d633170c5877d148"
 Status: 200
 Content-Type: application/json; charset=utf-8
+```
+
+We can open the console from a web browser, after making sure DNS client points to the DNS server running inside the openshift instance, URL would be:
+
+```
+https://broker.example.com/console
 ```
