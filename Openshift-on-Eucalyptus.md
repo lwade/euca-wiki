@@ -70,8 +70,6 @@ An output from a sample run in lab is available [here](https://gist.github.com/j
 
 * Modify /var/named/example.com.db and replace the private IP with public IP wherever mentioned
 
-* Modify /etc/openshift/plugins.d/openshift-origin-dns-bind.conf and replace the private IP with public IP wherever mentioned
-
 * Reboot the instance
 
 ## Start using Openshift
