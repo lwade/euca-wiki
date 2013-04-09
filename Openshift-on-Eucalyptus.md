@@ -132,3 +132,9 @@ Now open in web browser the web page for our demo app
 ```
 https://demoeuca-jeevanullas.app.example.com/
 ```
+
+DIY or do-it-yourself cartridge allows us to plugin any language support into Openshift, for example C, for more information readers are recommended to read the following [blog post](https://www.openshift.com/blogs/a-paas-that-runs-anything-http-getting-started-with-diy-applications-on-openshift) 
+
+## Conclusion
+
+For more information on Openshift one should checkout the [Openshift website](https://www.openshift.com/community) . If you have any question about this wiki article please feel free to reach out to the google groups for [euca-users](https://groups.google.com/a/eucalyptus.com/forum/#!forum/euca-users)
