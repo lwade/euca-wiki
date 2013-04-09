@@ -29,6 +29,14 @@ Golden means a service "just works". Pointing region and credential variables of
         * https://github.com/eucalyptus/eucalyptus/wiki/HowTo-use-s3cmd-with-Eucalyptus
  * Last update: 02 April 2013
 
+* _**EucaLobo**_
+ * Project URL: https://github.com/viglesiasce/EucaLobo
+ * Versions tested: master
+ * Driver: **[[Vic Iglesias]]**
+ * Known bugs: https://github.com/viglesiasce/EucaLobo/issues
+ * Notes: https://github.com/viglesiasce/EucaLobo
+ * Last update: 9 April 2013
+
 ## <font background="black" color="green">Green: Works with Tweaks</font>
 
 Green means a service works well enough to be useful, though code tweaks are necessary and fully equivalent functionality may not yet be available.  Problems with tools in the "green" state are considered bugs, and will be handled accordingly.
@@ -74,14 +82,6 @@ Green means a service works well enough to be useful, though code tweaks are nec
  * Known bugs: FIXME
  * Notes: [[Fog]]. **Notable: Fog with Walrus requires Euca DNS to be set up?**
  * Last update: 16 Mar 2013
-
-* _**EucaLobo**_
- * Project URL: https://github.com/viglesiasce/EucaLobo
- * Versions tested: master
- * Driver: **[[Vic Iglesias]]**
- * Known bugs: https://github.com/viglesiasce/EucaLobo/issues
- * Notes: https://github.com/viglesiasce/EucaLobo
- * Last update: 9 April 2013
 
 * _**NetflixOSS Edda**_
  * Project URL: FIXME
