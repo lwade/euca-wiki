@@ -37,6 +37,14 @@ Golden means a service "just works". Pointing region and credential variables of
  * Notes: https://github.com/viglesiasce/EucaLobo
  * Last update: 9 April 2013
 
+* _**Cyberduck**_
+ * Project URL: http://cyberduck.ch/
+ * Versions tested: master
+ * Driver: **[[Tony Beckham]]**
+ * Known bugs: 
+ * Notes: Show hidden files preference allows to see versioned files
+ * Last update: 9 April 2013
+
 ## <font background="black" color="green">Green: Works with Tweaks</font>
 
 Green means a service works well enough to be useful, though code tweaks are necessary and fully equivalent functionality may not yet be available.  Problems with tools in the "green" state are considered bugs, and will be handled accordingly.
@@ -70,7 +78,7 @@ Green means a service works well enough to be useful, though code tweaks are nec
  * Project URL: http://aws.amazon.com/sdkforjava/
  * Versions tested: [AWS JAVA SDK 1.4.1, Euca 3.3 m5]
  * Testplan: https://github.com/eucalyptus/eucalyptus/wiki/Aws-SDK-for-Java-Testplan
- * Driver: **Tony Beckham**
+ * Driver: **[[Tony Beckham]]**
  * Known bugs:
  * Notes: known issues with Walrus should be fixed as of 3.3m4, needs retesting
  * Last update: 03 April 2013
