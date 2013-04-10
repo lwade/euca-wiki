@@ -45,7 +45,7 @@ git clone https://github.com/maxamillion/ansible-openshift_origin.git
 The default login to the instance is as ec2-user , who has sudo privileges, the playbook has user set to root, we would need to modify that in both broker.yml and node.yml
 
 ```
-TODO: one liner sed for this job?
+sed -i -e 's/user: root/user: ec2-user/g' broker.yml node.yml
 ```
 
 Next we need to run the following command after changing current working directory to the playbook directory, replace the private key with your environment specific configuration:
