@@ -1,5 +1,4 @@
 
-
 ### Tested Versions
 AWS Java SDK 1.4.1/Euca Version 3.3m5
 
@@ -45,10 +44,10 @@ AWS Java SDK 1.4.1/Euca Version 3.3m5
 * <font color="green">Instance Health monitoring</font> 
 
 # ELB
-* <font color="red">ELB Connection (Euca endpoint)</font>
-* <font color="red">Register instance with ELB</font>
-* <font color="red">Add ELB to AS group</font>
-* <font color="red">ELB instance health monitoring</font>
+* <font color="green">ELB Connection (Euca endpoint)</font>
+* <font color="green">Register instance with ELB</font>
+* <font color="green">Add ELB to AS group</font>
+* <font color="green">ELB instance health monitoring</font>
 
 # Cloud Watch
 * <font color="green">CW Connection (Euca endpoint)</font> 
