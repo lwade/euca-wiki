@@ -41,7 +41,7 @@ Golden means a service "just works". Pointing region and credential variables of
  * Project URL: http://cyberduck.ch/
  * Versions tested: master
  * Driver: **[[Tony Beckham]]**
- * Known bugs: 
+ * Known bugs: None
  * Notes: Show hidden files preference allows to see versioned files
  * Last update: 9 April 2013
 
