@@ -135,6 +135,27 @@ https://demoeuca-jeevanullas.app.example.com/
 
 DIY or do-it-yourself cartridge allows us to plugin any language support into Openshift, for example C, for more information readers are recommended to read the following [blog post](https://www.openshift.com/blogs/a-paas-that-runs-anything-http-getting-started-with-diy-applications-on-openshift) 
 
+### Install a new cartridge 
+
+One could install a new [cartridge](https://www.openshift.com/faq#t6n11273) on the instance and restart the services to have them available for use, for example let's install a php-5.4 cartridge
+
+```
+yum -y install openshift-origin-cartridge-php-5.4
+```
+
+After this you should be able to start using php-5.4 in your deployments, by creating a new app using this cartridge
+
+```
+rhc app create demopho php-5.4 
+```
+
+If for some reason this fails, you could look at clearing the cartridge cache on the instance
+
+```
+cd /var/www/openshift/broker 
+bundle exec rake tmp:clear
+```
+
 ## Conclusion
 
 For more information on Openshift one should checkout the [Openshift website](https://www.openshift.com/community) . If you have any question about this wiki article please feel free to reach out to the google groups for [euca-users](https://groups.google.com/a/eucalyptus.com/forum/#!forum/euca-users)
