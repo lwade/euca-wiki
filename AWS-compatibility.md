@@ -79,9 +79,9 @@ Green means a service works well enough to be useful, though code tweaks are nec
  * Versions tested: [AWS JAVA SDK 1.4.1, Euca 3.3 m5]
  * Testplan: https://github.com/eucalyptus/eucalyptus/wiki/Aws-SDK-for-Java-Testplan
  * Driver: **[[Tony Beckham]]**
- * Known bugs:
+ * Known bugs: [EUCA-5515](https://eucalyptus.atlassian.net/browse/EUCA-5515) but reported fixed in 3.3 testing branch
  * Notes: known issues with Walrus should be fixed as of 3.3m4, needs retesting
- * Last update: 03 April 2013
+ * Last update: 09 April 2013
 
 * _**Fog**_
  * Project URL: http://fog.io
