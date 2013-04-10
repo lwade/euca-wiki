@@ -1,4 +1,3 @@
-
 ### Tested Versions
 AWS Java SDK 1.4.1/Euca Version 3.3m5
 
@@ -20,12 +19,12 @@ AWS Java SDK 1.4.1/Euca Version 3.3m5
 * <font color="green">Instance Status</font> 
 
 # S3
-* <font color="gold">S3 Connection (Euca endpoint)</font> 
-* <font color="gold">Create Bucket</font>
-* <font color="gold">Put to Bucket</font>
-* <font color="gold">Get from Bucket</font>
-* <font color="gold">List Bucket</font>
-* <font color="gold">Delete Bucket</font>
+* <font color="green">S3 Connection (Euca endpoint)</font> 
+* <font color="green">Create Bucket</font>
+* <font color="green">Put to Bucket</font>
+* <font color="green">Get from Bucket</font>
+* <font color="green">List Bucket</font>
+* <font color="green">Delete Bucket</font>
 * <font color="gold">Version bucket</font>
 
 # Auto Scale  
