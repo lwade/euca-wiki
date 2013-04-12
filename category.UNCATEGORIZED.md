@@ -6,6 +6,7 @@
 * [[Developer-Resources]]
 * [[EBS-Instances-Considerations-and-Large-Instance-Store-Images]]
 * [[EBS-Troubleshooting]]
+* [[ELB-FAQ]]
 * [[Emc-vnx-support-3]]
 * [[Eucalyptus-Mailing-Lists]]
 * [[Fedora-18-Image]]
