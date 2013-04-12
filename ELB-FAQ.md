@@ -1,4 +1,4 @@
-
+# General
 * There is a problem identified with the devel load balancer image.  Probably should use the non-devel version at first
 
 * Eustore image install broken right now, have to manually install load balancer image to your cloud. You have to manually bundle, upload and register the kernel, ramdisk and image. Something like this:
@@ -48,3 +48,19 @@ http://jenkins.release.eucalyptus-systems.com/job/load-balancer-image/
 
 * Github version (the read me here is helpful):
 https://github.com/eucalyptus/load-balancer-image 
+
+# Load Balancer VM
+ * What processes should we be looking for on the VM?
+    - you should look for 1) python load-balancer-servo, 2) haproxy
+ 
+ * Where are the logs? (servo/haproxy)
+    - /var/log/load-balancer-servo/servo.log
+ 
+ * Where is HA proxy's configuration file?
+    - /var/lib/load-balancer-servo/servo-haproxy.conf 
+
+ * Is there any way to poke servo for status/describe type operations?
+    - no, but you can check if it listens on using curl localhost:port 
+
+ * Do we need to explicitly add the listener ports to the loadbalancer VM security group?
+    - no elb code takes care of that 
