@@ -3,6 +3,7 @@
 * [[Boto]]
 * [[Chris-Grzegorczyk]]
 * [[Cloud-Libs-Branch-Management]]
+* [[CloudWatch-FAQ]]
 * [[Developer-Resources]]
 * [[EBS-Instances-Considerations-and-Large-Instance-Store-Images]]
 * [[EBS-Troubleshooting]]
