@@ -29,8 +29,8 @@ for (String name: dimMap.keySet()) {
 }
 ```
 ## How do I purge cloudwatch data from the database manually?
-1. Run the following sql statements against your database
-2. Sample command: psql -h /opt/eucalyptus/var/lib/eucalyptus/db/data/ -p 8777 eucalyptus_cloudwatch < empty.sql
+1. Save the following sql statements as a file on your system (in this example empty.sql)
+2. Run the following command on the CLC: psql -h /opt/eucalyptus/var/lib/eucalyptus/db/data/ -p 8777 eucalyptus_cloudwatch < empty.sql
 ```delete from absolute_metric_history;
 delete from alarms;
 delete from alarm_history;
