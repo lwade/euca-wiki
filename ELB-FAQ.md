@@ -1,4 +1,6 @@
 # General
+* A problem has been observed where cloud-init does not run on the load balancer servo vm.  This results in haproxy not being initialized and the lb vm will not accept and route traffic to registered instances.  To fix this particulkar issue log into the load balancer vm and reboot
+ 
 * There is a problem identified with the devel load balancer image.  Probably should use the non-devel version at first
 
 * Eustore image install broken right now, have to manually install load balancer image to your cloud. You have to manually bundle, upload and register the kernel, ramdisk and image. Something like this:
