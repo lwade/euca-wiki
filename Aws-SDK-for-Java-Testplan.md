@@ -1,6 +1,9 @@
 ### Tested Versions
 AWS Java SDK 1.4.1/Euca Version 3.3m5
 
+### Test Code
+https://github.com/eucalyptus/eutester/tree/testing/eutester4j/com/eucalyptus/tests/awssdk
+
 ### Legend
 <font color="green">GREEN</font> Working <br>
 <font color="gold">YELLOW</font> Unknown <br>
