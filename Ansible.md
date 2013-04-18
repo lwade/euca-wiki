@@ -116,4 +116,6 @@ Coderwall also has some tagged tips n' tricks for Ansible: https://coderwall.com
 
 You can track my blog here for some posts which focus on Ansible usage: https://lesterwade.wordpress.com/ with AWS + Euca.
 
+*****
 
+[[category.tools]]
