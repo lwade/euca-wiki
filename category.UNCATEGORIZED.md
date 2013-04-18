@@ -17,7 +17,6 @@
 * [[HowTo-use-s3cmd-with-Eucalyptus]]
 * [[Images-Project]]
 * [[Import-an-HVM-AMI]]
-* [[Imran-Hossain-Shaon]]
 * [[Inject-ephemeral-disk-into-root-disk]]
 * [[Netapp-support-3]]
 * [[Network-mode-configurations]]
