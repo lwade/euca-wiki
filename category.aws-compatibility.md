@@ -1,6 +1,5 @@
 * [[AWS-compatibility]]
 * [[Aws-SDK-for-Java-Testplan]]
-* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****

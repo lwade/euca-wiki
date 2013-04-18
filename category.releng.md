@@ -1,7 +1,6 @@
 * [[List-of-packages]]
 * [[Promoting-a-Release-Build]]
 * [[Release-Checklist]]
-* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****

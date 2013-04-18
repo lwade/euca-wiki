@@ -1,6 +1,5 @@
 * [[Designdocs-reporting]]
 * [[Designdocs-troubleshooting]]
-* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****

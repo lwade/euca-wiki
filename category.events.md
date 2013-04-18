@@ -1,5 +1,4 @@
 * [[Community-Events]]
-* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****

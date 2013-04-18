@@ -1,5 +1,4 @@
 * [[Documentation-Contributions]]
-* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****

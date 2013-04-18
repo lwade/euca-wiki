@@ -1,5 +1,4 @@
 * [[Keepalived-VIP-for-Node-Controller-Gateways]]
-* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****

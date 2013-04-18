@@ -30,6 +30,12 @@ foreach my $wikidoc (@wikidocs) {
     if ($wikidoc =~ /^category\./) {
         print "Excluding category file $wikidoc\n";
     }
+    elsif ($wikidoc =~ /^_Sidebar\./) {
+        print "Excluding sidebar file $wikidoc\n";
+    }
+    elsif ($wikidoc =~ /^\./) {
+        print "Ignoring dot file $wikidoc\n";
+    }
     else {
         my $category_found = '';  # we haven't seen a category on this page yet.
         print "$wikidoc\n";

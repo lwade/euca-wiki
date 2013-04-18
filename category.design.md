@@ -2,7 +2,6 @@
 * [[Designdocs-reporting]]
 * [[Designdocs-troubleshooting]]
 * [[Designdocs-ui]]
-* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****

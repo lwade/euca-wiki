@@ -1,6 +1,5 @@
 * [[EBS:-Import-a-Disk-Image]]
 * [[EBS:-Resize-a-Volume]]
-* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****

@@ -2,7 +2,6 @@
 * [[GSOC-ideas]]
 * [[Google-Summer-of-Code-2011]]
 * [[Google-Summer-of-Code-2012]]
-* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****

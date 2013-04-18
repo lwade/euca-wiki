@@ -1,5 +1,4 @@
 * [[Reporting-Bugs]]
-* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****

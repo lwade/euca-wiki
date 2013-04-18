@@ -1,5 +1,4 @@
 * [[Hackfests]]
-* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****
