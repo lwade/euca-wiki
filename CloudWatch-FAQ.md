@@ -68,3 +68,6 @@ delete from system_metric_data_d;
 delete from system_metric_data_e;
 delete from system_metric_data_f;
 ```
+
+*****
+[[category.faqs]]
