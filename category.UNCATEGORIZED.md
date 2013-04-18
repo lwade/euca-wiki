@@ -41,6 +41,7 @@
 * [[Troubleshooting-Tools]]
 * [[Typica]]
 * [[Ui-Guide]]
+* [[Validator-Scripts]]
 * [[Walrus-Troubleshooting]]
 * [[ami2emi]]
 * [[index-of-categories]]
