@@ -62,3 +62,7 @@ I dumped the response from both AWS and ECC via var_dump($response), and found t
 (6) Try to describe instances. Again, the response from AWS was quite different from the response from ECC in format.
 
 $response = $ec2->describe_instances();
+
+*****
+
+[[category.tools]]
