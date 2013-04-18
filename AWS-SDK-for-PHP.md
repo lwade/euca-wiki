@@ -66,3 +66,4 @@ $response = $ec2->describe_instances();
 *****
 
 [[category.tools]]
+[[category.aws-compatibility]]
