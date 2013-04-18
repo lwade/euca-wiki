@@ -71,9 +71,13 @@ for my $key ( sort keys %categories ) {
     $category_index_text .= "* [[category.$key]]\n"
 }
 
-# Now write to the index.
+# Now write to the index, and to the sidebar file.
 my $category_index_file = "$git_repo_path/index-of-categories.md";
 open (FH,">$category_index_file") or die $!;
 print FH $category_index_text;
 close FH;
 
+my $category_sidebar = "$git_repo_path/_Sidebar.md";
+open (FH,">$category_sidebar") or die $!;
+print FH $category_index_text;
+close FH;
