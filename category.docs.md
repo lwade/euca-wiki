@@ -7,6 +7,7 @@
 * [[Manually-Convert-BFEBS-EMI-to-AMI]]
 * [[Network-Troubleshooting-FAQ]]
 * [[Using-PHP-with-Eucalyptus]]
+* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****

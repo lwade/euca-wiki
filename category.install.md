@@ -1,4 +1,5 @@
 * [[Fedora-18-Single-System-Install]]
+* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****

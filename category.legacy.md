@@ -1,4 +1,5 @@
 * [[ChangeLog]]
+* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****

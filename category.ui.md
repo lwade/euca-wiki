@@ -1,4 +1,5 @@
 * [[Designdocs-ui]]
+* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****

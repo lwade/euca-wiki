@@ -1,3 +1,4 @@
+* [[_Sidebar]]
 * [[eucabot]]
 * [[index-of-categories]]
 

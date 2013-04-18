@@ -1,4 +1,5 @@
 * [[Contributing]]
+* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****

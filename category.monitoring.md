@@ -1,5 +1,6 @@
 * [[Integrating-Eutester-and-Nagios]]
 * [[Monitoring]]
+* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****

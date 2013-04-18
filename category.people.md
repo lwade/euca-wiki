@@ -14,6 +14,7 @@
 * [[Tony-Beckham]]
 * [[Vic-Iglesias]]
 * [[Zach-Hill]]
+* [[_Sidebar]]
 * [[grze]]
 * [[index-of-categories]]
 

@@ -1,6 +1,7 @@
 * [[Storage-Controller]]
 * [[Storage]]
 * [[Walrus]]
+* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****

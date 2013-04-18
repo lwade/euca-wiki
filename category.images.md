@@ -7,6 +7,7 @@
 * [[Kexec-loader]]
 * [[Manually-Convert-BFEBS-EMI-to-AMI]]
 * [[Starter-Images]]
+* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****

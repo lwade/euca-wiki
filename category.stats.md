@@ -1,4 +1,5 @@
 * [[Wiki-Statistics]]
+* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****

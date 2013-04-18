@@ -1,4 +1,5 @@
 * [[Documentation-Agenda-Items]]
+* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****

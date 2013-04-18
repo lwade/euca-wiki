@@ -1,6 +1,7 @@
 * [[Blueprints]]
 * [[NC-Blueprint]]
 * [[SC-Blueprint]]
+* [[_Sidebar]]
 * [[index-of-categories]]
 
 *****
