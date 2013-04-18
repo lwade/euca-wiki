@@ -14,6 +14,7 @@ Index of Categories
 * [[category.ebs]]
 * [[category.eustore]]
 * [[category.events]]
+* [[category.faqs]]
 * [[category.gsoc]]
 * [[category.ha]]
 * [[category.hackfests]]
@@ -29,4 +30,5 @@ Index of Categories
 * [[category.releng]]
 * [[category.reporting]]
 * [[category.stats]]
+* [[category.tools]]
 * [[category.ui]]
