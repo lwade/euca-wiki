@@ -1,7 +1,9 @@
 # General
 * A problem has been observed where cloud-init does not run on the load balancer servo vm.  This results in haproxy not being initialized and the lb vm will not accept and route traffic to registered instances.  To fix this particulkar issue log into the load balancer vm and reboot
 
-* Due to changes in ELB bootstrapper, The AWS_ELBURL will not be configured in eucarc. You must install the ELB VM image and set loadbalancing.loadbalancer_emi property then manually edit eucarc to add the ELB service URL. ex. export AWS_ELB_URL=http://<your clc ip>:8773/services/LoadBalancing
+* Due to changes in ELB bootstrapper, The AWS_ELBURL will not be configured in eucarc. You must install the ELB VM image and set loadbalancing.loadbalancer_emi property then manually edit eucarc to add the ELB service URL. 
+example. 
+> export AWS_ELB_URL=http://\<your clc ip\>:8773/services/LoadBalancing
  
 * There is a problem identified with the devel load balancer image.  Probably should use the non-devel version at first
 
