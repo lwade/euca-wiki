@@ -1,3 +1,4 @@
+* [[EBS-Instances-Considerations-and-Large-Instance-Store-Images]]
 * [[EBS-Troubleshooting]]
 * [[EBS:-Import-a-Disk-Image]]
 * [[EBS:-Resize-a-Volume]]
