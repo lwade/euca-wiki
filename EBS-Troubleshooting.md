@@ -5,3 +5,5 @@
 # On the NC
 * `iscsiadm -m session -P 3`
 * `iscsiadm -m node -P 1`
+
+[[category.ebs]]
