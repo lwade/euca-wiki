@@ -25,3 +25,7 @@ public x86_64	machine	eki-74C34082	eri-DAB1400A		instance-store
 in this case, centos6/ks-centos6-201302151307.manifest.xml is the manifest path.
 
 *NOTE*: When you modify an image, you should either change the file name or upload it to a different bucket.  If you upload to the same bucket and file name, your previous image will be overwritten, but it may take time for the cloud's various caches to invalid, which could lead to errors.
+
+*****
+[[category.docs]]
+[[category.images]]
