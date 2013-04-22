@@ -21,3 +21,7 @@ This mailing list is for architecture discussions of the Eucalyptus platform.  J
 **To subscribe, send an email to arch+subscribe@eucalyptus.com and then reply to the subsequent email.**
 
 **To see archives and for more information, visit https://groups.google.com/a/eucalyptus.com/forum/#!forum/arch**
+
+*****
+[[category.community]]
+[[category.infrastructure]]
