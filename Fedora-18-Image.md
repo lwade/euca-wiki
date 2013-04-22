@@ -26,3 +26,7 @@ euca-bundle-image --kernel $EKI --ramdisk $ERI -i $EXTFILE
 euca-upload-bundle -b $2 -m /tmp/$( basename $EXTFILE ).manifest.xml
 euca-register $2/$( basename $EXTFILE ).manifest.xml
 ```
+
+*****
+[[category.fedora]]
+[[category.images]]
