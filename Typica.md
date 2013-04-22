@@ -19,3 +19,7 @@ props.getProperty("aws.secretKey"), false, "your-host", 8773);
 ec2.setResourcePrefix("/services/Eucalyptus"); 
 ec2.setSignatureVersion(1);
 </code></pre>
+
+*****
+[[category.tools]]
+[[category.examples]]
