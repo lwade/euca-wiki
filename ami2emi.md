@@ -38,3 +38,7 @@ ami-0f3c8e66	bitnami-cloud/phpbb/bitnami-phpbb-3.0.11-1-linux-ubuntu-12.04.2-x86
 ami-1005df79	bitnami-cloud/magento/bitnami-magento-1.6.2.0-0-linux-ubuntu-12.04-x86_64-s3.manifest.xml
 ami-105dff79	bitnami-cloud/lampstack/bitnami-lampstack-5.3.14-0-linux-ubuntu-12.04-x86_64-s3.manifest.xml
 </pre>
+
+*****
+[[category.tools]]
+[[category.images]]
