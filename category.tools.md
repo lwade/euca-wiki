@@ -1,6 +1,9 @@
 * [[AWS-SDK-for-PHP]]
 * [[Ansible]]
 * [[Boto]]
+* [[Fog]]
+* [[Typica]]
+* [[ami2emi]]
 * [[index-of-categories]]
 
 *****

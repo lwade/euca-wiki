@@ -12,6 +12,7 @@
 * [[Jason-Eden]]
 * [[Jenny-Loza]]
 * [[Lester-Wade]]
+* [[Richard-Isaacson]]
 * [[Scot-Marvin]]
 * [[Tony-Beckham]]
 * [[Vic-Iglesias]]

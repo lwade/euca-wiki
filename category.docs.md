@@ -4,6 +4,7 @@
 * [[Designdocs-reporting]]
 * [[Designdocs-troubleshooting]]
 * [[Designdocs-ui]]
+* [[Growing-an-image-file]]
 * [[Manually-Convert-BFEBS-EMI-to-AMI]]
 * [[Network-Troubleshooting-FAQ]]
 * [[Using-PHP-with-Eucalyptus]]
