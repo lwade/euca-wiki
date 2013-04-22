@@ -1,4 +1,5 @@
 * [[AWS-SDK-for-PHP]]
+* [[AWS-SDK-for-Ruby-testplan]]
 * [[AWS-compatibility]]
 * [[Aws-SDK-for-Java-Testplan]]
 * [[Fog]]
