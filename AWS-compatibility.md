@@ -54,7 +54,7 @@ Green means a service works well enough to be useful, though code tweaks are nec
  * Versions tested:  Eclipse: Juno Service Release 1 --  AWS Java SDK: 1.4.0 -- Eucalyptus: 3.3 Milestone 3
  * Driver: **[[Colby Dyess]]**
  * Known bugs: ECUA-5275
- * Notes: EC2 functionality mostly "just works", some known issues around S3 functionality. More details here: [[Eclipse Plugin]]
+ * Notes: EC2 functionality mostly "just works", some known issues around S3 functionality. More details here: [[AWS Toolkit for Eclipse]]
  * Last update: 12 Mar 2013
 
 
