@@ -1,0 +1,86 @@
+== Introduction ==
+
+The AWS Toolkit for Eclipse is an open source plug-in for the Eclipse Java IDE that makes it easier for developers to develop, debug, and deploy Java applications using Amazon Web Services. With the AWS Toolkit for Eclipse, users can get started faster and be more productive when building AWS applications.
+
+This wiki page documents how to configure the AWS Toolkit for Eclipse to provision and control cloud resources on Eucalyptus. This enables developers to buil and deploy Java applications in either private or public cloud environments by simply changing the target cloud.
+
+== Pre-Requisites ==
+The instructions assume the reader has an AWS account and access to a Eucalyptus cloud. To install Eucalyptus for evaluation purposes we recommend the [http://www.eucalyptus.com/download/faststart FastStart] installer. If you do not have local resources to deploy Eucalyptus, you may requests a free account on the [http://www.eucalyptus.com/eucalyptus-cloud/community-cloud Eucalyptus Community Cloud].
+
+You will also require the following
+
+* [http://www.eclipse.org/downloads/ Eclipse development environment]
+* [http://aws.amazon.com/eclipse/ AWS Toolkit for Eclipse]
+* Private and secret keys for AWS and Eucalyptus clouds
+
+== Configuration for Eucalyptus ==
+This section describes how to configure the AWS Toolkit for Eclipse to communicate with your Eucalyptus cloud. The set of available regions is contained in the file regions.xml, which can be found in <eclipse_workspace_dir>/.metadata/.plugins/com.amazonaws.eclipse.core/regions/regions.xml
+
+Open the regions.xml file and add the following entry:
+```xml
+  <region>
+    &amp;ltdisplayname>My Euca Cloud</displayname>
+    <systemname>eucacloud</systemname>
+        <flag-icon>flags/usa.png</flag-icon>
+        <min-toolkit-version>1.1.0.0</min-toolkit-version>
+    <services>
+      <service name="S3">https://[your.euca.server]:8773/services/Walrus</service>
+      <service name="IAM">https://[your.euca.server]:8773/services/Euare</service>
+      <service name="EC2">https://[your.euca.server]:8773/services/Eucalyptus</service>
+    </services>
+  </region>
+```
+
+Note that you have to replace '[your.euca.server]' with the URL to your Eucalyptus front end. For example, this is the correct snippet to add when using the Eucalyptus Community Cloud:
+```xml
+  <region>
+    <displayname>EucalyptusCC</displayname>
+    <systemname>ecc-1</systemname>
+        <flag-icon>flags/usa.png</flag-icon>
+        <min-toolkit-version>1.1.0.0</min-toolkit-version>
+    <services>
+      <service name="S3">https://communitycloud.eucalyptus.com:8773/services/Walrus</service>
+      <service name="IAM">https://communitycloud.eucalyptus.com:8773/services/Euare</service>
+      <service name="EC2">https://communitycloud.eucalyptus.com:8773/services/Eucalyptus</service>
+    </services>
+  </region>
+```
+Be sure to restart Eclipse if it was running while editing the regions.xml file. Also, be sure to add your Eucalyptus key ID and secret key to the AWS Toolkit preferences
+
+
+== Latest Testing ==
+The AWS Toolkit for Eclipse is usually tested each time there is a major or minor Eucalyptus release. Testing is currently a manual process and aims to validate the following capabilities
+
+* Start, reboot & stop / terminate instances
+* View instance status
+* Create, attach, detach, delete volumes
+* Create, delete snapshots
+* View images list
+* Create, modify and delete security groups
+* Create, browse and delete Walrus buckets
+* Bundle EMI
+* Deploy simple web application into Eucalyptus cloud
+
+The information below describes the last known testing. 
+
+'''Latest Test: April 22, 2013'''
+
+VERSIONS IN PLAY
+* Eclipse: Juno Service Release 1
+* AWS Java SDK: 1.4.0
+* Eucalyptus: 3.3 Milestone 5
+
+
+What currently works:
+* View instances, their status and public IP
+* View, create, delete Volumes
+* View, create and delete Snapshots
+* View, create, modify and delete Security Groups
+
+Remaining issues:
+
+* Regarding Images: Image list is always blank.
+* Regarding Instances: Cannot start, stop, terminate, copy public DNS name, attach/detach volumes.
+* Regarding Instance Metadata: These columns are unexpectedly blank: State, Type, Availability Zone, Key Pair, Launch Time, Security Groups, Tags.
+* Simply viewing the instance list gets you an NPE. I mean the list appears, but something broke here because  the pop-up menu that should appear when selecting an instance doesn't even show. And selecting an instance from the list causes an "Unhandled event loop exception" in the ec2 UI code.
+* Cannot connect to Walrus, thus now S3 capabilities. This is a known issue and expected to be resolved by the time Eucalyptus 3.3 is released.
