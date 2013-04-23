@@ -2,10 +2,10 @@
 
 The AWS Toolkit for Eclipse is an open source plug-in for the Eclipse Java IDE that makes it easier for developers to develop, debug, and deploy Java applications using Amazon Web Services. With the AWS Toolkit for Eclipse, users can get started faster and be more productive when building AWS applications.
 
-This wiki page documents how to configure the AWS Toolkit for Eclipse to provision and control cloud resources on Eucalyptus. This enables developers to buil and deploy Java applications in either private or public cloud environments by simply changing the target cloud.
+This wiki page documents how to configure the AWS Toolkit for Eclipse to provision and control cloud resources on Eucalyptus. This enables developers to build and deploy Java applications in either private or public cloud environments by simply changing the target cloud.
 
-== Pre-Requisites ==
-The instructions assume the reader has an AWS account and access to a Eucalyptus cloud. To install Eucalyptus for evaluation purposes we recommend the [http://www.eucalyptus.com/download/faststart FastStart] installer. If you do not have local resources to deploy Eucalyptus, you may requests a free account on the [http://www.eucalyptus.com/eucalyptus-cloud/community-cloud Eucalyptus Community Cloud].
+== Prerequisites ==
+The instructions assume the reader has an AWS account and access to a Eucalyptus cloud. To install Eucalyptus for evaluation purposes we recommend the [http://www.eucalyptus.com/download/faststart FastStart] installer. If you do not have local resources to deploy Eucalyptus, you may request a free account on the [http://www.eucalyptus.com/eucalyptus-cloud/community-cloud Eucalyptus Community Cloud].
 
 You will also require the following
 
