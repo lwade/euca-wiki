@@ -31,7 +31,8 @@ You can find us on Freenode IRC in #eucalyptus or #eucalyptus-docs, or at any of
 ### Developer Resources
 
 * [Design Docs](wiki/DesignDocs) - Internal Eucalyptus design documentation.
-* [Debugging Eucalyptus C language components](wiki/Debugging-Eucalyptus-C-language-components) - Tools and advice to debug the components of Eucalyptus written in C: Node Controller and Cluster Controller.
+* [Debugging Eucalyptus Java-language components](wiki/Debugging-Eucalyptus-Java-language-components) - Advice on working with Eucalyptus from an IDE.
+* [Debugging Eucalyptus C-language components](wiki/Debugging-Eucalyptus-C-language-components) - Tools and advice to debug the components of Eucalyptus written in C: Node Controller and Cluster Controller.
 * [UI Guide](wiki/UI-Guide) - Information on the layout of the web UI and how to modify it.
 
 ### Finding Pages
