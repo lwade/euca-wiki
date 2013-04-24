@@ -2,9 +2,9 @@ The following are suggestions for debugging Eucalyptus components running in a J
 
 ## Load the code into an IDE
 
-If your installation is remote from your development machine, you'll first want to load the exact version of the code that is running. 
+If your installation is remote from your development machine, you'll first want to check out from Eucalyptus git repository the exact version of the code that is running. 
 
-* If the code was built from source on the remote host, using `git log` you can find out what git revision to check out on your development machine. 
+* If the code was built from source on the remote host, by using `git log` you can find out what git revision to check out on your development machine. 
 * If, however, Eucalyptus was installed from packages, look for the git commit hash among package metadata:
 
 ```
@@ -14,12 +14,12 @@ Release     : 0.0.798.20130422gite9dc4a97.el6
 
 The commit hash follows `git` and ends before the trailing `.el6`. In this example, the revision is `e9dc4a97`.
 
-## Restart CLC
+## Restart the CLC
 
 To enable connections from a debugger, restart the Eucalyptus JVM with `--debug` flag on the command line. Command-line flags can be changed by editing the line that invokes the JVM in the /etc/init.d/eucalyptus-cloud init script:
 
 ```
-$EUCALYPTUS/usr/sbin/eucalyptus-cloud $CLOUD_OPTS -h $EUCALYPTUS -u $EUCA_USER ...
+$EUCALYPTUS/usr/sbin/eucalyptus-cloud --debug $CLOUD_OPTS -h $EUCALYPTUS -u $EUCA_USER ...
 ```
 
 If the problem you are trying to debug takes place early in the lifetime of the VM, you can additionally supply the `--debug-suspend` flag to have the VM pause during startup indefinitely, waiting for a connection from a debugger.
