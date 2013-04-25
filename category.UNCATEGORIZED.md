@@ -30,6 +30,8 @@
 * [[Ui-Guide]]
 * [[Validator-Scripts]]
 * [[Walrus-Troubleshooting]]
+* [[_Footer]]
+* [[footer]]
 * [[index-of-categories]]
 * [[libvirt-network-configuration]]
 
