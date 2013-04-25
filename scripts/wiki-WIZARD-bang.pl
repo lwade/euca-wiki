@@ -20,6 +20,7 @@ $git_repo_path = ".";
 opendir (DIR, $git_repo_path) or die "$!"; my @wikidocs = grep {/.*?\.md/} readdir DIR; close DIR;
 opendir (DIR, $git_repo_path) or die "$!"; push (@wikidocs, (grep {/.*?\.org/} readdir DIR)); close DIR;
 opendir (DIR, $git_repo_path) or die "$!"; push (@wikidocs, (grep {/.*?\.textile/} readdir DIR)); close DIR;
+opendir (DIR, $git_repo_path) or die "$!"; push (@wikidocs, (grep {/.*?\.mediawiki/} readdir DIR)); close DIR;
 
 # Create an empty categories hash.
 my %categories = ();

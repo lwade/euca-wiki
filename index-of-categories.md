@@ -1,5 +1,6 @@
 Index of Categories
 
+* [[category.HOWTO]]
 * [[category.UNCATEGORIZED]]
 * [[category.aws-compatibility]]
 * [[category.blueprints]]
