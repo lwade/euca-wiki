@@ -1,4 +1,3 @@
-* [[AWS-Toolkit-for-Eclipse]]
 * [[index-of-categories]]
 
 *****
