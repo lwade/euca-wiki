@@ -1,0 +1,54 @@
+
+    [root@localhost /]# mkfs.ext3 /dev/vdb
+
+
+
+Mount the drive:
+
+
+    [root@localhost /]# mount /dev/vdb /mnt
+
+
+
+Now you are ready to use your EBS volume
+
+h3. Using ephemeral space
+
+When Eucalyptus creates an instance it also creates a separate ephemeral disk (size depends on the instance type).
+
+For example, if you create a c1.xlarge instance disk space of 40GB and your image was created with 10 GB diskspace layout\\
+you see 10 GB at root fs and 30 GB ext2 fs on second disk device usually mounted on /mnt or /ephemeral
+
+If you do not see the device mounted to anywhere you can mount it from {{/dev/vda2}}, for example
+
+
+    mkdir -p /mnt/morespacehere
+    mount /dev/vda2 /mnt/morespacehere
+
+
+
+h3. Taking a snapshot backup of a EBS volume
+
+Take snapshot of selected EBS by pressing green arrow or with right mouse click and "Create a new snapshot from this volume"
+
+!take-snapshot.png!
+
+h3. Restoring an EBS volume from a snapshot
+
+Restore volume of selected EBS by selecting "Create a new volume from this snapshot"
+
+!restore_ebs.png!
+
+h3. Detaching the volume
+
+The EBS volume can only be attached to a single cloud instance at the time. If you need to attach it to another instance or you are terminating the instance it is currently attached to, you should detach the volume from the instance. Please make sure you have first unmounted the file system from within the instance. Afterwards you can select your volume in Hybridfox and choose "Detach this volume" from the available options.
+
+h3. Terminating the volume
+
+Once you are finished using the volume and don't needed any more, please release the storage back to the cloud by terminating the volume. You can do this by selecting your volume from Hybridfox and choosing "Delete this volume".
+
+h3. Managing EBS from the command line
+
+For full documentation on using command line tools for managing volumes, please see the [Eucalyptus CLI docs|http://www.eucalyptus.com/docs/3.1/cli/euca.html#euca] and [EBS documentation on the Eucalyptus wiki|http://open.eucalyptus.com/wiki/EucalyptusBlockStorage_v2.0]
+
+Just remember to use {{/dev/vdb}} instead sda since Eucalyptus uses a virtio device.

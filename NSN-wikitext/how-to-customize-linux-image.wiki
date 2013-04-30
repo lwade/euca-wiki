@@ -1,0 +1,125 @@
+
+> This page applies to Linux images only.
+
+
+There are two ways to customize an existing image. You can either bundle an existing instance into a new image; or you can customize the image rootFS file.
+
+h2. Bundling a running instance
+
+The easiest way to bundle a new image from a running instance is to use euca-bundle-vol on an existing server instance. See Eucalyptus documentation:
+
+* [http://open.eucalyptus.com/participate/wiki/creating-image-existing-vm-centos]
+* [http://open.eucalyptus.com/participate/wiki/bundling-images]
+
+You need to have the credentials available and the environment sourced, so extract your credentials zip and:
+
+
+    source .euca/eucarc
+
+
+
+Good practice is to mount an EBS volume 3x size of the instances rootfs to /ebs for example.
+
+Here is an example for bundling:
+
+
+    euca-bundle-vol -p RHEL53b32V7 -d /ebs -s 2048 --exclude /ebs/,/var/run/dhclient-eth0.pid,/root/.euca --no-inherit --kernel eki-0DFA1532 --ramdisk eri-65D11676
+
+
+
+### "unexport" http_proxy:
+
+
+    export http_proxy=
+
+    euca-bundle-vol -p rhel5u5-64b-php -d /mnt/ -s 2048 --exclude /opt/,/mnt/,/var/run/dhclient-eth0.pid,/root/.euca
+
+
+
+Of course you need to replace the parameters with your own and use size in 512 increments i.e. 2048 or 4096. If you are bundling a public image, make sure to exclude any personal details, such as shell history, ssh keys etc.
+
+h2. Customizing existing image rootFS file
+
+Making changes to existing image root filesystem file is fairly simple.
+
+First source the eucarc of the cluster that you are working with
+
+
+    . .euca/eucarc
+
+
+
+Make sure that the client has enough free disk space. The {{/tmp}}directory is the default bundling path. You can change that with {{-d}} parameter in case your /tmp is too small.\\
+{{rm -rf /tmp/<previous image files>}}
+
+Make a new version of existing root file system file
+
+
+    [root@example euca-fedora-10-x86_64]# cp fedoraV7.10.x86-64.img fedoraV11.10.x86-64.img
+
+
+
+Loop mount it to some directory, go there and make the needed modifications to the filesystem
+
+
+    [root@example euca-fedora-10-x86_64]# mount fedoraV11.10.x86-64.img new/ -o loop
+    [root@example euca-fedora-10-x86_64]# cd new/
+    [root@example ]# vi etc/motd
+	edit it say hello ...
+
+    After done unmount the file
+    [root@example euca-fedora-10-x86_64]# umount new
+
+
+
+Then you can bundle the new root fs to the cluster as usual.
+
+
+    [root@example euca-fedora-10-x86_64]# export EKI=<Euca Kernel Image ID of the image, which is the same as in the original>
+    [root@example euca-fedora-10-x86_64]# export ERI=<Euca Ramdisk Image ID of the image, which is the same as in the original>
+    [root@example euca-fedora-10-x86_64]#
+
+
+
+The Eucalyptus bundle defaults to the 64 bit architecture. in case you want to bundle 32 bit OS use the -r i386 switch to the bundle command. First, bundle the image.
+
+
+    [root@example euca-fedora-10-x86_64]# euca-bundle-image -i fedoraV11.10.x86-64.img --kernel $EKI --ramdisk $ERI
+    Checking image
+    Tarring image
+    Encrypting image
+    Splitting image...
+    Part: fedoraV11.10.x86-64.img.part.0
+    ------Clip-----
+    Part: fedoraV11.10.x86-64.img.part.16
+    Generating manifest /tmp/fedoraV11.10.x86-64.img.manifest.xml
+
+
+
+h2. Uploading and registering the new image
+
+Once you have bundled the new image, you need to upload and register it to the cloud:
+
+First upload the bundle into a Walrus bucket.
+
+
+    [root@example euca-fedora-10-x86_64]# euca-upload-bundle -b XX:Fedora10b64V11Image -m /tmp/fedoraV11.10.x86-64.img.manifest.xml
+    Checking bucket: XX:Fedora10b64V11Image
+    Creating bucket: XX:Fedora10b64V11Image
+    Uploading manifest file
+    Uploading part: fedoraV11.10.x86-64.img.part.0
+    ----Clip-----
+    Uploading part: fedoraV11.10.x86-64.img.part.16
+    Uploaded image as XX:Fedora10b64V11Image/fedoraV11.10.x86-64.img.manifest.xml
+
+
+
+Finally register the image.
+
+
+    [root@example euca-fedora-10-x86_64]# euca-register -d 'Description of Image' XX:Fedora10b64V11Image/fedoraV11.10.x86-64.img.manifest.xml
+    IMAGE   emi-F3F914C0
+
+
+\\
+

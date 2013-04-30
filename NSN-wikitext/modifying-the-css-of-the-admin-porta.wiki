@@ -1,0 +1,12 @@
+In euca3 you can modify the CSS of the admin portal
+
+In case custom Look & Feel is needed to Admin Portal there is couple of files that needs to be edited on Front-end server.
+
+Browse the webapp folder
+
+    cd /var/run/eucalyptus/webapp/themes/active
+
+This folder as style file global.css where you can edit the background colors or wallpaper.
+
+Also the logo.png can be be replaced with the your Cloud logo picture.
+

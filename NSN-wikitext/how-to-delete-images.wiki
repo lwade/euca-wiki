@@ -1,0 +1,53 @@
+h1. How to delete bucket, image & bundle
+
+After you have successfully created several versions of your images select one and move it to production cluster. After that delete unused versions of your images from testing cluster.
+
+First source the eucalyptus credentials of the testing cluster
+
+
+    [root@<your client> ~]# . .euca/eucarc 
+
+
+
+Get information of your images
+
+
+    [root@<your client>]# euca-describe-images | grep win
+
+
+Make sure that you are not running an instance which image you are about to deregister & delete. Terminate them if found.
+
+
+    euca-describe-instances| grep emi-1B3F163D
+
+
+
+Deregister the Eucalyptus Machine Image -{color:#FF0000}*If AND ONLY IF there are no instances of this image running*{color}
+
+
+    [root@<your client>]# euca-deregister emi-1B3F163D
+    IMAGE   emi-1B3F163D
+
+
+
+Next deregister the image second time so that it will be wiped out of image listing also.
+
+
+    [root@<your client>]# euca-deregister emi-1B3F163D
+    IMAGE   emi-1B3F163D
+
+
+
+Delete the bundle from storage. The {color:#FF0000}*most important switch is the --clear*{color} which stated that all files must be really deleted from filer.
+
+
+    [root@exampleserver windows]# euca-delete-bundle -b ExampleImage --clear
+
+
+
+This way the clusters storage will not be cluttered.
+
+Also remember to delete the Eucalyptus Kernel (EKI) and Ramdisk (ERI) buckets same way.
+
+h2. Reference to eucalyptus engage page
+[https://engage.eucalyptus.com/customer/portal/articles/489947-how-to-delete-images]

@@ -1,0 +1,264 @@
+\\
+
+
+{note}
+This page describes the process of installing Boxgrinder server for cloud service.{note}
+{toc}
+
+## Requirements
+
+*Basic Fedora 17 installation.
+*Enough disk space, 25GB mounted to /home/grinder to store the images.
+*Internet access.
+*Boxgrinder repositories.
+
+## Installing BoxGrinder
+
+SSH to Boxgrinder Fedora 17 server and export http proxy:
+
+Get the Boxgrinder RPM repositories:
+
+    curl http://boxgrinder.org/files/yum/boxgrinder-fedora.repo > /etc/yum.repos.d/boxgrinder.repo
+
+Install all the needed Boxrinder packages:
+
+    yum install rubygem-boxgrinder-build
+
+## Copy cloud custom scripts Boxgrinder
+
+Customized cloud appliance scripts are needed. 
+
+Copy the scripts and overwrite the default appliaces done by the Boxgrinder installation.
+
+## Post-install steps
+
+To successfully create images for cloud with boxgrinder:
+
+• Modify the static fstab file from boxgrinder to requirements
+• Do not create ec2 user account on the system
+• Skip adding of code to copy SSH keys from the cloud to ec2 user account home directory (added to rc.local normally by ec2 plugin)
+• Do not replace kernel in image with Xen kernel on RHEL 5 releases, do not install xen kernel modules to ramdisk
+• Allow root logins in sshd configuration
+• Modify qemu command wrapper script (a bug in Fedora 17 boxgrinder) to allow building of i686 images on x86_64 server.
+
+# Detailed instructions
+
+## Common Information
+
+Boxgrinder is commandline tool for creating images to various cloud platform using predifined set of repositories and OS configuration rules.
+
+More information and tutorials:[http://boxgrinder.org/]
+
+Server Details:\\
+• Basic Fedora 17 install with current updates as of October 2012\\
+• Enough disk space mounted to /home/grinder to store the images\\
+• Credentials to the test cloud as image user in /root/.euca 
+directory, including registered SSH key grinder for testing SSH to 
+images\\
+• Customized version of boxgrinder image build scripts in /usr/share/gems/gems/boxgrinder-build-0.10.4\\
+• Custom shell scripts to implement post image tasks and to create the rc.local script for images in /home/grinder/scripts\\
+• Custom shell scripts to automate image building, extracting kernel 
+files from images, bundling and eucalyptus registration. These commands 
+are linked to /usr/local/bin to make them available to standard PATH.\\
+• A separate boxgrinder appliance description (.appl) file for each image to be created in /home/grinder/config directory\\
+• Credentials to upload images to test cloud from the build environment as image test cloud user
+
+{note}
+Since the boxgrinder scripts installed from RPMs are modified, it is important to not run any upgrades on the build server, unless care is taken to reimplement the changes to boxgrinder.{note}
+
+## Supported Guest OS
+
+Boxgrinder has been tested to create images for following OS releases:
+
+• RHEL 5.5\\
+• RHEL 5.6\\
+• RHEL 5.8\\
+• RHEL 6.1\\
+• RHEL 6.2\\
+• RHEL 6.3\\
+• CentOS 6.3\\
+• Fedora 17
+
+By default, boxgrinder creates x86_64 images only. New OS versions can be added easily by editing the configuration files. Ubuntu nor Debian are not supported by Boxgrinder.
+
+## Image and Bucket Naming
+
+All
+ created images use following naming rules in image file and Eucalyptus 
+storage buckets. Each image has 4 GB root filesystem and can be started 
+as small instances in\\
+Eucalyptus cloud.
+
+Since it´s possible to create images for both i386 and x86_64 architectures, the bucket names contain this information.
+
+• Image name is short without dots, for example rhel55, centos63 or fedora17.\\
+The registered image name currently ends with .ec2 but can be easily renamed if needed by editing configuration script.
+
+• For each image, two buckets are created:\\
+◦ <name>-<arch>-baseimage-boot contains kernel and ramdisk\\
+◦ <name>-<arch>-baseimage contains the <name>.ec2 image
+
+Bundeling and registering the images are automated in the image creation scripts. The image architecture and description fields are always set as correct values when script is run.
+
+## Creating images with Boxgrinder
+
+Recreate all images from scratch:
+
+    . /root/.euca/eucarc
+    cd /home/grinder
+    rm -rf build/* log/*
+    for c in config/*.appl;do boxgrinder-build -p ec2 $c; custom-register-image $c; done
+    custom-instance-info
+
+
+Following procedure explains how an image of RHEL 5.5 can be created from scratch\\
+with the build system. Login to the build server as root with SSH
+
+Go to directory /home/grinder
+
+
+    cd /home/grinder
+
+Use boxgrinder to build the appliance image. Image is placed to a directory under /home/boxgrinder/build/appliances/rhel/
+
+    boxgrinder-build -p ec2 config/rhel-5.5.appl
+
+If an existing image for the image version being created is found in build directory, the command does not do anything. If you wish to create the image again, remove any related build data from correct build appliance directory first.
+
+If you wish to create i386/i686 target image, prefix the command with setarch i686:
+
+
+    setarch i686 boxgrinder-build -p ec2 config/rhel-5.5.appl
+
+
+
+Next command calls multiple other scripts from bin directory, including: custom-extract-kernel It will mount the image and copies kernel and ramdisk to image directory. Only executed if kernel and ramdisk are not already extracted to the image directory:
+
+
+    custom-register-image config/rhel-5.5.appl
+
+
+
+Registers the extracted kernel and ramdisk images to the cloud, unless files with same bucket and manifest path already exist:
+
+
+    custom-register-kernel
+
+
+
+After calling the other scripts, custom-register-image continues to lookup correct kernel (eki-) and ramdisk (eri-) images from the cloud and bundles and registers the root image to the cloud.
+
+If you wish to register the i386 image created earlier with setarch, prefix the\\
+command similarly with setarch command:
+
+
+    setarch i686 custom-register-image config/rhel-5.5.appl
+
+
+
+Notice! Cloud version 3.2.1 and newer all new images will be published "private" visibility if you wish to change that "public"
+
+
+    euca-modify-image-attribute -l -a all <EMI> or <EKI>, <ERI>
+
+
+## Image Name and Description
+
+The image name and summary items in boxgrinder .appl configuration are important.\\
+These values are used to:\\
+• Name the bucket where the image is registered in the cloud\\
+• Add the Description information to registered images in the cloud\\
+Always make sure the image name and summary fields are correct and describe the exact image being generated.
+
+## User Provided Boot Scripts
+
+You can add custom boot scripts to the system by following steps:\\
+• Add the script to directory /home/grinder/scripts/init.d/\\
+• Add the full path of script to appliance configuration file\\
+The scripts are enabled with chkconfig <scriptname> on command. 
+This means the scripts must contain all valid script headers required by
+ chkconfig.
+
+## User Provided Custom Installer Packages
+
+Our scripts allow users to add custom features and software configuration scripts without changing the build system.
+
+To add a custom bundled installer script:
+
+• Create a directory with your files to be installed and install.sh script, which is executed automatically
+
+• Pack the directory with tar -zxf command, using same name as the directory for package filename: for example, tar -zxf product-x-1.2.3.tar.gz product-x-1.2.3
+
+• Copy the tar file to image build server directory /home/grinder/userpackages
+
+• Add full path to the image to the custom image's files section, for example /home/grinder/userpackages/product-x-1.2.3.tar.gz
+
+• Remember to rename the image and give it correct summary in appliance configuration files before publishing a test image!
+
+The install.sh script is executed in context of the image during image build steps. When this step is executed, the image does not seem to have any network connectivity, but you can execute commands available locally for the image. Because there is no network connectivity, the package should include all data to be installed.
+
+## Cleaning Up Buckets
+
+If
+ you are iterating the build of new images for a certain release, it is 
+not required to register the kernel and ramdisk files again every time.\\
+Note: after cleaning the build tree, you still need to extract the 
+kernel files for eucaregister-image script to work (we need to figure 
+out the exact kernel name to look it up from buckets).
+
+It is very easy to forget registered files to the buckets and use up bucket space from the cloud. The consistent naming of the images helps here, and it is highly recommended to clean up the images while building new versions.
+
+Script custom-wipe-emi-instance can be used to terminate instances using given EMI and to clear the buckets and registrations for the EMI file. Note that this command does not clear the kernel and ramdisk files for this image.
+
+Script custom-instance-info can be used to list the baseimage EMIs and associated instances.\\
+The command is configured to only show images generated with Boxgrinder.
+
+## Summary of Changes in BoxGrinder
+
+To successfully create images for Eucalyptus Cloud with boxgrinder, the build scripts for ec2 platform target were modified slightly.
+
+The changes made are:
+
+• Instead of 10GB images created by ec2 plugin, create 4 GB images
+
+• Modify the static fstab file from boxgrinder to Eucalyptus requirements
+
+• Do not create ec2 user account on the system
+
+• Skip adding of code to copy SSH keys from the cloud to ec2 user account home directory (added to rc.local normally by ec2 plugin)
+
+• Do not replace kernel in image with Xen kernel on RHEL 5 releases, do not install xen kernel modules to ramdisk
+
+• Allow root logins in sshd configuration
+
+• Modify qemu command wrapper script (a bug in Fedora 17 boxgrinder) to allow building of i686 images on x86_64 server.
+
+## List of Scripts and Configuration Files
+
+### Utility scripts for image processing
+
+|Script (/home/grinder/bin)|Description|
+|boxgrinder-export-appl-config|Internally used script to read a .appl file and output shell environment variables for the key/value pairs.|
+|custom-extract-kernel|Script to extract kernel and ramdisk from an image to the directory containing the image.|
+|custom-grinder-instance|Testing tool to quickly create a test instance with correct parameters from an EMI.|
+|custom-instance-info|Wrapper to view details for images and instances.|
+|custom-register-image|Bundle and register a boxgrinder image. Takes the boxgrinder .appl configuration file as parameter.|
+|custom-register-kernel|Bundle and register kernel and ramdisk from a boxgrinder image. Takes the boxgrinder .appl configuration file as parameter.|
+|custom-wipe-emi-instances|Terminate any instances for given EMI, deregister the EMI and clear it's bundle from cloud storage. Does not clear the kernel and ramdisk files for the kernel.|
+
+### Image processing scripts
+
+Executed by boxgrinder
+
+|Script (/home/grinder/scripts)|Description|
+|10-selinux.sh|Disable SeLinux in the image|
+|11-fstab.sh|Create mountpoints /ephemeral and /ebs|
+|12-accounts.sh|Configure /home_local for useradd new local accounts|
+|20-services.sh|Ensure certain services are disabled in image, copy any init scripts from scripts/init.d to the server. Note: only init scripts mentioned in .appl files section are copied to the instance's scripts/init.d directory and installed to the image.|
+|40-networking.sh|Configure networking parameters to our standards.|
+|50-create-rclocal.sh|Create a rc.local file on the server. Currently does not do anything, everything is done by custom-cloud-init script in scripts/init.d/ directory.|
+|91-user.sh|Install any user specified tar.gz packaged installers.|
+|99-cleanup.sh|Clean up image temporary files.|
+|init.d/custom-cloud-init|A mandatory system boot script, which sets Eucalyptus cloud specific settings as described in this document.|
+\\
+

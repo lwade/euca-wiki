@@ -1,0 +1,91 @@
+
+## *Question* - *What are AIMs, AKIs etc.?*
+
+Answer - These terms are derived from Amazon Web Services APIs. AMI and EMI are Amazon and Eucalyptus Machine Images. AKI stands for Amazon Kernel Image. ARI - "R" stands for "RAM Disk".|
+
+## *Question* - *Am I able to keep my elastic IP indefinitely for as long as I need it?*
+
+Answer - Elastic IP addresses should be stable enough to use for DNS names. If however, one was lost through an operational mistake Eucalyptus does not support restoring it since it may already be assigned to another user. Please ensure that you have at least two separate IP addresses in two different clouds if this will present a serious operational risk for your application.
+
+
+## *Question* - *Can a cloud instance rely on a permanent IP address? Netact product relies on unchanging IP - can that be supported?*
+
+Answer -  Typically cloud manages your IP's automatically. It gives an IP from the available pool. But for some application you want to have stable IP. Elastic IP is a way to book and release IP's from the cloud.
+
+
+## *Question* - *I have launched an instance but failed to connect to it. What could be the reason?*
+
+Answer - Please check your security group, it might be missing the SSH or RDP port you need to connect to it.
+
+
+
+
+
+
+## *Question* - *Is there a limit to image size?*
+
+Answer - The base image should be below 5GBytes. The smaller the better - size impacts the instance startup time. Large, practically unlimited EBS volumes can be attached.|
+||Related links or documents||
+|
+
+
+
+
+
+
+
+
+## *Question* - *Is data on EBS volume persistant?*
+
+Answer - Yes. Data on EBS volume is preserved althoug instance is terminated. In addition snapshots will be taken from those there in the file system level in the centralized disk storage.|
+||Related links or documents||
+|
+
+
+
+
+
+
+## *Question* - *Can I move instances across clouds?*
+
+Answer - Instances you cannot move anywhere, not even inside the cloud, but images we can move easily across.|
+||Related links or documents||
+|
+
+
+
+
+
+
+
+
+## *Question* - *Can I online assign more memory or CPU cores to my instance?*
+
+Answer - No you can not, The cloud way is to start new instance with bigger VM Type.  Just simply start a new bigger instance and migrate to that||
+
+
+
+
+## *Question* - *How to mount a volume to Windows instance?*
+
+Answer - There is a HybridFox bug related to "Attach volume". Workaround: Set up a Linux instance, and execute the command there based on instructions in the Wiki, see the link below.|
+||Related links or documents||[Attach EBS to Windows|Attach EBS to Windows]|
+
+
+
+## *Question* - *How to increase image rootfs size?*
+
+Answer - How to increase image rootfs size? 
+
+Start an image which rootfs size yuo want to increase
+{{euca-bundle-vol}}it to bigger size.
+For example if current size was 2G and you would like to increase it to 4G:
+{{#euca-bundle-vol
+ -p RHEL53b32V7 -d /ebs -s 4096 --exclude 
+/ebs/,/var/run/dhclient-eth0.pid,/root/.euca --no-inherit --kernel 
+eki-0DFA1532 --ramdisk eri-65D11676}}
+and then upload and register it. When you start the new image it has more space in / root file system|
+||Related links or documents||
+|
+
+
